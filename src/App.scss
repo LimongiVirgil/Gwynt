@@ -1,3 +1,13 @@
+@keyframes hover-ripple {
+  100% {
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    opacity: 0;
+  }
+}
+
 .menu {
   width: 100vw;
   height: 100vh;
@@ -5,4 +15,60 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  .gameTitle {
+    margin: auto;
+    width: 60vw;
+    padding-top: 15vh;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    img:first-child {
+      width: 70%;
+      height: auto;
+      object-position: center;
+      object-fit: unset;
+    }
+
+    img:last-child {
+      width: 12%;
+      margin-top: 5%;
+    }
+  }
+
+  button {
+    color: white;
+    height: 50px;
+    width: 150px;
+    background-color: #B28D41;
+    cursor: pointer;
+    border: none;
+    font-size: 28px;
+    margin-top: 10vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hover-ripple {
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 5px #B28D41 solid;
+      animation-duration: 1s;
+    }
+
+    &:hover::before {
+      animation-name: hover-ripple;
+    }
+  }
 }
