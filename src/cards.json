@@ -1,0 +1,1700 @@
+{
+  "Neutre": [{
+      "name": "Geralt de Riv",
+      "power": 15,
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Cirilla Fiona Elen Riannon",
+      "power": 15,
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Yennefer de Vengerberg",
+      "power": 7,
+      "area": "archer",
+      "effect": "heroe doctor",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Triss Merigold",
+      "power": 7,
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Elfe mystérieux",
+      "power": 0,
+      "area": "melee",
+      "effect": "heroe spy",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+    },
+    {
+      "name": "Villentretenmerth",
+      "power": 7,
+      "area": "melee",
+      "effect": "meeeIncineration",
+      "description": "Détruisez les unités de combat rapproché les plus fortes de votre ennemi si la force cumulée de ses unités de combat rapproché est d'au moins 10."
+    },
+    {
+      "name": "Vesemir",
+      "power": 6,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Emiel Régis Rohellec Terzieff-Godefroy",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Jaskier",
+      "power": 2,
+      "area": "melee",
+      "effect": "chargeRing",
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+    },
+    {
+      "name": "Zoltan Chivay",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Leurre",
+      "power": false,
+      "area": false,
+      "effect": "lure",
+      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main."
+    },
+    {
+      "name": "Leurre",
+      "power": false,
+      "area": false,
+      "effect": "lure",
+      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main."
+    },
+    {
+      "name": "Leurre",
+      "power": false,
+      "area": false,
+      "effect": "lure",
+      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main."
+    },
+    {
+      "name": "Sonnerie de la charge",
+      "power": false,
+      "area": false,
+      "effect": "chargeRing",
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+    },
+    {
+      "name": "Sonnerie de la charge",
+      "power": false,
+      "area": false,
+      "effect": "chargeRing",
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+    },
+    {
+      "name": "Sonnerie de la charge",
+      "power": false,
+      "area": false,
+      "effect": "chargeRing",
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+    },
+    {
+      "name": "Terre Brûlée",
+      "power": false,
+      "area": false,
+      "effect": "destroy",
+      "description": "Détruit la ou les cates les plus fortes du terrain"
+    },
+    {
+      "name": "Terre Brûlée",
+      "power": false,
+      "area": false,
+      "effect": "destroy",
+      "description": "Détruit la ou les cates les plus fortes du terrain"
+    },
+    {
+      "name": "Terre Brûlée",
+      "power": false,
+      "area": false,
+      "effect": "destroy",
+      "description": "Détruit la ou les cates les plus fortes du terrain"
+    },
+    {
+      "name": "Froid mordant",
+      "power": false,
+      "area": "melee",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous."
+    },
+    {
+      "name": "Froid mordant",
+      "power": false,
+      "area": "melee",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous."
+    },
+    {
+      "name": "Froid mordant",
+      "power": false,
+      "area": "melee",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous."
+    },
+    {
+      "name": "Brouillard impénétrable",
+      "power": false,
+      "area": "archer",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous."
+    },
+    {
+      "name": "Brouillard impénétrable",
+      "power": false,
+      "area": "archer",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous."
+    },
+    {
+      "name": "Brouillard impénétrable",
+      "power": false,
+      "area": "archer",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous."
+    },
+    {
+      "name": "Pluie torrentielle",
+      "power": false,
+      "area": "siege",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+    },
+    {
+      "name": "Pluie torrentielle",
+      "power": false,
+      "area": "siege",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+    },
+    {
+      "name": "Pluie torrentielle",
+      "power": false,
+      "area": "siege",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+    },
+    {
+      "name": "Temps dégagé",
+      "power": false,
+      "area": "melee archer siege",
+      "effect": "meteo",
+      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle."
+    },
+    {
+      "name": "Temps dégagé",
+      "power": false,
+      "area": "melee archer siege",
+      "effect": "meteo",
+      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle."
+    },
+    {
+      "name": "Temps dégagé",
+      "power": false,
+      "area": "melee archer siege",
+      "effect": "meteo",
+      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle."
+    }
+  ],
+  
+  "Skellige": [{
+      "name": "Crach an Craite",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Mélange les cartes de la défausse de chaque joueur et les remet dans leur jeu."
+    },
+    {
+      "name": "Roi Bran",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Les unités ne perdent que la moitié de leur force par mauvais temps."
+    },
+    {
+      "name": "Hjalmar",
+      "power": 10,
+      "area": "archer",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Cerys",
+      "power": 10,
+      "area": "melee",
+      "effect": "heroe CerysRally",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et invoque toutes les Vierges au bouclier dans le jeu et la main."
+    },
+    {
+      "name": "Sac-à-souris",
+      "power": 8,
+      "area": "archer",
+      "effect": "heroe mardrome",
+      "description": "Carte non affectée par les cartes spéciales ou les capacité et déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+    },
+    {
+      "name": "Tempête de Skellige",
+      "power": false,
+      "area": "archer siege",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+    },
+    {
+      "name": "Tempête de Skellige",
+      "power": false,
+      "area": "archer siege",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+    },
+    {
+      "name": "Tempête de Skellige",
+      "power": false,
+      "area": "archer siege",
+      "effect": "meteo",
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+    },
+    {
+      "name": "Mardrome",
+      "power": false,
+      "area": false,
+      "effect": "mardrome",
+      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+    },
+    {
+      "name": "Mardrome",
+      "power": false,
+      "area": false,
+      "effect": "mardrome",
+      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+    },
+    {
+      "name": "Mardrome",
+      "power": false,
+      "area": false,
+      "effect": "mardrome",
+      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+    },
+    {
+      "name": "Lugos le Dingue",
+      "power": 6,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Lugos la Beigne",
+      "power": 6,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Archer du clan Brokvar",
+      "power": 6,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Archer du clan Brokvar",
+      "power": 6,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Archer du clan Brokvar",
+      "power": 6,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Holger Main-noire",
+      "power": 4,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Donar an Hindar",
+      "power": 4,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Udalryk",
+      "power": 4,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Svanrige",
+      "power": 4,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Armurier du clan Tordarroch",
+      "power": 4,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Skalde du clan Heymaey",
+      "power": 4,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Olaf",
+      "power": 12,
+      "area": "melee archer",
+      "effect": "morals",
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+    },
+    {
+      "name": "Guerrier du clan an Craite",
+      "power": 6,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Guerrier du clan an Craite",
+      "power": 6,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Guerrier du clan an Craite",
+      "power": 6,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Drakkar de guerre",
+      "power": 6,
+      "area": "siege",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Drakkar de guerre",
+      "power": 6,
+      "area": "siege",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Drakkar de guerre",
+      "power": 6,
+      "area": "siege",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Pirate du clan Dimun",
+      "power": 6,
+      "area": "archer",
+      "effect": "archerIncineration",
+      "description": "Détruisez les unités de combat à distance les plus fortes de votre ennemi si la force cumulée de ses unités de combat à distance est d'au moins 10."
+    },
+    {
+      "name": "Berserker",
+      "power": 4,
+      "area": "melee",
+      "effect": "berserker",
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+    },
+    {
+      "name": "Drakkar léger",
+      "power": 4,
+      "area": "archer",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Drakkar léger",
+      "power": 4,
+      "area": "archer",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Drakkar léger",
+      "power": 4,
+      "area": "archer",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Vierge au bouclier du clan Drummond",
+      "power": 4,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Vierge au bouclier du clan Drummond",
+      "power": 4,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Vierge au bouclier du clan Drummond",
+      "power": 4,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Draig Bon-Dhu",
+      "power": 2,
+      "area": "siege",
+      "effect": "chargeRing",
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+    },
+    {
+      "name": "Birna Bran",
+      "power": 2,
+      "area": "melee",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Jeune berserker",
+      "power": 2,
+      "area": "archer",
+      "effect": "berserker",
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+    },
+    {
+      "name": "Jeune berserker",
+      "power": 2,
+      "area": "archer",
+      "effect": "berserker",
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+    },
+    {
+      "name": "Jeune berserker",
+      "power": 2,
+      "area": "archer",
+      "effect": "berserker",
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+    },
+    {
+      "name": "Kambi",
+      "power": false,
+      "area": "melee",
+      "effect": "invocation",
+      "description": "Quand cette carte est supprimée du champ de bataille, elle invoque une nouvelle carte d'unité puissante à sa place."
+    }
+  ],
+
+  "Monstres": [{
+      "name": "Eredin : Destructeur de mondes",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Défaussez 2 cartes et tirez-en 1 de votre choix dans votre jeu."
+    },
+    {
+      "name": "Eredin : Commandant des Cavaliers pourpres",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Double la force de toutes vos unités de combat rapproché (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne)."
+    },
+    {
+      "name": "Eredin : Roi de la Chasse Sauvage",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Prenez une carte météo dans votre jeu et jouez-la instantanément."
+    },
+    {
+      "name": "Eredin : Le Mortifère",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Remettez dans votre main une carte de votre pile de défausse."
+    },
+    {
+      "name": "Draugr",
+      "power": 10,
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Imlerith",
+      "power": 10,
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Leshen",
+      "power": 10,
+      "area": "archer",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Keyran",
+      "power": 8,
+      "area": "melee archer",
+      "effect": "heroe morals",
+      "description": "Carte non affectée par les cartes spéciales ou les capacitéset ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+    },
+    {
+      "name": "Élémentaire de terre",
+      "power": 6,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Élémentaire de feu",
+      "power": 6,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Mastodonte arachas",
+      "power": 6,
+      "area": "siege",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Géant de glace",
+      "power": 5,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Guenaude sépulcrale",
+      "power": 5,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Endriague",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Cocatrix",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Gargouille",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Wyvern",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Fiellon",
+      "power": 6,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Moire : Fuselle",
+      "power": 6,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Moire : Ambroisie",
+      "power": 6,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Moire : Soupir",
+      "power": 6,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Foënard",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Vierge de la peste",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Griffon",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Loup-garou",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Épouvanteur",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Vampire : Katakan",
+      "power": 5,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Couvin",
+      "power": 4,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Arachas",
+      "power": 4,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Arachas",
+      "power": 4,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Arachas",
+      "power": 4,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Vampire : Ekimme",
+      "power": 4,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Vampire : Noctule",
+      "power": 4,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Vampire : Garkain",
+      "power": 4,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Vampire : Brouxe",
+      "power": 4,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Harpie",
+      "power": 2,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Célénos",
+      "power": 2,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Brumelin",
+      "power": 2,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Nekker",
+      "power": 2,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Nekker",
+      "power": 2,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Nekker",
+      "power": 2,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Goule",
+      "power": 1,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Goule",
+      "power": 1,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Goule",
+      "power": 1,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    }
+  ],
+
+  "Scoia'Tael": [{
+      "name": "Francesca Findabair : Elfe de sang pur",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Prenez une carte Froid mordant dans votre jeu et jouez-la instantanément."
+    },
+    {
+      "name": "Francesca Findabair : La Pâquerette des vallées",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Tirez une carte supplémentaire au début de la bataille."
+    },
+    {
+      "name": "Francesca Findabair : La Belle",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Double la force de toutes vos unités de combat à distance (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne)."
+    },
+    {
+      "name": "Francesca Findabair : Reine de Dol Blathanna",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Détruisez les unités de combat rapproché les plus fortes de votre ennemi si la force cumulée de ses unités de combat rapproché est d'au moins 10."
+    },
+    {
+      "name": "Eithné",
+      "power": 10,
+      "area": "archer",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Saesenthessis",
+      "power": 10,
+      "area": "archer",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Isengrim Faoiltiarna",
+      "power": 10,
+      "area": "melee",
+      "effect": "heroe morals",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Iorveth",
+      "power": 10,
+      "area": "archer",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+    },
+    {
+      "name": "Milva",
+      "power": 10,
+      "area": "archer",
+      "effect": "morals",
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+    },
+    {
+      "name": "Ida Emean aep Sivney",
+      "power": 6,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Filavandrel aen Fidhail",
+      "power": 6,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Yaevinn",
+      "power": 6,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Barclay Els",
+      "power": 6,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Éclaireur de Dol Blathanna",
+      "power": 6,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Éclaireur de Dol Blathanna",
+      "power": 6,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Éclaireur de Dol Blathanna",
+      "power": 6,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Vétéran de la brigade Vrihedd",
+      "power": 5,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Vétéran de la brigade Vrihedd",
+      "power": 5,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Jeune recrue exaltée",
+      "power": 4,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Archer de Dol Blathanna",
+      "power": 4,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Ciaran aep Easnillien",
+      "power": 3,
+      "area": "melee archer",
+      "effect": "agility",
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+    },
+    {
+      "name": "Toruviel",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Escarmoucheur elfe",
+      "power": 2,
+      "area": "archer",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Escarmoucheur elfe",
+      "power": 2,
+      "area": "archer",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Escarmoucheur elfe",
+      "power": 2,
+      "area": "archer",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Riordain",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Guérisseuse havekar",
+      "power": 0,
+      "area": "archer",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Guérisseuse havekar",
+      "power": 0,
+      "area": "archer",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Guérisseuse havekar",
+      "power": 0,
+      "area": "archer",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Dennis Cranmer",
+      "power": 6,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Contrebandier havekar",
+      "power": 5,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Contrebandier havekar",
+      "power": 5,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Contrebandier havekar",
+      "power": 5,
+      "area": "melee",
+      "effect": "rally",
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+    },
+    {
+      "name": "Défenseur de Mahakam",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Défenseur de Mahakam",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Défenseur de Mahakam",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Défenseur de Mahakam",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Défenseur de Mahakam",
+      "power": 5,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Escarmoucheur nain",
+      "power": 3,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Escarmoucheur nain",
+      "power": 3,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Escarmoucheur nain",
+      "power": 3,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    }
+  ],
+
+  "Empire de Nilfgaard": [{
+      "name": "Emhyr var Emreis : Sa Majesté impériale",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Prenez une carte Pluie torrentielle dans votre jeu et jouez-la instantanément."
+    },
+    {
+      "name": "Emhyr var Emreis : Empereur du Nilfgaard",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Regardez 3 cartes choisies au hasard dans la main de votre adversaire."
+    },
+    {
+      "name": "Emhyr var Emreis : La Flamme Blanche",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Annulez la capacité de chef de votre adversaire."
+    },
+    {
+      "name": "Emhyr var Emreis : L'Implacable",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Prenez une carte dans la pile de défausse de votre adversaire."
+    },
+    {
+      "name": "Letho de Guletta",
+      "power": 10,
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Menno Coehoorn",
+      "power": 10,
+      "area": "melee",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Morvran Voorhis",
+      "power": 10,
+      "area": "siege",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Tibor Eggebracht",
+      "power": 10,
+      "area": "archer",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Scorpion incendiaire lourd zerrikanien",
+      "power": 10,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Ingénieur de siège",
+      "power": 6,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Scorpion incendiaire zerrikanien",
+      "power": 5,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Mangonneau vermoulu",
+      "power": 3,
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Sapeur",
+      "power": 0,
+      "area": "siege",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Archer des Escadrons noirs",
+      "power": 10,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Archer des Escadrons noirs",
+      "power": 10,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Assire var Anahid",
+      "power": 6,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Fringilla Vigo",
+      "power": 6,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Renuald aep Matsen",
+      "power": 5,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Cynthia",
+      "power": 4,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Vanhemar",
+      "power": 4,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Puttkammer",
+      "power": 3,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Albrich",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Sweers",
+      "power": 2,
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Archer auxiliaire étolien",
+      "power": 1,
+      "area": "archer",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Archer auxiliaire étolien",
+      "power": 1,
+      "area": "archer",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Stefan Skellen",
+      "power": 9,
+      "area": "melee",
+      "effect": "spy",
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+    },
+    {
+      "name": "Shilard Fitz-Oesterlen",
+      "power": 7,
+      "area": "melee",
+      "effect": "spy",
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+    },
+    {
+      "name": "Cahir Mawr Dyffryn aep Ceallach",
+      "power": 6,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Jeune émissaire",
+      "power": 5,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Jeune émissaire",
+      "power": 5,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Rainfarn",
+      "power": 4,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Vattier de Rideaux",
+      "power": 4,
+      "area": "melee",
+      "effect": "spy",
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+    },
+    {
+      "name": "Morteisen",
+      "power": 3,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Garde de la brigade Impera",
+      "power": 3,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Garde de la brigade Impera",
+      "power": 3,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Garde de la brigade Impera",
+      "power": 3,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Garde de la brigade Impera",
+      "power": 3,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Vreemde",
+      "power": 2,
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Cavalier de la brigade Nausicaa",
+      "power": 2,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Cavalier de la brigade Nausicaa",
+      "power": 2,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Cavalier de la brigade Nausicaa",
+      "power": 2,
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    }
+  ],
+
+  "Royaumes du Nord": [{
+      "name": "Foltest : Roi de Temeria",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Prenez une carte Brouillard impénétrable dans votre jeu et jouez-la instantanément."
+    },
+    {
+      "name": "Foltest : Le Brave",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Détruisez les unités de combat de siège les plus fortes de votre ennemi si la force cumulée de ses unités de siège est d'au moins 10."
+    },
+    {
+      "name": "Foltest : Protecteur du Nord",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Prenez une carte Brouillard impénétrable dans votre jeu et jouez-la instantanément."
+    },
+    {
+      "name": "Foltest : Maître du siège",
+      "power": false,
+      "area": false,
+      "effect": "king",
+      "description": "Double la force de toutes vos unités de combat de siège (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne)."
+    },
+    {
+      "name": "Vernon Roche",
+      "power": "10",
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Jan Natalis",
+      "power": "10",
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Esterad Thyssen",
+      "power": "10",
+      "area": "melee",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Philippa Eilhart",
+      "power": "10",
+      "area": "archer",
+      "effect": "heroe",
+      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+    },
+    {
+      "name": "Catapulte",
+      "power": "8",
+      "area": "siege",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Catapulte",
+      "power": "8",
+      "area": "siege",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Trébuchet",
+      "power": "6",
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Trébuchet",
+      "power": "6",
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Baliste",
+      "power": "6",
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Baliste",
+      "power": "6",
+      "area": "siege",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Tour de siège",
+      "power": "6",
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Chirurgienne de la Bannière Brune",
+      "power": "5",
+      "area": "siege",
+      "effect": "doctor",
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+    },
+    {
+      "name": "Talar",
+      "power": "1",
+      "area": "melee",
+      "effect": "spy",
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+    },
+    {
+      "name": "Expert en siège de Kaedwen",
+      "power": "1",
+      "area": "siege",
+      "effect": "morals",
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+    },
+    {
+      "name": "Expert en siège de Kaedwen",
+      "power": "1",
+      "area": "siege",
+      "effect": "morals",
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+    },
+    {
+      "name": "Expert en siège de Kaedwen",
+      "power": "1",
+      "area": "siege",
+      "effect": "morals",
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+    },
+    {
+      "name": "Detmold",
+      "power": "6",
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Keira Metz",
+      "power": "5",
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Sheala de Tancarville",
+      "power": "5",
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Chasseur de dragons de Crinfrid",
+      "power": "5",
+      "area": "archer",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Chasseur de dragons de Crinfrid",
+      "power": "5",
+      "area": "archer",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Chasseur de dragons de Crinfrid",
+      "power": "5",
+      "area": "archer",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Sabrina Glevissig",
+      "power": "4",
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Sheldon Skaggs",
+      "power": "4",
+      "area": "archer",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Cyn",
+      "power": "5",
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Siegfried de Denesle",
+      "power": "5",
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Prince Stennis",
+      "power": "5",
+      "area": "melee",
+      "effect": "spy",
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+    },
+    {
+      "name": "Sigismund Dijkstra",
+      "power": "4",
+      "area": "melee",
+      "effect": "spy",
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+    },
+    {
+      "name": "Commando des Stries Bleues",
+      "power": "4",
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Commando des Stries Bleues",
+      "power": "4",
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Commando des Stries Bleues",
+      "power": "4",
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Yarpen Zigrin",
+      "power": "2",
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Misérable Fantassin de Mes Deux",
+      "power": "1",
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Misérable Fantassin de Mes Deux",
+      "power": "1",
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Misérable Fantassin de Mes Deux",
+      "power": "1",
+      "area": "melee",
+      "effect": "link",
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+    },
+    {
+      "name": "Fantassin redanien",
+      "power": "1",
+      "area": "melee",
+      "effect": false,
+      "description": false
+    },
+    {
+      "name": "Fantassin redanien",
+      "power": "1",
+      "area": "melee",
+      "effect": false,
+      "description": false
+    }
+  ]
+}
