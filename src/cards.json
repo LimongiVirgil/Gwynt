@@ -1,1700 +1,2182 @@
 {
   "Neutre": [{
+      "id": 1,
       "name": "Geralt de Riv",
       "power": 15,
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Neutre/Geralt_de_Riv.jpg"
     },
     {
+      "id": 2,
       "name": "Cirilla Fiona Elen Riannon",
       "power": 15,
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Neutre/Cirilla_Fiona_Elen_Riannon.jpg"
     },
     {
+      "id": 3,
       "name": "Yennefer de Vengerberg",
       "power": 7,
       "area": "archer",
       "effect": "heroe doctor",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités et choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/Neutre/Yennefer_de_Vengerberg.jpg"
     },
     {
+      "id": 5,
       "name": "Triss Merigold",
       "power": 7,
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Neutre/Triss_Merigold.jpg"
     },
     {
+      "id": 6,
       "name": "Elfe mystérieux",
       "power": 0,
       "area": "melee",
       "effect": "heroe spy",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités et placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu.",
+      "image_url": "./images/Neutre/Elfe_mystérieux.jpg"
     },
     {
+      "id": 7,
       "name": "Villentretenmerth",
       "power": 7,
       "area": "melee",
       "effect": "meeeIncineration",
-      "description": "Détruisez les unités de combat rapproché les plus fortes de votre ennemi si la force cumulée de ses unités de combat rapproché est d'au moins 10."
+      "description": "Détruisez les unités de combat rapproché les plus fortes de votre ennemi si la force cumulée de ses unités de combat rapproché est d'au moins 10.",
+      "image_url": "./images/Neutre/Villentretenmerth.jpg"
     },
     {
+      "id": 8,
       "name": "Vesemir",
       "power": 6,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Neutre/Vesemir.jpg"
     },
     {
+      "id": 9,
       "name": "Emiel Régis Rohellec Terzieff-Godefroy",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Neutre/Emiel_Régis_Rohellec_Terzieff-Godefroy.jpg"
     },
     {
+      "id": 10,
       "name": "Jaskier",
       "power": 2,
       "area": "melee",
       "effect": "chargeRing",
-      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
+      "image_url": "./images/Neutre/Jaskier.jpg"
     },
     {
+      "id": 11,
       "name": "Zoltan Chivay",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Neutre/Zoltan_Chivay.jpg"
     },
     {
+      "id": 12,
       "name": "Leurre",
       "power": false,
       "area": false,
       "effect": "lure",
-      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main."
+      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main.",
+      "image_url": "./images/Neutre/Leurre.jpg"
     },
     {
+      "id": 13,
       "name": "Leurre",
       "power": false,
       "area": false,
       "effect": "lure",
-      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main."
+      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main.",
+      "image_url": "./images/Neutre/Leurre.jpg"
     },
     {
+      "id": 14,
       "name": "Leurre",
       "power": false,
       "area": false,
       "effect": "lure",
-      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main."
+      "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main.",
+      "image_url": "./images/Neutre/Leurre.jpg"
     },
     {
+      "id": 15,
       "name": "Sonnerie de la charge",
       "power": false,
       "area": false,
       "effect": "chargeRing",
-      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
+      "image_url": "./images/Neutre/Sonnerie_de_la_charge.jpg"
     },
     {
+      "id": 16,
       "name": "Sonnerie de la charge",
       "power": false,
       "area": false,
       "effect": "chargeRing",
-      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
+      "image_url": "./images/Neutre/Sonnerie_de_la_charge.jpg"
     },
     {
+      "id": 17,
       "name": "Sonnerie de la charge",
       "power": false,
       "area": false,
       "effect": "chargeRing",
-      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
+      "image_url": "./images/Neutre/Sonnerie_de_la_charge.jpg"
     },
     {
+      "id": 18,
       "name": "Terre Brûlée",
       "power": false,
       "area": false,
       "effect": "destroy",
-      "description": "Détruit la ou les cates les plus fortes du terrain"
+      "description": "Détruit la ou les cates les plus fortes du terrain",
+      "image_url": "./images/Neutre/Terre_Brulee.jpg"
     },
     {
+      "id": 19,
       "name": "Terre Brûlée",
       "power": false,
       "area": false,
       "effect": "destroy",
-      "description": "Détruit la ou les cates les plus fortes du terrain"
+      "description": "Détruit la ou les cates les plus fortes du terrain",
+      "image_url": "./images/Neutre/Terre_Brulee.jpg"
     },
     {
+      "id": 20,
       "name": "Terre Brûlée",
       "power": false,
       "area": false,
       "effect": "destroy",
-      "description": "Détruit la ou les cates les plus fortes du terrain"
+      "description": "Détruit la ou les cates les plus fortes du terrain",
+      "image_url": "./images/Neutre/Terre_Brulee.jpg"
     },
     {
+      "id": 21,
       "name": "Froid mordant",
       "power": false,
       "area": "melee",
       "effect": "meteo",
-      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous."
+      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous.",
+      "image_url": "./images/Neutre/Froid_mordant.jpg"
     },
     {
+      "id": 22,
       "name": "Froid mordant",
       "power": false,
       "area": "melee",
       "effect": "meteo",
-      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous."
+      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous.",
+      "image_url": "./images/Neutre/Froid_mordant.jpg"
     },
     {
+      "id": 23,
       "name": "Froid mordant",
       "power": false,
       "area": "melee",
       "effect": "meteo",
-      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous."
+      "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous.",
+      "image_url": "./images/Neutre/Froid_mordant.jpg"
     },
     {
+      "id": 24,
       "name": "Brouillard impénétrable",
       "power": false,
       "area": "archer",
       "effect": "meteo",
-      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous."
+      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous.",
+      "image_url": "./images/Neutre/Brouillard_impénétrable.jpg"
     },
     {
+      "id": 25,
       "name": "Brouillard impénétrable",
       "power": false,
       "area": "archer",
       "effect": "meteo",
-      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous."
+      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous.",
+      "image_url": "./images/Neutre/Brouillard_impénétrable.jpg"
     },
     {
+      "id": 26,
       "name": "Brouillard impénétrable",
       "power": false,
       "area": "archer",
       "effect": "meteo",
-      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous."
+      "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous.",
+      "image_url": "./images/Neutre/Brouillard_impénétrable.jpg"
     },
     {
+      "id": 27,
       "name": "Pluie torrentielle",
       "power": false,
       "area": "siege",
       "effect": "meteo",
-      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
+      "image_url": "./images/Neutre/Pluie_torrentielle.jpg"
     },
     {
+      "id": 28,
       "name": "Pluie torrentielle",
       "power": false,
       "area": "siege",
       "effect": "meteo",
-      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
+      "image_url": "./images/Neutre/Pluie_torrentielle.jpg"
     },
     {
+      "id": 29,
       "name": "Pluie torrentielle",
       "power": false,
       "area": "siege",
       "effect": "meteo",
-      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
+      "image_url": "./images/Neutre/Pluie_torrentielle.jpg"
     },
     {
+      "id": 30,
       "name": "Temps dégagé",
       "power": false,
       "area": "melee archer siege",
       "effect": "meteo",
-      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle."
+      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle.",
+      "image_url": "./images/Neutre/Temps_dégagé.jpg"
     },
     {
+      "id": 31,
       "name": "Temps dégagé",
       "power": false,
       "area": "melee archer siege",
       "effect": "meteo",
-      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle."
+      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle.",
+      "image_url": "./images/Neutre/Temps_dégagé.jpg"
     },
     {
+      "id": 32,
       "name": "Temps dégagé",
       "power": false,
       "area": "melee archer siege",
       "effect": "meteo",
-      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle."
+      "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle.",
+      "image_url": "./images/Neutre/Temps_dégagé.jpg"
     }
   ],
   
   "Skellige": [{
+      "id": 33,
       "name": "Crach an Craite",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Mélange les cartes de la défausse de chaque joueur et les remet dans leur jeu."
+      "description": "Mélange les cartes de la défausse de chaque joueur et les remet dans leur jeu.",
+      "image_url": "./images/Skellige/Crach_an_Craite.jpg"
     },
     {
+      "id": 34,
       "name": "Roi Bran",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Les unités ne perdent que la moitié de leur force par mauvais temps."
+      "description": "Les unités ne perdent que la moitié de leur force par mauvais temps.",
+      "image_url": "./images/Skellige/Roi_Bran.jpg"
     },
     {
+      "id": 35,
       "name": "Hjalmar",
       "power": 10,
       "area": "archer",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Skellige/Hjalmar.jpg"
     },
     {
+      "id": 36,
       "name": "Cerys",
       "power": 10,
       "area": "melee",
       "effect": "heroe CerysRally",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités et invoque toutes les Vierges au bouclier dans le jeu et la main."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et invoque toutes les Vierges au bouclier dans le jeu et la main.",
+      "image_url": "./images/Skellige/Cerys.jpg"
     },
     {
+      "id": 37,
       "name": "Sac-à-souris",
       "power": 8,
       "area": "archer",
       "effect": "heroe mardrome",
-      "description": "Carte non affectée par les cartes spéciales ou les capacité et déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+      "description": "Carte non affectée par les cartes spéciales ou les capacité et déclenche la transformation de toutes les cartes Berserker sur la même ligne.",
+      "image_url": "./images/Skellige/Sac-à-souris.jpg"
     },
     {
+      "id": 38,
       "name": "Tempête de Skellige",
       "power": false,
       "area": "archer siege",
       "effect": "meteo",
-      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
+      "image_url": "./images/Skellige/Tempête_de_Skellige.jpg"
     },
     {
+      "id": 39,
       "name": "Tempête de Skellige",
       "power": false,
       "area": "archer siege",
       "effect": "meteo",
-      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
+      "image_url": "./images/Skellige/Tempête_de_Skellige.jpg"
     },
     {
+      "id": 40,
       "name": "Tempête de Skellige",
       "power": false,
       "area": "archer siege",
       "effect": "meteo",
-      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège."
+      "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
+      "image_url": "./images/Skellige/Tempête_de_Skellige.jpg"
     },
     {
+      "id": 41,
       "name": "Mardrome",
       "power": false,
       "area": false,
       "effect": "mardrome",
-      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne.",
+      "image_url": "./images/Skellige/Mardrome.jpg"
     },
     {
+      "id": 42,
       "name": "Mardrome",
       "power": false,
       "area": false,
       "effect": "mardrome",
-      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne.",
+      "image_url": "./images/Skellige/Mardrome.jpg"
     },
     {
+      "id": 43,
       "name": "Mardrome",
       "power": false,
       "area": false,
       "effect": "mardrome",
-      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne."
+      "description": "Déclenche la transformation de toutes les cartes Berserker sur la même ligne.",
+      "image_url": "./images/Skellige/Mardrome.jpg"
     },
     {
+      "id": 44,
       "name": "Lugos le Dingue",
       "power": 6,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Lugos_le_Dingue.jpg"
     },
     {
+      "id": 45,
       "name": "Lugos la Beigne",
       "power": 6,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Lugos_la_Beigne.jpg"
     },
     {
+      "id": 46,
       "name": "Archer du clan Brokvar",
       "power": 6,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Archer_du_clan_Brokvar.jpg"
     },
     {
+      "id": 47,
       "name": "Archer du clan Brokvar",
       "power": 6,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Archer_du_clan_Brokvar.jpg"
     },
     {
+      "id": 48,
       "name": "Archer du clan Brokvar",
       "power": 6,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Archer_du_clan_Brokvar.jpg"
     },
     {
+      "id": 49,
       "name": "Holger Main-noire",
       "power": 4,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Holger_Main-noire.jpg"
     },
     {
+      "id": 50,
       "name": "Donar an Hindar",
       "power": 4,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Donar_an_Hindar.jpg"
     },
     {
+      "id": 51,
       "name": "Udalryk",
       "power": 4,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Udalryk.jpg"
     },
     {
+      "id": 52,
       "name": "Svanrige",
       "power": 4,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Svanrige.jpg"
     },
     {
+      "id": 53,
       "name": "Armurier du clan Tordarroch",
       "power": 4,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Armurier_du_clan_Tordarroch.jpg"
     },
     {
+      "id": 54,
       "name": "Skalde du clan Heymaey",
       "power": 4,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Skellige/Skalde_du_clan_Heymaey.jpg"
     },
     {
+      "id": 55,
       "name": "Olaf",
       "power": 12,
       "area": "melee archer",
       "effect": "morals",
-      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même.",
+      "image_url": "./images/Skellige/Olaf.jpg"
     },
     {
+      "id": 56,
       "name": "Guerrier du clan an Craite",
       "power": 6,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Guerrier_du_clan_an_Craite.jpg"
     },
     {
+      "id": 57,
       "name": "Guerrier du clan an Craite",
       "power": 6,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Guerrier_du_clan_an_Craite.jpg"
     },
     {
+      "id": 58,
       "name": "Guerrier du clan an Craite",
       "power": 6,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Guerrier_du_clan_an_Craite.jpg"
     },
     {
+      "id": 59,
       "name": "Drakkar de guerre",
       "power": 6,
       "area": "siege",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Drakkar_de_guerre.jpg"
     },
     {
+      "id": 60,
       "name": "Drakkar de guerre",
       "power": 6,
       "area": "siege",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Drakkar_de_guerre.jpg"
     },
     {
+      "id": 61,
       "name": "Drakkar de guerre",
       "power": 6,
       "area": "siege",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Drakkar_de_guerre.jpg"
     },
     {
+      "id": 62,
       "name": "Pirate du clan Dimun",
       "power": 6,
       "area": "archer",
       "effect": "archerIncineration",
-      "description": "Détruisez les unités de combat à distance les plus fortes de votre ennemi si la force cumulée de ses unités de combat à distance est d'au moins 10."
+      "description": "Détruisez les unités de combat à distance les plus fortes de votre ennemi si la force cumulée de ses unités de combat à distance est d'au moins 10.",
+      "image_url": "./images/Skellige/Pirate_du_clan_Dimun.jpg"
     },
     {
+      "id": 63,
       "name": "Berserker",
       "power": 4,
       "area": "melee",
       "effect": "berserker",
-      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne.",
+      "image_url": "./images/Skellige/Berserker.jpg"
     },
     {
+      "id": 64,
       "name": "Drakkar léger",
       "power": 4,
       "area": "archer",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Skellige/Drakkar_léger.jpg"
     },
     {
+      "id": 65,
       "name": "Drakkar léger",
       "power": 4,
       "area": "archer",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Skellige/Drakkar_léger.jpg"
     },
     {
+      "id": 66,
       "name": "Drakkar léger",
       "power": 4,
       "area": "archer",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Skellige/Drakkar_léger.jpg"
     },
     {
+      "id": 67,
       "name": "Vierge au bouclier du clan Drummond",
       "power": 4,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Vierge_au_bouclier_du_clan_Drummon1.jpg"
     },
     {
+      "id": 68,
       "name": "Vierge au bouclier du clan Drummond",
       "power": 4,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Vierge_au_bouclier_du_clan_Drummon2.jpg"
     },
     {
+      "id": 69,
       "name": "Vierge au bouclier du clan Drummond",
       "power": 4,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Skellige/Vierge_au_bouclier_du_clan_Drummon3.jpg"
     },
     {
+      "id": 70,
       "name": "Draig Bon-Dhu",
       "power": 2,
       "area": "siege",
       "effect": "chargeRing",
-      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne."
+      "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
+      "image_url": "./images/Skellige/Draig_Bon-Dhu.jpg"
     },
     {
+      "id": 71,
       "name": "Birna Bran",
       "power": 2,
       "area": "melee",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/Skellige/Birna_Bran.jpg"
     },
     {
+      "id": 72,
       "name": "Jeune berserker",
       "power": 2,
       "area": "archer",
       "effect": "berserker",
-      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne.",
+      "image_url": "./images/Skellige/Jeune_berserker.jpg"
     },
     {
+      "id": 73,
       "name": "Jeune berserker",
       "power": 2,
       "area": "archer",
       "effect": "berserker",
-      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne.",
+      "image_url": "./images/Skellige/Jeune_berserker.jpg"
     },
     {
+      "id": 74,
       "name": "Jeune berserker",
       "power": 2,
       "area": "archer",
       "effect": "berserker",
-      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne."
+      "description": "Se transforme en ours quand une carte Mardrome se trouve sur sa ligne.",
+      "image_url": "./images/Skellige/Jeune_berserker.jpg"
     },
     {
+      "id": 75,
       "name": "Kambi",
       "power": false,
       "area": "melee",
       "effect": "invocation",
-      "description": "Quand cette carte est supprimée du champ de bataille, elle invoque une nouvelle carte d'unité puissante à sa place."
+      "description": "Quand cette carte est supprimée du champ de bataille, elle invoque une nouvelle carte d'unité puissante à sa place.",
+      "image_url": "./images/Skellige/Kambi.jpg"
     }
   ],
 
   "Monstres": [{
+    "id": 76,
       "name": "Eredin : Destructeur de mondes",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Défaussez 2 cartes et tirez-en 1 de votre choix dans votre jeu."
+      "description": "Défaussez 2 cartes et tirez-en 1 de votre choix dans votre jeu.",
+      "image_url": "./images/Monstres/Eredin_Destructeur_de_mondes.jpg"
     },
     {
+      "id": 77,
       "name": "Eredin : Commandant des Cavaliers pourpres",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Double la force de toutes vos unités de combat rapproché (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne)."
+      "description": "Double la force de toutes vos unités de combat rapproché (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne).",
+      "image_url": "./images/Monstres/Eredin_Commandant_des_Cavaliers_pourpres.jpg"
     },
     {
+      "id": 78,
       "name": "Eredin : Roi de la Chasse Sauvage",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Prenez une carte météo dans votre jeu et jouez-la instantanément."
+      "description": "Prenez une carte météo dans votre jeu et jouez-la instantanément.",
+      "image_url": "./images/Monstres/Eredin_Roi_de_la_Chasse_Sauvage.jpg"
     },
     {
+      "id": 79,
       "name": "Eredin : Le Mortifère",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Remettez dans votre main une carte de votre pile de défausse."
+      "description": "Remettez dans votre main une carte de votre pile de défausse.",
+      "image_url": "./images/Monstres/Eredin_Le_Mortifère.jpg"
     },
     {
+      "id": 80,
       "name": "Draugr",
       "power": 10,
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Monstres/Draugr.jpg"
     },
     {
+      "id": 81,
       "name": "Imlerith",
       "power": 10,
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Monstres/Imlerith.jpg"
     },
     {
+      "id": 82,
       "name": "Leshen",
       "power": 10,
       "area": "archer",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Monstres/Leshen.jpg"
     },
     {
+      "id": 83,
       "name": "Keyran",
       "power": 8,
       "area": "melee archer",
       "effect": "heroe morals",
-      "description": "Carte non affectée par les cartes spéciales ou les capacitéset ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+      "description": "Carte non affectée par les cartes spéciales ou les capacitéset ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même.",
+      "image_url": "./images/Monstres/Keyran.jpg"
     },
     {
+      "id": 84,
       "name": "Élémentaire de terre",
       "power": 6,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Elémentaire_de_terre.jpg"
     },
     {
+      "id": 85,
       "name": "Élémentaire de feu",
       "power": 6,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Elémentaire_de_feu.jpg"
     },
     {
+      "id": 86,
       "name": "Mastodonte arachas",
       "power": 6,
       "area": "siege",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Mastodonte_arachas.jpg"
     },
     {
+      "id": 87,
       "name": "Géant de glace",
       "power": 5,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Géant_de_glace.jpg"
     },
     {
+      "id": 88,
       "name": "Guenaude sépulcrale",
       "power": 5,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Guenaude_sépulcrale.jpg"
     },
     {
+      "id": 89,
       "name": "Endriague",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Endriague.jpg"
     },
     {
+      "id": 90,
       "name": "Cocatrix",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Cocatrix.jpg"
     },
     {
+      "id": 91,
       "name": "Gargouille",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Gargouille.jpg"
     },
     {
+      "id": 92,
       "name": "Wyvern",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Wyvern.jpg"
     },
     {
+      "id": 93,
       "name": "Fiellon",
       "power": 6,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Fiellon.jpg"
     },
     {
+      "id": 94,
       "name": "Moire : Fuselle",
       "power": 6,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Moire_Fuselle.jpg"
     },
     {
+      "id": 95,
       "name": "Moire : Ambroisie",
       "power": 6,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Moire_Ambroisie.jpg"
     },
     {
+      "id": 96,
       "name": "Moire : Soupir",
       "power": 6,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Moire_Soupir.jpg"
     },
     {
+      "id": 97,
       "name": "Foënard",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Foënard.jpg"
     },
     {
+      "id": 98,
       "name": "Vierge de la peste",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Vierge_de_la_peste.jpg"
     },
     {
+      "id": 99,
       "name": "Griffon",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Griffon.jpg"
     },
     {
+      "id": 100,
       "name": "Loup-garou",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Loup-garou.jpg"
     },
     {
+      "id": 101,
       "name": "Épouvanteur",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Epouvanteur.jpg"
     },
     {
+      "id": 102,
       "name": "Vampire : Katakan",
       "power": 5,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Vampire_Katakan.jpg"
     },
     {
+      "id": 103,
       "name": "Couvin",
       "power": 4,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Couvin.jpg"
     },
     {
+      "id": 104,
       "name": "Arachas",
       "power": 4,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Arachas1.jpg"
     },
     {
+      "id": 105,
       "name": "Arachas",
       "power": 4,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Arachas2.jpg"
     },
     {
+      "id": 106,
       "name": "Arachas",
       "power": 4,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Arachas3.jpg"
     },
     {
+      "id": 107,
       "name": "Vampire : Ekimme",
       "power": 4,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Vampire_Ekimme.jpg"
     },
     {
+      "id": 108,
       "name": "Vampire : Noctule",
       "power": 4,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Vampire_Noctule.jpg"
     },
     {
+      "id": 109,
       "name": "Vampire : Garkain",
       "power": 4,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Vampire_Garkain.jpg"
     },
     {
+      "id": 110,
       "name": "Vampire : Brouxe",
       "power": 4,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Vampire_Brouxe.jpg"
     },
     {
+      "id": 111,
       "name": "Harpie",
       "power": 2,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/Monstres/Harpie.jpg"
     },
     {
+      "id": 112,
       "name": "Célénos",
       "power": 2,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/Monstres/Célénos.jpg"
     },
     {
+      "id": 113,
       "name": "Brumelin",
       "power": 2,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Monstres/Brumelin.jpg"
     },
     {
+      "id": 114,
       "name": "Nekker",
       "power": 2,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Nekker1.jpg"
     },
     {
+      "id": 115,
       "name": "Nekker",
       "power": 2,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Nekker2.jpg"
     },
     {
+      "id": 116,
       "name": "Nekker",
       "power": 2,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Nekker3.jpg"
     },
     {
+      "id": 117,
       "name": "Goule",
       "power": 1,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Goule1.jpg"
     },
     {
+      "id": 118,
       "name": "Goule",
       "power": 1,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Goule2.jpg"
     },
     {
+      "id": 119,
       "name": "Goule",
       "power": 1,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/Monstres/Goule3.jpg"
     }
   ],
 
-  "Scoia'Tael": [{
+  "ScoiaTael": [{
+      "id": 120,
       "name": "Francesca Findabair : Elfe de sang pur",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Prenez une carte Froid mordant dans votre jeu et jouez-la instantanément."
+      "description": "Prenez une carte Froid mordant dans votre jeu et jouez-la instantanément.",
+      "image_url": "./images/ScoiaTael/Francesca_Findabair_Elfe_de_sang_pur.jpg"
     },
     {
+      "id": 121,
       "name": "Francesca Findabair : La Pâquerette des vallées",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Tirez une carte supplémentaire au début de la bataille."
+      "description": "Tirez une carte supplémentaire au début de la bataille.",
+      "image_url": "./images/ScoiaTael/Francesca_Findabair_La_Pâquerette_des_vallées.jpg"
     },
     {
+      "id": 122,
       "name": "Francesca Findabair : La Belle",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Double la force de toutes vos unités de combat à distance (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne)."
+      "description": "Double la force de toutes vos unités de combat à distance (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne).",
+      "image_url": "./images/ScoiaTael/Francesca_Findabair_La_Belle.jpg"
     },
     {
+      "id": 123,
       "name": "Francesca Findabair : Reine de Dol Blathanna",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Détruisez les unités de combat rapproché les plus fortes de votre ennemi si la force cumulée de ses unités de combat rapproché est d'au moins 10."
+      "description": "Détruisez les unités de combat rapproché les plus fortes de votre ennemi si la force cumulée de ses unités de combat rapproché est d'au moins 10.",
+      "image_url": "./images/ScoiaTael/Francesca_Findabair_Reine_de_Dol_Blathanna.jpg"
     },
     {
+      "id": 124,
       "name": "Eithné",
       "power": 10,
       "area": "archer",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/ScoiaTael/Eithné.jpg"
     },
     {
+      "id": 125,
       "name": "Saesenthessis",
       "power": 10,
       "area": "archer",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/ScoiaTael/Saesenthessis.jpg"
     },
     {
+      "id": 126,
       "name": "Isengrim Faoiltiarna",
       "power": 10,
       "area": "melee",
       "effect": "heroe morals",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/ScoiaTael/Isengrim_Faoiltiarna.jpg"
     },
     {
+      "id": 127,
       "name": "Iorveth",
       "power": 10,
       "area": "archer",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités et ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités et ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même.",
+      "image_url": "./images/ScoiaTael/Iorveth.jpg"
     },
     {
+      "id": 128,
       "name": "Milva",
       "power": 10,
       "area": "archer",
       "effect": "morals",
-      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même.",
+      "image_url": "./images/ScoiaTael/Milva.jpg"
     },
     {
+      "id": 129,
       "name": "Ida Emean aep Sivney",
       "power": 6,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Ida_Emean_aep_Sivney.jpg"
     },
     {
+      "id": 130,
       "name": "Filavandrel aen Fidhail",
       "power": 6,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Filavandrel_aen_Fidhail.jpg"
     },
     {
+      "id": 131,
       "name": "Yaevinn",
       "power": 6,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Yaevinn.jpg"
     },
     {
+      "id": 132,
       "name": "Barclay Els",
       "power": 6,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Barclay_Els.jpg"
     },
     {
+      "id": 133,
       "name": "Éclaireur de Dol Blathanna",
       "power": 6,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Éclaireur_de_Dol_Blathanna1.jpg"
     },
     {
+      "id": 134,
       "name": "Éclaireur de Dol Blathanna",
       "power": 6,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Éclaireur_de_Dol_Blathanna2.jpg"
     },
     {
+      "id": 135,
       "name": "Éclaireur de Dol Blathanna",
       "power": 6,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Éclaireur_de_Dol_Blathanna3.jpg"
     },
     {
+      "id": 136,
       "name": "Vétéran de la brigade Vrihedd",
       "power": 5,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Vétéran_de_la_brigade_Vrihedd1.jpg"
     },
     {
+      "id": 137,
       "name": "Vétéran de la brigade Vrihedd",
       "power": 5,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Vétéran_de_la_brigade_Vrihedd2.jpg"
     },
     {
+      "id": 138,
       "name": "Jeune recrue exaltée",
       "power": 4,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Jeune_recrue_exaltée.jpg"
     },
     {
+      "id": 139,
       "name": "Archer de Dol Blathanna",
       "power": 4,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Archer_de_Dol_Blathanna.jpg"
     },
     {
+      "id": 140,
       "name": "Ciaran aep Easnillien",
       "power": 3,
       "area": "melee archer",
       "effect": "agility",
-      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée."
+      "description": "Placez la carte sur la ligne de combat rapproché ou de combat à distance. Une fois placée, elle ne peut plus être déplacée.",
+      "image_url": "./images/ScoiaTael/Ciaran_aep_Easnillien.jpg"
     },
     {
+      "id": 141,
       "name": "Toruviel",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Toruviel.jpg"
     },
     {
+      "id": 142,
       "name": "Escarmoucheur elfe",
       "power": 2,
       "area": "archer",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/ScoiaTael/Escarmoucheur_elfe1.jpg"
     },
     {
+      "id": 143,
       "name": "Escarmoucheur elfe",
       "power": 2,
       "area": "archer",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/ScoiaTael/Escarmoucheur_elfe2.jpg"
     },
     {
+      "id": 144,
       "name": "Escarmoucheur elfe",
       "power": 2,
       "area": "archer",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/ScoiaTael/Escarmoucheur_elfe3.jpg"
     },
     {
+      "id": 145,
       "name": "Riordain",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Riordain.jpg"
     },
     {
+      "id": 146,
       "name": "Guérisseuse havekar",
       "power": 0,
       "area": "archer",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/ScoiaTael/Guérisseuse_havekar1.jpg"
     },
     {
+      "id": 147,
       "name": "Guérisseuse havekar",
       "power": 0,
       "area": "archer",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/ScoiaTael/Guérisseuse_havekar2.jpg"
     },
     {
+      "id": 148,
       "name": "Guérisseuse havekar",
       "power": 0,
       "area": "archer",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/ScoiaTael/Guérisseuse_havekar3.jpg"
     },
     {
+      "id": 149,
       "name": "Dennis Cranmer",
       "power": 6,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Dennis_Cranmer.jpg"
     },
     {
+      "id": 150,
       "name": "Contrebandier havekar",
       "power": 5,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/ScoiaTael/Contrebandier_havekar1.jpg"
     },
     {
+      "id": 151,
       "name": "Contrebandier havekar",
       "power": 5,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/ScoiaTael/Contrebandier_havekar2.jpg"
     },
     {
+      "id": 152,
       "name": "Contrebandier havekar",
       "power": 5,
       "area": "melee",
       "effect": "rally",
-      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement."
+      "description": "Passez en revue votre jeu, trouvez toutes les cartes portant le même nom et jouez-les immédiatement.",
+      "image_url": "./images/ScoiaTael/Contrebandier_havekar3.jpg"
     },
     {
+      "id": 153,
       "name": "Défenseur de Mahakam",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Défenseur_de_Mahakam1.jpg"
     },
     {
+      "id": 154,
       "name": "Défenseur de Mahakam",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Défenseur_de_Mahakam2.jpg"
     },
     {
+      "id": 155,
       "name": "Défenseur de Mahakam",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Défenseur_de_Mahakam3.jpg"
     },
     {
+      "id": 156,
       "name": "Défenseur de Mahakam",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Défenseur_de_Mahakam4.jpg"
     },
     {
+      "id": 157,
       "name": "Défenseur de Mahakam",
       "power": 5,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Défenseur_de_Mahakam5.jpg"
     },
     {
+      "id": 158,
       "name": "Escarmoucheur nain",
       "power": 3,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Escarmoucheur_nain1.jpg"
     },
     {
+      "id": 159,
       "name": "Escarmoucheur nain",
       "power": 3,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Escarmoucheur_nain2.jpg"
     },
     {
+      "id": 160,
       "name": "Escarmoucheur nain",
       "power": 3,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/ScoiaTael/Escarmoucheur_nain3.jpg"
     }
   ],
 
-  "Empire de Nilfgaard": [{
+  "Nilfgaard": [{
+      "id": 161,
       "name": "Emhyr var Emreis : Sa Majesté impériale",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Prenez une carte Pluie torrentielle dans votre jeu et jouez-la instantanément."
+      "description": "Prenez une carte Pluie torrentielle dans votre jeu et jouez-la instantanément.",
+      "image_url": "./images/Nilfgaard/Emhyr_var_Emreis_Sa_Majesté_impériale.jpg"
     },
     {
+      "id": 162,
       "name": "Emhyr var Emreis : Empereur du Nilfgaard",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Regardez 3 cartes choisies au hasard dans la main de votre adversaire."
+      "description": "Regardez 3 cartes choisies au hasard dans la main de votre adversaire.",
+      "image_url": "./images/Nilfgaard/Emhyr_var_Emreis_Empereur_du_Nilfgaard.jpg"
     },
     {
+      "id": 163,
       "name": "Emhyr var Emreis : La Flamme Blanche",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Annulez la capacité de chef de votre adversaire."
+      "description": "Annulez la capacité de chef de votre adversaire.",
+      "image_url": "./images/Nilfgaard/Emhyr_var_Emreis_La_Flamme_Blanche.jpg"
     },
     {
+      "id": 164,
       "name": "Emhyr var Emreis : L'Implacable",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Prenez une carte dans la pile de défausse de votre adversaire."
+      "description": "Prenez une carte dans la pile de défausse de votre adversaire.",
+      "image_url": "./images/Nilfgaard/Emhyr_var_Emreis_L_Implacable.jpg"
     },
     {
+      "id": 165,
       "name": "Letho de Guletta",
       "power": 10,
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Nilfgaard/Letho_de_Guletta.jpg"
     },
     {
+      "id": 166,
       "name": "Menno Coehoorn",
       "power": 10,
       "area": "melee",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/Nilfgaard/Menno_Coehoorn.jpg"
     },
     {
+      "id": 167,
       "name": "Morvran Voorhis",
       "power": 10,
       "area": "siege",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Nilfgaard/Morvran_Voorhis.jpg"
     },
     {
+      "id": 168,
       "name": "Tibor Eggebracht",
       "power": 10,
       "area": "archer",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Nilfgaard/Tibor_Eggebracht.jpg"
     },
     {
+      "id": 169,
       "name": "Scorpion incendiaire lourd zerrikanien",
       "power": 10,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Scorpion_incendiaire_lourd_zerrikanien.jpg"
     },
     {
+      "id": 170,
       "name": "Ingénieur de siège",
       "power": 6,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Ingénieur_de_siège.jpg"
     },
     {
+      "id": 171,
       "name": "Scorpion incendiaire zerrikanien",
       "power": 5,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Scorpion_incendiaire_zerrikanien.jpg"
     },
     {
+      "id": 172,
       "name": "Mangonneau vermoulu",
       "power": 3,
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Mangonneau_vermoulu.jpg"
     },
     {
+      "id": 173,
       "name": "Sapeur",
       "power": 0,
       "area": "siege",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/Nilfgaard/Sapeur.jpg"
     },
     {
+      "id": 174,
       "name": "Archer des Escadrons noirs",
       "power": 10,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Archer_des_Escadrons_noirs1.jpg"
     },
     {
+      "id": 175,
       "name": "Archer des Escadrons noirs",
       "power": 10,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Archer_des_Escadrons_noirs2.jpg"
     },
     {
+      "id": 176,
       "name": "Assire var Anahid",
       "power": 6,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Assire_var_Anahid.jpg"
     },
     {
+      "id": 177,
       "name": "Fringilla Vigo",
       "power": 6,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Fringilla_Vigo.jpg"
     },
     {
+      "id": 178,
       "name": "Renuald aep Matsen",
       "power": 5,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Renuald_aep_Matsen.jpg"
     },
     {
+      "id": 179,
       "name": "Cynthia",
       "power": 4,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Cynthia.jpg"
     },
     {
+      "id": 180,
       "name": "Vanhemar",
       "power": 4,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Vanhemar.jpg"
     },
     {
+      "id": 181,
       "name": "Puttkammer",
       "power": 3,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Puttkammer.jpg"
     },
     {
+      "id": 182,
       "name": "Albrich",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Albrich.jpg"
     },
     {
+      "id": 183,
       "name": "Sweers",
       "power": 2,
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Sweers.jpg"
     },
     {
+      "id": 184,
       "name": "Archer auxiliaire étolien",
       "power": 1,
       "area": "archer",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/Nilfgaard/Archer_auxiliaire_étolien1.jpg"
     },
     {
+      "id": 185,
       "name": "Archer auxiliaire étolien",
       "power": 1,
       "area": "archer",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/Nilfgaard/Archer_auxiliaire_étolien2.jpg"
     },
     {
+      "id": 186,
       "name": "Stefan Skellen",
       "power": 9,
       "area": "melee",
       "effect": "spy",
-      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu.",
+      "image_url": "./images/Nilfgaard/Stefan_Skellen.jpg"
     },
     {
+      "id": 187,
       "name": "Shilard Fitz-Oesterlen",
       "power": 7,
       "area": "melee",
       "effect": "spy",
-      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu.",
+      "image_url": "./images/Nilfgaard/Shilard_Fitz-Oesterlen.jpg"
     },
     {
+      "id": 188,
       "name": "Cahir Mawr Dyffryn aep Ceallach",
       "power": 6,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Cahir_Mawr_Dyffryn_aep_Ceallach.jpg"
     },
     {
+      "id": 189,
       "name": "Jeune émissaire",
       "power": 5,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Jeune_émissaire1.jpg"
     },
     {
+      "id": 190,
       "name": "Jeune émissaire",
       "power": 5,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Jeune_émissaire2.jpg"
     },
     {
+      "id": 191,
       "name": "Rainfarn",
       "power": 4,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Rainfarn.jpg"
     },
     {
+      "id": 192,
       "name": "Vattier de Rideaux",
       "power": 4,
       "area": "melee",
       "effect": "spy",
-      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu.",
+      "image_url": "./images/Nilfgaard/Vattier_de_Rideaux.jpg"
     },
     {
+      "id": 193,
       "name": "Morteisen",
       "power": 3,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/Morteisen.jpg"
     },
     {
+      "id": 194,
       "name": "Garde de la brigade Impera",
       "power": 3,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Garde_de_la_brigade_Impera.jpg"
     },
     {
+      "id": 195,
       "name": "Garde de la brigade Impera",
       "power": 3,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Garde_de_la_brigade_Impera.jpg"
     },
     {
+      "id": 196,
       "name": "Garde de la brigade Impera",
       "power": 3,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Garde_de_la_brigade_Impera.jpg"
     },
     {
+      "id": 197,
       "name": "Garde de la brigade Impera",
       "power": 3,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Garde_de_la_brigade_Impera.jpg"
     },
     {
+      "id": 198,
       "name": "Vreemde",
       "power": 2,
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nilfgaard/.jpg"
     },
     {
+      "id": 199,
       "name": "Cavalier de la brigade Nausicaa",
       "power": 2,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Cavalier_de_la_brigade_Nausicaa.jpg"
     },
     {
+      "id": 200,
       "name": "Cavalier de la brigade Nausicaa",
       "power": 2,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Cavalier_de_la_brigade_Nausicaa.jpg"
     },
     {
+      "id": 201,
       "name": "Cavalier de la brigade Nausicaa",
       "power": 2,
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nilfgaard/Cavalier_de_la_brigade_Nausicaa.jpg"
     }
   ],
 
-  "Royaumes du Nord": [{
+  "Nordling": [{
+      "id": 202,
       "name": "Foltest : Roi de Temeria",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Prenez une carte Brouillard impénétrable dans votre jeu et jouez-la instantanément."
+      "description": "Prenez une carte Brouillard impénétrable dans votre jeu et jouez-la instantanément.",
+      "image_url": "./images/Nordling/Foltest_Roi_de_Temeria.jpg"
     },
     {
+      "id": 203,
       "name": "Foltest : Le Brave",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Détruisez les unités de combat de siège les plus fortes de votre ennemi si la force cumulée de ses unités de siège est d'au moins 10."
+      "description": "Détruisez les unités de combat de siège les plus fortes de votre ennemi si la force cumulée de ses unités de siège est d'au moins 10.",
+      "image_url": "./images/Nordling/Foltest_Le_Brave.jpg"
     },
     {
+      "id": 204,
       "name": "Foltest : Protecteur du Nord",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Prenez une carte Brouillard impénétrable dans votre jeu et jouez-la instantanément."
+      "description": "Prenez une carte Brouillard impénétrable dans votre jeu et jouez-la instantanément.",
+      "image_url": "./images/Nordling/Foltest_Protecteur_du_Nord.jpg"
     },
     {
+      "id": 205,
       "name": "Foltest : Maître du siège",
       "power": false,
       "area": false,
       "effect": "king",
-      "description": "Double la force de toutes vos unités de combat de siège (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne)."
+      "description": "Double la force de toutes vos unités de combat de siège (sauf s'il y a déjà une carte 'Sonnerie de la charge' sur cette ligne).",
+      "image_url": "./images/Nordling/Foltest_Maître_du_siège.jpg"
     },
     {
+      "id": 206,
       "name": "Vernon Roche",
       "power": "10",
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Nordling/Vernon_Roche.jpg"
     },
     {
+      "id": 207,
       "name": "Jan Natalis",
       "power": "10",
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Nordling/Jan_Natalis.jpg"
     },
     {
+      "id": 208,
       "name": "Esterad Thyssen",
       "power": "10",
       "area": "melee",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Nordling/Esterad_Thyssen.jpg"
     },
     {
+      "id": 209,
       "name": "Philippa Eilhart",
       "power": "10",
       "area": "archer",
       "effect": "heroe",
-      "description": "Carte non affectée par les cartes spéciales ou les capacités."
+      "description": "Carte non affectée par les cartes spéciales ou les capacités.",
+      "image_url": "./images/Nordling/Philippa_Eilhart.jpg"
     },
     {
+      "id": 210,
       "name": "Catapulte",
       "power": "8",
       "area": "siege",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Catapulte.jpg"
     },
     {
+      "id": 211,
       "name": "Catapulte",
       "power": "8",
       "area": "siege",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Catapulte.jpg"
     },
     {
+      "id": 212,
       "name": "Trébuchet",
       "power": "6",
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Trébuchet1.jpg"
     },
     {
+      "id": 213,
       "name": "Trébuchet",
       "power": "6",
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Trébuchet2.jpg"
     },
     {
+      "id": 214,
       "name": "Baliste",
       "power": "6",
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Baliste.jpg"
     },
     {
+      "id": 215,
       "name": "Baliste",
       "power": "6",
       "area": "siege",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Baliste.jpg"
     },
     {
+      "id": 216,
       "name": "Tour de siège",
       "power": "6",
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Tour_de_siège.jpg"
     },
     {
+      "id": 217,
       "name": "Chirurgienne de la Bannière Brune",
       "power": "5",
       "area": "siege",
       "effect": "doctor",
-      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément."
+      "description": "Choisissez une carte de votre pile de défausse (pas de héros ou de carte spéciale) et jouez-la instantanément.",
+      "image_url": "./images/Nordling/Chirurgienne_de_la_Bannière_Brune.jpg"
     },
     {
+      "id": 218,
       "name": "Talar",
       "power": "1",
       "area": "melee",
       "effect": "spy",
-      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu.",
+      "image_url": "./images/Nordling/Talar.jpg"
     },
     {
+      "id": 219,
       "name": "Expert en siège de Kaedwen",
       "power": "1",
       "area": "siege",
       "effect": "morals",
-      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même.",
+      "image_url": "./images/Nordling/Expert_en_siège_de_Kaedwen.jpg"
     },
     {
+      "id": 220,
       "name": "Expert en siège de Kaedwen",
       "power": "1",
       "area": "siege",
       "effect": "morals",
-      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même.",
+      "image_url": "./images/Nordling/Expert_en_siège_de_Kaedwen.jpg"
     },
     {
+      "id": 221,
       "name": "Expert en siège de Kaedwen",
       "power": "1",
       "area": "siege",
       "effect": "morals",
-      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même."
+      "description": "Ajoute 1 point à toutes les unités de la ligne, à l'exception d'elle-même.",
+      "image_url": "./images/Nordling/Expert_en_siège_de_Kaedwen.jpg"
     },
     {
+      "id": 222,
       "name": "Detmold",
       "power": "6",
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Detmold.jpg"
     },
     {
+      "id": 223,
       "name": "Keira Metz",
       "power": "5",
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Keira_Metz.jpg"
     },
     {
+      "id": 224,
       "name": "Sheala de Tancarville",
       "power": "5",
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Sheala_de_Tancarville.jpg"
     },
     {
+      "id": 225,
       "name": "Chasseur de dragons de Crinfrid",
       "power": "5",
       "area": "archer",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Chasseur_de_dragons_de_Crinfrid.jpg"
     },
     {
+      "id": 226,
       "name": "Chasseur de dragons de Crinfrid",
       "power": "5",
       "area": "archer",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Chasseur_de_dragons_de_Crinfrid.jpg"
     },
     {
+      "id": 227,
       "name": "Chasseur de dragons de Crinfrid",
       "power": "5",
       "area": "archer",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Chasseur_de_dragons_de_Crinfrid.jpg"
     },
     {
+      "id": 228,
       "name": "Sabrina Glevissig",
       "power": "4",
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Sabrina_Glevissig.jpg"
     },
     {
+      "id": 229,
       "name": "Sheldon Skaggs",
       "power": "4",
       "area": "archer",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Sheldon_Skaggs.jpg"
     },
     {
+      "id": 230,
       "name": "Cyn",
       "power": "5",
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Cyn.jpg"
     },
     {
+      "id": 231,
       "name": "Siegfried de Denesle",
       "power": "5",
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Siegfried_de_Denesle.jpg"
     },
     {
+      "id": 232,
       "name": "Prince Stennis",
       "power": "5",
       "area": "melee",
       "effect": "spy",
-      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu.",
+      "image_url": "./images/Nordling/Prince_Stennis.jpg"
     },
     {
+      "id": 233,
       "name": "Sigismund Dijkstra",
       "power": "4",
       "area": "melee",
       "effect": "spy",
-      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu."
+      "description": "Placez la carte dans le camp de votre adversaire (elle augmentera son total) et tirez 2 cartes de votre jeu.",
+      "image_url": "./images/Nordling/Sigismund_Dijkstra.jpg"
     },
     {
+      "id": 234,
       "name": "Commando des Stries Bleues",
       "power": "4",
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Commando_des_Stries_Bleues.jpg"
     },
     {
+      "id": 235,
       "name": "Commando des Stries Bleues",
       "power": "4",
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Commando_des_Stries_Bleues.jpg"
     },
     {
+      "id": 236,
       "name": "Commando des Stries Bleues",
       "power": "4",
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Commando_des_Stries_Bleues.jpg"
     },
     {
+      "id": 237,
       "name": "Yarpen Zigrin",
       "power": "2",
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Yarpen_Zigrin.jpg"
     },
     {
+      "id": 238,
       "name": "Misérable Fantassin de Mes Deux",
       "power": "1",
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Misérable_Fantassin_de_Mes_Deux.jpg"
     },
     {
+      "id": 239,
       "name": "Misérable Fantassin de Mes Deux",
       "power": "1",
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Misérable_Fantassin_de_Mes_Deux.jpg"
     },
     {
+      "id": 240,
       "name": "Misérable Fantassin de Mes Deux",
       "power": "1",
       "area": "melee",
       "effect": "link",
-      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes."
+      "description": "Placez la carte près d'une autre portant le même nom pour doubler la force des deux cartes.",
+      "image_url": "./images/Nordling/Misérable_Fantassin_de_Mes_Deux.jpg"
     },
     {
+      "id": 241,
       "name": "Fantassin redanien",
       "power": "1",
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Fantassin_redanien1.jpg"
     },
     {
+      "id": 242,
       "name": "Fantassin redanien",
       "power": "1",
       "area": "melee",
       "effect": false,
-      "description": false
+      "description": false,
+      "image_url": "./images/Nordling/Fantassin_redanien2.jpg"
     }
   ]
 }
