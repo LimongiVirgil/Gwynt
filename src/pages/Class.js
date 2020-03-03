@@ -15,6 +15,17 @@ export default Class => {
     thisFaction.style.display = "block"
   }
 
+  function CardList(props) {
+    return(
+      <div className={props.faction + " faction"}>
+        {props.data.map(card => 
+          <img onClick={cardClick} src={card.image_url} alt="carte"></img>
+        )}
+      </div>
+    )
+  }
+
+
   const cardClick = (e) => {
     // Get the existing data
     var existing = localStorage.getItem('cardGame');
@@ -32,12 +43,6 @@ export default Class => {
       // Save back to localStorage
       localStorage.setItem('cardGame', existing.toString());
     }
-
-    existing.forEach(card => {
-      if (card == 202) {
-        console.log('oui')
-      }
-    })
   }
 
   return (
@@ -51,31 +56,11 @@ export default Class => {
       </ul>
       <div className="mainContainer">
         <div className="deck">
-          <div class="Nordling faction">
-             { data.Nordling.map(card => 
-              <img id={card.id} onClick={cardClick} src={card.image_url} alt="carte"></img>
-            )}
-          </div>
-          <div class="Nilfgaard faction">
-             { data.Nilfgaard.map(card => 
-              <img onClick={cardClick} src={card.image_url} alt="carte"></img>
-            )}
-          </div>
-          <div class="Monstres faction">
-             { data.Monstres.map(card => 
-              <img onClick={cardClick} src={card.image_url} alt="carte"></img>
-            )}
-          </div>
-          <div class="ScoiaTael faction">
-             { data.ScoiaTael.map(card => 
-              <img onClick={cardClick} src={card.image_url} alt="carte"></img>
-            )}
-          </div>
-          <div class="Skellige faction">
-             { data.Skellige.map(card => 
-              <img onClick={cardClick} src={card.image_url} alt="carte"></img>
-            )}
-          </div>
+            <CardList data={data.Nordling} faction="Nordling"/>
+            <CardList data={data.Nilfgaard} faction="Nilfgaard"/>
+            <CardList data={data.Monstres} faction="Monstres"/>
+            <CardList data={data.ScoiaTael} faction="ScoiaTael"/>
+            <CardList data={data.Skellige} faction="Skellige"/>
         </div>
         <div className="mainDeck">
 
