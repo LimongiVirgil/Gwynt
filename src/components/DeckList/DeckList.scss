@@ -1,0 +1,27 @@
+.mainDeck {
+  height: 95%;
+  overflow: auto;
+  width: 50%;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Neutre, .Monstres, .Skellige, .Nilfgaard, .ScoiaTael {
+		display: none;
+  }
+  
+  img {
+    border-radius: 6px 10px 13px 12px;
+    width: 170px;
+    height: auto;
+    margin: 10px;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

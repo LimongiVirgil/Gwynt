@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className="menu">
       <div className="gameTitle">
-        <img src="/images/logo_witcher.png"></img>
-        <img src="/images/Gwent.png"></img>
+        <img src="/images/logo_witcher.png" alt="title logo"></img>
+        <img src="/images/Gwent.png" alt="background"></img>
       </div>
       <Link to="/class">
         <button className="hover-ripple">Jouer</button>

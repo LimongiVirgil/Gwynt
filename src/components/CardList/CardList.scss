@@ -1,0 +1,19 @@
+.faction {
+  margin-bottom: 80px;
+  margin-left: 20px
+}
+
+.deck {
+  height: 95%;
+  overflow: auto;
+  width: 50%;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+	.Neutre, .Monstres, .Skellige, .Nilfgaard, .ScoiaTael {
+		display: none;
+	}
+}
