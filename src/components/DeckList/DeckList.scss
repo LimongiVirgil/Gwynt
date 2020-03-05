@@ -1,15 +1,21 @@
 .mainDeck {
   height: 95%;
   overflow: auto;
-  width: calc((170px + 20px) * 4 + 20px);
+  width: calc((170px + 22px) * 4 + 20px);
   -ms-overflow-style: none;
-  border-left: 2px solid #B28D41;
-  border-radius: 5px;
   padding-top: 10px;
+
+  h2 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
 
   .faction {
     margin-bottom: 80px;
-    margin-right: 20px
+    margin-right: 20px;
+    border-left: 2px solid #B28D41;
+    border-radius: 5px;
   }  
 
   &::-webkit-scrollbar {

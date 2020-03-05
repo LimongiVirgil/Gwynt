@@ -3,14 +3,6 @@ import './KingList.scss'
 
 function KingList(props) {
 	let parentClass = props.faction;
-	
-	var existing = localStorage.getItem(parentClass);
-
-	// If no existing data, create an array
-	// Otherwise, convert the localStorage string to an array
-	existing = existing ? existing.split(',') : [];
-
-	console.log(existing)
 
 	return(
 		<div className={props.faction + ' faction'}>

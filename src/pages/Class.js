@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../cards.json'
 import CardList from '../components/CardList/CardList'
 import DeckList from '../components/DeckList/DeckList'
+import InfoFaction from '../components/InfoFaction/InfoFaction'
 
 export default Class => {
   //let mainDeck = document.querySelector('.mainDeck')
@@ -30,6 +31,7 @@ export default Class => {
       </ul>
       <div className="mainContainer">
         <div className="deck">
+          <h2>Collection</h2>
           <CardList data={data.Nordling} faction="Nordling"/>
           <CardList data={data.Nilfgaard} faction="Nilfgaard"/>
           <CardList data={data.Monstres} faction="Monstres"/>
@@ -37,9 +39,14 @@ export default Class => {
           <CardList data={data.Skellige} faction="Skellige"/>
         </div>
         <div className="infoDeck">
-
+          <InfoFaction data={data.Nordling} faction="Nordling"/>
+          <InfoFaction data={data.Nilfgaard} faction="Nilfgaard"/>
+          <InfoFaction data={data.Monstres} faction="Monstres"/>
+          <InfoFaction data={data.ScoiaTael} faction="ScoiaTael"/>
+          <InfoFaction data={data.Skellige} faction="Skellige"/>
         </div>
         <div className="mainDeck">
+          <h2>Jeu</h2>
           <DeckList data={data.Nordling} faction="Nordling"/>
           <DeckList data={data.Nilfgaard} faction="Nilfgaard"/>
           <DeckList data={data.Monstres} faction="Monstres"/>

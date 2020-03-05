@@ -94,6 +94,7 @@
       "name": "Leurre",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "lure",
       "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main.",
       "image_url": "./images/Neutre/Leurre.jpg"
@@ -103,6 +104,7 @@
       "name": "Leurre",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "lure",
       "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main.",
       "image_url": "./images/Neutre/Leurre.jpg"
@@ -112,6 +114,7 @@
       "name": "Leurre",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "lure",
       "description": "Échangez cette carte avec une carte jouée pour la reprendre dans votre main.",
       "image_url": "./images/Neutre/Leurre.jpg"
@@ -121,6 +124,7 @@
       "name": "Sonnerie de la charge",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "chargeRing",
       "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
       "image_url": "./images/Neutre/Sonnerie_de_la_charge.jpg"
@@ -130,6 +134,7 @@
       "name": "Sonnerie de la charge",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "chargeRing",
       "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
       "image_url": "./images/Neutre/Sonnerie_de_la_charge.jpg"
@@ -139,6 +144,7 @@
       "name": "Sonnerie de la charge",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "chargeRing",
       "description": "Double la force de toutes les cartes d'unités de la ligne. Vous ne pouvez en placer qu'une par ligne.",
       "image_url": "./images/Neutre/Sonnerie_de_la_charge.jpg"
@@ -148,6 +154,7 @@
       "name": "Terre Brûlée",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "destroy",
       "description": "Détruit la ou les cates les plus fortes du terrain",
       "image_url": "./images/Neutre/Terre_Brulee.jpg"
@@ -157,6 +164,7 @@
       "name": "Terre Brûlée",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "destroy",
       "description": "Détruit la ou les cates les plus fortes du terrain",
       "image_url": "./images/Neutre/Terre_Brulee.jpg"
@@ -166,6 +174,7 @@
       "name": "Terre Brûlée",
       "power": false,
       "area": false,
+      "special": true,
       "effect": "destroy",
       "description": "Détruit la ou les cates les plus fortes du terrain",
       "image_url": "./images/Neutre/Terre_Brulee.jpg"
@@ -175,6 +184,7 @@
       "name": "Froid mordant",
       "power": false,
       "area": "melee",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous.",
       "image_url": "./images/Neutre/Froid_mordant.jpg"
@@ -184,6 +194,7 @@
       "name": "Froid mordant",
       "power": false,
       "area": "melee",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous.",
       "image_url": "./images/Neutre/Froid_mordant.jpg"
@@ -193,6 +204,7 @@
       "name": "Froid mordant",
       "power": false,
       "area": "melee",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force de toutes les cartes de combat rapproché jouées par votre adversaire et vous.",
       "image_url": "./images/Neutre/Froid_mordant.jpg"
@@ -202,6 +214,7 @@
       "name": "Brouillard impénétrable",
       "power": false,
       "area": "archer",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous.",
       "image_url": "./images/Neutre/Brouillard_impénétrable.jpg"
@@ -211,6 +224,7 @@
       "name": "Brouillard impénétrable",
       "power": false,
       "area": "archer",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous.",
       "image_url": "./images/Neutre/Brouillard_impénétrable.jpg"
@@ -220,6 +234,7 @@
       "name": "Brouillard impénétrable",
       "power": false,
       "area": "archer",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force de toutes les cartes de combat à distance jouées par votre adversaire et vous.",
       "image_url": "./images/Neutre/Brouillard_impénétrable.jpg"
@@ -229,6 +244,7 @@
       "name": "Pluie torrentielle",
       "power": false,
       "area": "siege",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
       "image_url": "./images/Neutre/Pluie_torrentielle.jpg"
@@ -238,6 +254,7 @@
       "name": "Pluie torrentielle",
       "power": false,
       "area": "siege",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
       "image_url": "./images/Neutre/Pluie_torrentielle.jpg"
@@ -247,6 +264,7 @@
       "name": "Pluie torrentielle",
       "power": false,
       "area": "siege",
+      "special": true,
       "effect": "meteo",
       "description": "Réduit à 1 la force des unités de combat à distance et des unités de siège.",
       "image_url": "./images/Neutre/Pluie_torrentielle.jpg"
@@ -256,6 +274,7 @@
       "name": "Temps dégagé",
       "power": false,
       "area": "melee archer siege",
+      "special": true,
       "effect": "meteo",
       "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle.",
       "image_url": "./images/Neutre/Temps_dégagé.jpg"
@@ -265,6 +284,7 @@
       "name": "Temps dégagé",
       "power": false,
       "area": "melee archer siege",
+      "special": true,
       "effect": "meteo",
       "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle.",
       "image_url": "./images/Neutre/Temps_dégagé.jpg"
@@ -274,6 +294,7 @@
       "name": "Temps dégagé",
       "power": false,
       "area": "melee archer siege",
+      "special": true,
       "effect": "meteo",
       "description": "Supprimez tous les effets météo actifs dus à Froid mordant, Brouillard impénétrable et Pluie torrentielle.",
       "image_url": "./images/Neutre/Temps_dégagé.jpg"
