@@ -109,6 +109,7 @@
   .mainContainer {
     height: 90%;
     display: flex;
+    justify-content: space-between;
 
     .deck img {
       border-radius: 6px 10px 13px 12px;

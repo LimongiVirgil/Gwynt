@@ -5,6 +5,11 @@ const cardClick = (e) => {
 	// Get name of faction
 	let parentClass = e.target.parentNode.className.split(' ')[0];
 
+	// Get deck list
+	let deck = document.querySelector(`.mainDeck .${parentClass}.faction`)
+	//Get card list
+	let card = document.querySelector(`.deck .${parentClass}.faction`)
+
 	// Get the existing data
 	var existing = localStorage.getItem(parentClass);
 
@@ -13,14 +18,28 @@ const cardClick = (e) => {
 	existing = existing ? existing.split(',') : [];
 
 	if (e.detail === 2) {
-		e.target.style.display = 'none'
+		if (e.target.parentNode.parentNode.className === "mainDeck") {
+			card.append(e.target)
 
-		// Add new data to localStorage Array
-		existing.push(e.target.id);
+			const index = existing.indexOf(e.target.id);
+			if (index > -1) {
+				existing.splice(index, 1);
+			}
 
-		// Save back to localStorage
-		localStorage.setItem(parentClass, existing.toString());
+			// Save back to localStorage
+			localStorage.setItem(parentClass, existing.toString());
+		} else {
+			// Add new data to localStorage Array
+			existing.push(e.target.id);
+
+			// Save back to localStorage
+			localStorage.setItem(parentClass, existing.toString());
+
+			// Add select card to deck list
+			deck.append(e.target)
+		}
 	}
+
 }
 
 function CardList(props) {
