@@ -36,6 +36,9 @@ export default Class => {
           <CardList data={data.ScoiaTael} faction="ScoiaTael"/>
           <CardList data={data.Skellige} faction="Skellige"/>
         </div>
+        <div className="infoDeck">
+
+        </div>
         <div className="mainDeck">
           <DeckList data={data.Nordling} faction="Nordling"/>
           <DeckList data={data.Nilfgaard} faction="Nilfgaard"/>
