@@ -1,0 +1,2432 @@
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style: none; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img, embed, iframe, object, audio, video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0;
+  text-align: left; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+@font-face {
+  font-family: "Regular";
+  src: url("/fonts/regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Bold";
+  src: url("/fonts/bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Medium";
+  src: url("/fonts/medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "Title";
+  src: url("/fonts/title.woff") format("woff"); }
+
+.\.Z1Popgs\/src\/pages\/_app\.scss-app {
+  font-size: 10px;
+  font-family: "Regular";
+  color: #1f1f1f; }
+  .\.Z1Popgs\/src\/pages\/_app\.scss-app a {
+    color: #1f1f1f; }
+  .\.Z1Popgs\/src\/pages\/_app\.scss-app strong {
+    font-family: "Bold"; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Page */
+
+/*
+ * Mixins
+ */
+@media screen and (min-width: 768px) {
+  .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component {
+    display: block;
+    width: 100em;
+    margin: auto;
+    position: relative;
+    height: 7.6em;
+    line-height: 4.8em; }
+    .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component .\.vqsal\/src\/app\/components\/header\/styles\.scss-mobile {
+      display: none; }
+    .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component .\.16O1cE\/src\/app\/components\/header\/styles\.scss-desktop {
+      position: absolute;
+      right: 1.5em;
+      bottom: 0;
+      text-align: center;
+      overflow: hidden; }
+      .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component .\.16O1cE\/src\/app\/components\/header\/styles\.scss-desktop li {
+        display: inline-block;
+        margin: 0 4em;
+        position: relative;
+        cursor: pointer; }
+        .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component .\.16O1cE\/src\/app\/components\/header\/styles\.scss-desktop li a {
+          text-decoration: none;
+          color: #000;
+          font-size: 1.6em;
+          font-family: "Bold";
+          letter-spacing: .06em; }
+        .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component .\.16O1cE\/src\/app\/components\/header\/styles\.scss-desktop li .\.Z1sv8Yi\/src\/app\/components\/header\/styles\.scss-focus {
+          height: 1em;
+          background: #e6002c;
+          width: calc(100% + 1.2em);
+          display: inline-block;
+          position: absolute;
+          bottom: -1em;
+          left: -.6em;
+          border-radius: 5px;
+          transition: bottom .15s; }
+        .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component .\.16O1cE\/src\/app\/components\/header\/styles\.scss-desktop li:hover .\.Z1sv8Yi\/src\/app\/components\/header\/styles\.scss-focus, .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component .\.16O1cE\/src\/app\/components\/header\/styles\.scss-desktop li.\.5QqLO\/src\/app\/components\/header\/styles\.scss-active .\.Z1sv8Yi\/src\/app\/components\/header\/styles\.scss-focus {
+          bottom: -.5em; }
+  .\.ZGSTFD\/src\/app\/components\/header\/styles\.scss-logo {
+    text-indent: -9999px;
+    display: block;
+    width: 14.4em;
+    height: 7em;
+    bottom: -3.35em;
+    position: absolute;
+    background: url("/img/logo-panzani.svg") no-repeat center;
+    background-size: contain;
+    z-index: 2; }
+  .\.Has8p\/src\/app\/components\/header\/styles\.scss-search {
+    text-indent: -9999px;
+    background: url("/img/search.svg") no-repeat center;
+    background-size: 2.5em auto;
+    width: 3em;
+    height: 4em;
+    position: relative;
+    bottom: .2em; } }
+
+@media screen and (max-width: 767px) {
+  .\.1UhoeP\/src\/app\/components\/header\/styles\.scss-component {
+    height: 9em; }
+  .\.Z1YtL8o\/src\/app\/components\/header\/styles\.scss-container {
+    display: block;
+    height: 9em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 400;
+    background: #fff; }
+  .\.16O1cE\/src\/app\/components\/header\/styles\.scss-desktop {
+    display: none; }
+  .\.ZGSTFD\/src\/app\/components\/header\/styles\.scss-logo {
+    text-indent: -9999px;
+    display: block;
+    width: 7.3em;
+    height: 3.8em;
+    top: 3.8em;
+    left: 2.4em;
+    position: absolute;
+    background: url("/img/logo-panzani.svg") no-repeat center;
+    background-size: contain;
+    z-index: 501; }
+  .\.2kp4ct\/src\/app\/components\/header\/styles\.scss-shortcut {
+    position: absolute;
+    right: 2em;
+    top: 3.9em;
+    z-index: 501; }
+    .\.2kp4ct\/src\/app\/components\/header\/styles\.scss-shortcut > div {
+      display: inline-block; }
+  .\.JU1g8\/src\/app\/components\/header\/styles\.scss-toggle div {
+    width: 2.4em;
+    height: .2em;
+    background: #000;
+    margin: .6em .6em;
+    transition: opacity .25s, transform .25s; }
+  .\.JU1g8\/src\/app\/components\/header\/styles\.scss-toggle.\.5QqLO\/src\/app\/components\/header\/styles\.scss-active div:first-child {
+    transform: translateY(0.8em) rotate(45deg); }
+  .\.JU1g8\/src\/app\/components\/header\/styles\.scss-toggle.\.5QqLO\/src\/app\/components\/header\/styles\.scss-active div:nth-child(2) {
+    opacity: 0; }
+  .\.JU1g8\/src\/app\/components\/header\/styles\.scss-toggle.\.5QqLO\/src\/app\/components\/header\/styles\.scss-active div:last-child {
+    transform: translateY(-0.8em) rotate(-45deg); }
+  .\.Has8p\/src\/app\/components\/header\/styles\.scss-search {
+    text-indent: -9999px;
+    background: url("/img/search.svg") no-repeat center;
+    background-size: 2.5em auto;
+    width: 3.5em;
+    height: 3em;
+    margin-right: .5em; }
+  .\.Z1s7t7d\/src\/app\/components\/header\/styles\.scss-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 200; }
+    .\.Z1s7t7d\/src\/app\/components\/header\/styles\.scss-links a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1.8em; }
+    .\.Z1s7t7d\/src\/app\/components\/header\/styles\.scss-links > ul {
+      margin: 11em 0 0 3.8em; }
+      .\.Z1s7t7d\/src\/app\/components\/header\/styles\.scss-links > ul > li {
+        margin-bottom: 3em; }
+        .\.Z1s7t7d\/src\/app\/components\/header\/styles\.scss-links > ul > li:first-child {
+          font-family: 'Medium'; }
+          .\.Z1s7t7d\/src\/app\/components\/header\/styles\.scss-links > ul > li:first-child a {
+            color: #e6002c; }
+        .\.Z1s7t7d\/src\/app\/components\/header\/styles\.scss-links > ul > li li {
+          margin: 3em 0 0 2em;
+          padding: 0 0 0 2.7em;
+          background: url("/img/arrow-right-dark.svg") no-repeat left center; } }
+
+/*
+ * Mixins
+ */
+.\.uyR0A\/src\/app\/components\/footer\/styles\.scss-component {
+  display: block;
+  width: 100vw;
+  max-width: 100em;
+  margin: 4.5em auto 4.2em auto; }
+  @media screen and (max-width: 767px) {
+    .\.uyR0A\/src\/app\/components\/footer\/styles\.scss-component {
+      margin-bottom: 2.2em; } }
+  .\.uyR0A\/src\/app\/components\/footer\/styles\.scss-component a {
+    color: #1f1f1f;
+    text-decoration: none; }
+    .\.uyR0A\/src\/app\/components\/footer\/styles\.scss-component a:hover {
+      text-decoration: underline; }
+  .\.uyR0A\/src\/app\/components\/footer\/styles\.scss-component li {
+    font-size: 1.6em; }
+
+.\.Z1vc31h\/src\/app\/components\/footer\/styles\.scss-logo {
+  width: 10em;
+  height: 5em;
+  background: url("/img/logo-panzani.svg") no-repeat center;
+  background-size: contain;
+  display: block;
+  text-indent: -9999px;
+  margin: auto; }
+  @media screen and (max-width: 767px) {
+    .\.Z1vc31h\/src\/app\/components\/footer\/styles\.scss-logo {
+      width: 9em; } }
+
+.\.27otMQ\/src\/app\/components\/footer\/styles\.scss-slogan {
+  font-size: 4em;
+  text-align: center;
+  margin: 0.3em 0 1em 0;
+  color: #e6002c;
+  font-family: "Title"; }
+  @media screen and (max-width: 767px) {
+    .\.27otMQ\/src\/app\/components\/footer\/styles\.scss-slogan {
+      font-size: 3em;
+      margin-bottom: 2em; } }
+
+.\.Z15hrhb\/src\/app\/components\/footer\/styles\.scss-menu1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3em; }
+  @media screen and (max-width: 767px) {
+    .\.Z15hrhb\/src\/app\/components\/footer\/styles\.scss-menu1 {
+      margin: 0 10%; }
+      .\.Z15hrhb\/src\/app\/components\/footer\/styles\.scss-menu1 li {
+        flex: 0 45%;
+        margin-bottom: 2em; } }
+
+.\.Z15vMl8\/src\/app\/components\/footer\/styles\.scss-item1 {
+  font-family: "Bold";
+  display: inline-block; }
+  .\.Z15vMl8\/src\/app\/components\/footer\/styles\.scss-item1:after {
+    content: " ";
+    margin-top: .5em;
+    display: block;
+    width: 1.2em;
+    height: .25em;
+    background: #e6002c;
+    border-radius: 6px; }
+  .\.Z15vMl8\/src\/app\/components\/footer\/styles\.scss-item1:hover a {
+    text-decoration: none; }
+  .\.Z15vMl8\/src\/app\/components\/footer\/styles\.scss-item1:hover:after {
+    background: #00ab2e; }
+
+.\.Z15hrha\/src\/app\/components\/footer\/styles\.scss-menu2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Bold";
+  margin-bottom: 3.3em; }
+  .\.Z15hrha\/src\/app\/components\/footer\/styles\.scss-menu2 li {
+    display: inline-block;
+    margin: 0 2.9em; }
+
+@media screen and (max-width: 767px) {
+  .\.Z15vMl7\/src\/app\/components\/footer\/styles\.scss-item2 {
+    font-family: "Bold"; } }
+
+@media screen and (max-width: 767px) {
+  .\.154iIL\/src\/app\/components\/footer\/styles\.scss-followUs {
+    font-family: "Bold"; } }
+
+.\.154iIL\/src\/app\/components\/footer\/styles\.scss-followUs span {
+  display: block;
+  margin-bottom: .25em; }
+
+.\.154iIL\/src\/app\/components\/footer\/styles\.scss-followUs a {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 1.7em;
+  height: 1.7em;
+  background-color: #e6002c;
+  margin: .25em .4em 0 0;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.\.14k6s8\/src\/app\/components\/footer\/styles\.scss-twitter {
+  background-image: url("/img/share/twitter.svg"); }
+
+.\.1jaQso\/src\/app\/components\/footer\/styles\.scss-facebook {
+  background-image: url("/img/share/facebook.svg"); }
+
+.\.XRUm5\/src\/app\/components\/footer\/styles\.scss-youtube {
+  background-image: url("/img/share/youtube.svg"); }
+
+.\.2bKHBf\/src\/app\/components\/footer\/styles\.scss-instagram {
+  background-image: url("/img/share/instagram.svg");
+  margin-right: 0; }
+
+.\.Z15hrh9\/src\/app\/components\/footer\/styles\.scss-menu3 {
+  display: flex;
+  justify-content: center; }
+  .\.Z15hrh9\/src\/app\/components\/footer\/styles\.scss-menu3 li {
+    display: inline-block;
+    margin: 0 2.9em; }
+  @media screen and (max-width: 767px) {
+    .\.Z15hrh9\/src\/app\/components\/footer\/styles\.scss-menu3 {
+      display: block;
+      text-align: center; }
+      .\.Z15hrh9\/src\/app\/components\/footer\/styles\.scss-menu3 li {
+        margin-bottom: 1.5em; } }
+
+.\.Z17wqTA\/src\/app\/components\/footer\/styles\.scss-copyright {
+  font-family: "Bold"; }
+
+/*
+ * Mixins
+ */
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Breadcrumb */
+.\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component {
+  width: 100vw; }
+  @media screen and (min-width: 768px) {
+    .\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component {
+      margin-bottom: 2em; } }
+  @media screen and (max-width: 767px) {
+    .\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component {
+      padding: 1em 9% 2em 9%; } }
+  .\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component ul {
+    max-width: 100em;
+    margin: auto; }
+  .\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component li {
+    font-size: 1.6em;
+    display: inline-block;
+    margin-right: 0.5em;
+    padding-right: 0.9em;
+    background: url(/img/arrow-right-red.svg) no-repeat right 0.4em;
+    background-size: auto 55%;
+    font-family: "Medium"; }
+    .\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component li:last-child {
+      background: transparent; }
+  .\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Regular"; }
+    .\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component a:hover {
+      text-decoration: underline; }
+
+@media screen and (min-width: 768px) {
+  .\.Z1i1xDw\/src\/app\/blocks\/breadcrumb\/styles\.scss-border {
+    height: 4em;
+    width: 100%;
+    margin-bottom: 2.2em; } }
+
+/* Themes */
+.red .\.Z1i1xDw\/src\/app\/blocks\/breadcrumb\/styles\.scss-border {
+  background: #e6002c; }
+
+.red.\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component li {
+  color: #e6002c; }
+
+.green .\.Z1i1xDw\/src\/app\/blocks\/breadcrumb\/styles\.scss-border {
+  background: #00ab2e; }
+
+.green.\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component li {
+  color: #00ab2e; }
+
+.yellow .\.Z1i1xDw\/src\/app\/blocks\/breadcrumb\/styles\.scss-border {
+  background: #faba32; }
+
+.yellow.\.MXuhf\/src\/app\/blocks\/breadcrumb\/styles\.scss-component li {
+  color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Contact */
+.\.Z16abnx\/src\/app\/blocks\/contact\/styles\.scss-component {
+  max-width: 100em;
+  width: 100vw;
+  margin: auto;
+  position: relative; }
+  .\.Z16abnx\/src\/app\/blocks\/contact\/styles\.scss-component h2 {
+    font-size: 3.95em;
+    font-family: "Medium";
+    text-transform: uppercase; }
+  .\.Z16abnx\/src\/app\/blocks\/contact\/styles\.scss-component p {
+    font-size: 1.8em;
+    width: 20em; }
+    .\.Z16abnx\/src\/app\/blocks\/contact\/styles\.scss-component p strong {
+      font-family: "Medium"; }
+    .\.Z16abnx\/src\/app\/blocks\/contact\/styles\.scss-component p .big {
+      font-size: 1.5em;
+      font-family: "Medium"; }
+    .\.Z16abnx\/src\/app\/blocks\/contact\/styles\.scss-component p .small {
+      font-size: .8em; }
+
+.\.2sjj7y\/src\/app\/blocks\/contact\/styles\.scss-border {
+  display: block;
+  bottom: 0;
+  width: 6.6em;
+  height: .8em;
+  background: #e6002c;
+  border-radius: 6px;
+  margin: .5em 0 5em 0; }
+
+.\.Z1qj1rN\/src\/app\/blocks\/contact\/styles\.scss-illustration {
+  width: 55.7em;
+  height: 53.3em;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -3em;
+  left: -5em; }
+
+.\.19Gp25\/src\/app\/blocks\/contact\/styles\.scss-content {
+  margin: 0 0 18em 55em; }
+
+/*
+ * Mixins
+ */
+/* Block Ingredients */
+.\.Z1KDN1e\/src\/app\/blocks\/ingredients\/styles\.scss-component {
+  color: #fff;
+  position: relative;
+  background: #e6002c center no-repeat;
+  background-size: cover; }
+
+.\.ZAdOzw\/src\/app\/blocks\/ingredients\/styles\.scss-container {
+  width: 100vw;
+  max-width: 100em;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    .\.ZAdOzw\/src\/app\/blocks\/ingredients\/styles\.scss-container {
+      display: flex;
+      padding: 10.5vw 0 12em 0; } }
+  @media screen and (max-width: 767px) {
+    .\.ZAdOzw\/src\/app\/blocks\/ingredients\/styles\.scss-container {
+      padding: 0 0 4em 0; } }
+  @media screen and (min-width: 768px) {
+    .\.ZAdOzw\/src\/app\/blocks\/ingredients\/styles\.scss-container > div {
+      width: 50%; } }
+  @media screen and (max-width: 767px) {
+    .\.ZAdOzw\/src\/app\/blocks\/ingredients\/styles\.scss-container > div {
+      width: 100%; } }
+
+.\.b3LTx\/src\/app\/blocks\/ingredients\/styles\.scss-background {
+  background: url("/img/blocks/slider-1/background.jpg");
+  background-size: 256px 256px;
+  opacity: .1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none; }
+
+.\.1Q0FU7\/src\/app\/blocks\/ingredients\/styles\.scss-forground {
+  width: 104.5vw;
+  max-width: inherit;
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  background-size: contain;
+  transform: translateX(-50%); }
+  @media screen and (max-width: 767px) {
+    .\.1Q0FU7\/src\/app\/blocks\/ingredients\/styles\.scss-forground {
+      width: 150vw; } }
+
+.\.Zfvh7F\/src\/app\/blocks\/ingredients\/styles\.scss-title {
+  font-family: "Bold";
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  font-size: 1.7em;
+  text-align: center; }
+  .\.Zfvh7F\/src\/app\/blocks\/ingredients\/styles\.scss-title span {
+    font-size: 0.9em;
+    text-transform: initial;
+    display: block; }
+
+.\.ttiWL\/src\/app\/blocks\/ingredients\/styles\.scss-body {
+  font-size: 1.8em; }
+  @media screen and (min-width: 768px) {
+    .\.ttiWL\/src\/app\/blocks\/ingredients\/styles\.scss-body {
+      width: 16em;
+      margin: auto; } }
+  @media screen and (max-width: 767px) {
+    .\.ttiWL\/src\/app\/blocks\/ingredients\/styles\.scss-body {
+      padding: 0 9% 5em 9%; } }
+
+.\.ZfvM2R\/src\/app\/blocks\/ingredients\/styles\.scss-texts {
+  padding-top: 8.5em; }
+  @media screen and (min-width: 768px) {
+    .\.ZfvM2R\/src\/app\/blocks\/ingredients\/styles\.scss-texts {
+      width: 29em; } }
+  @media screen and (max-width: 767px) {
+    .\.ZfvM2R\/src\/app\/blocks\/ingredients\/styles\.scss-texts {
+      padding-top: 8em; } }
+  .\.ZfvM2R\/src\/app\/blocks\/ingredients\/styles\.scss-texts h1 {
+    margin-bottom: 2em; }
+
+.\.2926hc\/src\/app\/blocks\/ingredients\/styles\.scss-box {
+  width: 34em;
+  margin: auto;
+  background: #c6011a;
+  border-radius: 2.5em;
+  padding: 3.5em 3em;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .\.2926hc\/src\/app\/blocks\/ingredients\/styles\.scss-box {
+      margin: 0 9%;
+      width: auto; } }
+  .\.2926hc\/src\/app\/blocks\/ingredients\/styles\.scss-box li {
+    font-size: 1.8em;
+    margin-top: 1em; }
+
+.\.ZfodLL\/src\/app\/blocks\/ingredients\/styles\.scss-value {
+  font-family: "Bold";
+  font-size: 0.9em; }
+
+.\.ZfA9Al\/src\/app\/blocks\/ingredients\/styles\.scss-score {
+  width: 13.6em;
+  height: 7.4em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: -5em;
+  transform: translateX(-50%); }
+  .\.ZfA9Al\/src\/app\/blocks\/ingredients\/styles\.scss-score.nutri-a {
+    background-image: url("/img/blocks/ingredients/nutri-score-a.svg"); }
+  .\.ZfA9Al\/src\/app\/blocks\/ingredients\/styles\.scss-score.nutri-b {
+    background-image: url("/img/blocks/ingredients/nutri-score-b.svg"); }
+  .\.ZfA9Al\/src\/app\/blocks\/ingredients\/styles\.scss-score.nutri-c {
+    background-image: url("/img/blocks/ingredients/nutri-score-c.svg"); }
+  .\.ZfA9Al\/src\/app\/blocks\/ingredients\/styles\.scss-score.nutri-d {
+    background-image: url("/img/blocks/ingredients/nutri-score-d.svg"); }
+  .\.ZfA9Al\/src\/app\/blocks\/ingredients\/styles\.scss-score.nutri-e {
+    background-image: url("/img/blocks/ingredients/nutri-score-e.svg"); }
+
+/* Themes */
+.red.\.Z1KDN1e\/src\/app\/blocks\/ingredients\/styles\.scss-component {
+  background-color: #e6002c; }
+
+.green.\.Z1KDN1e\/src\/app\/blocks\/ingredients\/styles\.scss-component {
+  background-color: #00ab2e; }
+
+.yellow.\.Z1KDN1e\/src\/app\/blocks\/ingredients\/styles\.scss-component {
+  background-color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Header */
+.\.Z12lECD\/src\/app\/blocks\/header\/styles\.scss-component {
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 14em 0 8em 0; }
+  @media screen and (max-width: 767px) {
+    .\.Z12lECD\/src\/app\/blocks\/header\/styles\.scss-component {
+      padding: 5em 0 4.5em 0; } }
+  .\.Z12lECD\/src\/app\/blocks\/header\/styles\.scss-component h1 {
+    margin-bottom: 1.6em; }
+
+.\.Z1DrnuW\/src\/app\/blocks\/header\/styles\.scss-title {
+  font-size: 4.2em;
+  display: block;
+  font-family: "Medium";
+  text-transform: uppercase;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .\.Z1DrnuW\/src\/app\/blocks\/header\/styles\.scss-title {
+      font-size: 3em; } }
+
+.\.2ujql\/src\/app\/blocks\/header\/styles\.scss-subtitle {
+  font-family: "Title";
+  font-size: 8em;
+  margin-top: -.2em;
+  display: block;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .\.2ujql\/src\/app\/blocks\/header\/styles\.scss-subtitle {
+      font-size: 5em; } }
+
+.\.gILYl\/src\/app\/blocks\/header\/styles\.scss-body {
+  font-size: 1.8em;
+  margin: auto;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .\.gILYl\/src\/app\/blocks\/header\/styles\.scss-body {
+      width: 31.5em; } }
+  @media screen and (max-width: 767px) {
+    .\.gILYl\/src\/app\/blocks\/header\/styles\.scss-body {
+      padding: 0 9%; } }
+
+.\.2ltsC6\/src\/app\/blocks\/header\/styles\.scss-background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Title";
+  font-size: 25em;
+  color: #f5f1f0;
+  font-style: italic;
+  pointer-events: none; }
+  @media screen and (max-width: 767px) {
+    .\.2ltsC6\/src\/app\/blocks\/header\/styles\.scss-background {
+      font-size: 10em;
+      font-style: normal; } }
+
+/* Themes */
+.red .\.2ujql\/src\/app\/blocks\/header\/styles\.scss-subtitle {
+  color: #e6002c; }
+
+.green .\.2ujql\/src\/app\/blocks\/header\/styles\.scss-subtitle {
+  color: #00ab2e; }
+
+.yellow .\.2ujql\/src\/app\/blocks\/header\/styles\.scss-subtitle {
+  color: #faba32; }
+
+/*
+ * Mixins
+ */
+.\.QDuCL\/src\/app\/blocks\/pastas\/styles\.scss-component {
+  margin: auto;
+  text-align: center;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .\.QDuCL\/src\/app\/blocks\/pastas\/styles\.scss-component {
+      min-width: 100em;
+      width: 100vw;
+      height: 60.5em;
+      padding-top: 19em; } }
+  @media screen and (max-width: 767px) {
+    .\.QDuCL\/src\/app\/blocks\/pastas\/styles\.scss-component {
+      padding: 8.5em 9%; } }
+  .\.QDuCL\/src\/app\/blocks\/pastas\/styles\.scss-component span {
+    position: relative; }
+  .\.QDuCL\/src\/app\/blocks\/pastas\/styles\.scss-component p {
+    font-size: 1.8em;
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      .\.QDuCL\/src\/app\/blocks\/pastas\/styles\.scss-component p {
+        width: 35em; } }
+
+.\.ZT9W05\/src\/app\/blocks\/pastas\/styles\.scss-title {
+  font-family: "Bold";
+  font-size: 4.4em;
+  text-transform: uppercase;
+  display: block;
+  z-index: 2; }
+  @media screen and (max-width: 767px) {
+    .\.ZT9W05\/src\/app\/blocks\/pastas\/styles\.scss-title {
+      font-size: 4em; } }
+
+.\.UgwYv\/src\/app\/blocks\/pastas\/styles\.scss-subtitle {
+  font-size: 8em;
+  font-family: "Title";
+  display: block;
+  margin-top: -.49em; }
+  @media screen and (max-width: 767px) {
+    .\.UgwYv\/src\/app\/blocks\/pastas\/styles\.scss-subtitle {
+      font-size: 5.6em;
+      margin-top: -.4em; } }
+
+.\.haW8A\/src\/app\/blocks\/pastas\/styles\.scss-background {
+  position: absolute;
+  background: url("/img/blocks/pastas/background.png") no-repeat center;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; }
+  @media screen and (min-width: 768px) {
+    .\.haW8A\/src\/app\/blocks\/pastas\/styles\.scss-background {
+      width: 144em;
+      height: 65.1em; } }
+  @media screen and (max-width: 767px) {
+    .\.haW8A\/src\/app\/blocks\/pastas\/styles\.scss-background {
+      background-image: url("/img/blocks/pastas/background.png");
+      width: 90em;
+      height: 41em;
+      top: calc(50% + 1em); } }
+
+/* Themes */
+.red .\.UgwYv\/src\/app\/blocks\/pastas\/styles\.scss-subtitle {
+  color: #e6002c; }
+
+.green .\.UgwYv\/src\/app\/blocks\/pastas\/styles\.scss-subtitle {
+  color: #00ab2e; }
+
+.yellow .\.UgwYv\/src\/app\/blocks\/pastas\/styles\.scss-subtitle {
+  color: #faba32; }
+
+/*
+ * Mixins
+ */
+.\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component {
+      max-width: 100em;
+      width: 100vw;
+      margin: auto;
+      min-height: 51em; } }
+  @media screen and (max-width: 767px) {
+    .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component {
+      padding: 80vw 0 8em 0; } }
+  .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component p {
+    font-size: 1.8em; }
+  @media screen and (min-width: 768px) {
+    .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component {
+      /* Right */
+      /* Left */ }
+      .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right {
+        margin-bottom: 10em; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right .\.Z1FFuyK\/src\/app\/blocks\/push-texts-images\/styles\.scss-texts {
+          left: calc(50% + 11em); }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right .image-0 {
+          width: 64em;
+          height: 43em;
+          right: calc(50% + 8.5em);
+          top: 0; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right .image-1 {
+          width: 28em;
+          height: 37em;
+          right: calc(50% - 1.9em);
+          top: 13em; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right .image-2 {
+          width: 54.2em;
+          height: 44.6em;
+          background-size: contain;
+          left: calc(50% - 4.5em);
+          top: 8em;
+          transform: translate(-50%, -50%); }
+      .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left {
+        margin-bottom: 17em; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left .\.Z1FFuyK\/src\/app\/blocks\/push-texts-images\/styles\.scss-texts {
+          left: calc(50% - 49em); }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left .image-0 {
+          width: 79em;
+          height: 52em;
+          left: calc(50% - 7.6em);
+          top: 0; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left .image-1 {
+          width: 28.4em;
+          height: 37.4em;
+          left: calc(50% + 43em);
+          top: 22.8em; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left .image-2 {
+          width: 39em;
+          height: 39.4em;
+          left: calc(50% + 37.4em);
+          top: 54em;
+          transform: translate(-50%, -50%); } }
+  @media screen and (max-width: 767px) {
+    .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component {
+      /* Left */
+      /* Right */ }
+      .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left {
+        padding-top: 86vw; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left .image-0 {
+          width: 100vw;
+          height: 65.70048309vw;
+          left: 0;
+          top: 0;
+          z-index: 4; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left .image-1 {
+          width: 36.23188406vw;
+          height: 47.34299517vw;
+          right: 0;
+          top: 28.98550725vw;
+          z-index: 5; }
+        .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-left .image-2 {
+          width: 70vw;
+          height: 70vw;
+          left: 49vw;
+          top: 41vw;
+          transform: translate(-50%, -50%);
+          z-index: 6; }
+      .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right .image-0 {
+        width: 84.5410628vw;
+        height: 57.00483092vw;
+        left: -17.14975845vw;
+        top: 0;
+        z-index: 5; }
+      .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right .image-1 {
+        width: 43.96135266vw;
+        height: 57.00483092vw;
+        right: 0;
+        top: 12.31884058vw;
+        z-index: 4; }
+      .\.17mF3Q\/src\/app\/blocks\/push-texts-images\/styles\.scss-component.position-right .image-2 {
+        width: 98vw;
+        height: 98vw;
+        left: 49vw;
+        top: 31vw;
+        transform: translate(-50%, -50%);
+        z-index: 6; } }
+
+.\.Z1FEYDy\/src\/app\/blocks\/push-texts-images\/styles\.scss-title {
+  display: block;
+  font-weight: bold;
+  font-size: 3.4em;
+  font-family: "Medium"; }
+  @media screen and (max-width: 767px) {
+    .\.Z1FEYDy\/src\/app\/blocks\/push-texts-images\/styles\.scss-title {
+      font-size: 3em;
+      line-height: 1.1em; } }
+
+.\.Z2vlJrz\/src\/app\/blocks\/push-texts-images\/styles\.scss-subtitle {
+  display: block;
+  font-size: 4.8em;
+  font-family: "Title";
+  margin-top: -.1em; }
+  @media screen and (max-width: 767px) {
+    .\.Z2vlJrz\/src\/app\/blocks\/push-texts-images\/styles\.scss-subtitle {
+      font-size: 4.4em; } }
+
+.\.Z1UfQlW\/src\/app\/blocks\/push-texts-images\/styles\.scss-button {
+  margin-top: 1.75em; }
+
+.\.Z1FFuyK\/src\/app\/blocks\/push-texts-images\/styles\.scss-texts {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .\.Z1FFuyK\/src\/app\/blocks\/push-texts-images\/styles\.scss-texts {
+      width: 35em;
+      padding-top: 12em; } }
+  @media screen and (max-width: 767px) {
+    .\.Z1FFuyK\/src\/app\/blocks\/push-texts-images\/styles\.scss-texts {
+      padding: 0 9%; } }
+
+.\.Z1GoiFu\/src\/app\/blocks\/push-texts-images\/styles\.scss-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .\.Z1GoiFu\/src\/app\/blocks\/push-texts-images\/styles\.scss-image.image-2 {
+    background-size: contain; }
+
+/* Themes */
+.red .\.Z2vlJrz\/src\/app\/blocks\/push-texts-images\/styles\.scss-subtitle {
+  color: #e6002c; }
+
+.green .\.Z2vlJrz\/src\/app\/blocks\/push-texts-images\/styles\.scss-subtitle {
+  color: #00ab2e; }
+
+.yellow .\.Z2vlJrz\/src\/app\/blocks\/push-texts-images\/styles\.scss-subtitle {
+  color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Button */
+.\.224rgJ\/src\/app\/components\/button\/styles\.scss-component {
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 0.6em 2.1em;
+  border-radius: 2em;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Medium";
+  border: 2px solid transparent;
+  transition: border .2s, background .2s, color .2s;
+  cursor: pointer; }
+  .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.red {
+    background: #e6002c;
+    color: #fff; }
+    .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.red:hover {
+      border-color: #e6002c;
+      color: #e6002c;
+      background: #fff; }
+  .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.white-red {
+    background: #fff;
+    color: #1F1F1F; }
+    .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.white-red:hover {
+      border-color: #fff;
+      background: #fff;
+      color: #e6002c; }
+  .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.green {
+    background: #00ab2e;
+    color: #fff; }
+    .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.green:hover {
+      border-color: #00ab2e;
+      color: #00ab2e;
+      background: #fff; }
+  .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.white-green {
+    background: #fff;
+    color: #1F1F1F; }
+    .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.white-green:hover {
+      border-color: #fff;
+      background: #fff;
+      color: #00ab2e; }
+  .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.yellow {
+    background: #faba32;
+    color: #fff; }
+    .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.yellow:hover {
+      border-color: #faba32;
+      color: #faba32;
+      background: #fff; }
+  .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.white-yellow {
+    background: #fff;
+    color: #1F1F1F; }
+    .\.224rgJ\/src\/app\/components\/button\/styles\.scss-component.white-yellow:hover {
+      border-color: #fff;
+      background: #fff;
+      color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Search */
+.\.Z2vptdm\/src\/app\/blocks\/search\/styles\.scss-component h2 {
+  font-size: 1.6em;
+  font-family: "Bold";
+  padding: 1.7em 0 1em 0; }
+
+.\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters {
+  background: #FAF4EA;
+  position: relative; }
+  .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters ul {
+    padding-bottom: 4em; }
+    @media screen and (max-width: 767px) {
+      .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters ul {
+        padding-bottom: 2em; } }
+  .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-family: "Medium";
+    display: inline-block;
+    background: #fff;
+    padding: 0.6em 2.1em;
+    border-radius: 2em;
+    margin: 0 .6em .6em 0;
+    cursor: pointer; }
+    @media screen and (max-width: 767px) {
+      .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li {
+        font-size: 1.3em; } }
+    .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.ZLvGzM\/src\/app\/blocks\/search\/styles\.scss-moreTags {
+      text-indent: -9999px;
+      white-space: nowrap;
+      width: 2.6669em;
+      padding: 0.6em 0;
+      height: 2.6669em;
+      margin: 0;
+      background: #fff no-repeat center;
+      background-size: 40%; }
+
+.\.2lkyP9\/src\/app\/blocks\/search\/styles\.scss-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/img/blocks/slider-1/background.jpg");
+  background-size: 256px 256px;
+  width: 100%;
+  height: 100%;
+  opacity: .1; }
+
+.\.ZmlMPE\/src\/app\/blocks\/search\/styles\.scss-content {
+  max-width: 100em;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  width: 100vw; }
+  @media screen and (max-width: 767px) {
+    .\.ZmlMPE\/src\/app\/blocks\/search\/styles\.scss-content {
+      padding: 0 9%;
+      width: auto; } }
+
+.\.Z1Tz8m2\/src\/app\/blocks\/search\/styles\.scss-sort {
+  font-family: "Bold";
+  padding-top: 1.6em;
+  z-index: 5; }
+  .\.Z1Tz8m2\/src\/app\/blocks\/search\/styles\.scss-sort .\.1L25Xb\/src\/app\/blocks\/search\/styles\.scss-label {
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 0 1em .5em 0; }
+    @media screen and (max-width: 767px) {
+      .\.Z1Tz8m2\/src\/app\/blocks\/search\/styles\.scss-sort .\.1L25Xb\/src\/app\/blocks\/search\/styles\.scss-label {
+        font-size: 1.4em; } }
+  .\.Z1Tz8m2\/src\/app\/blocks\/search\/styles\.scss-sort .\.1Lwx7L\/src\/app\/blocks\/search\/styles\.scss-space {
+    word-spacing: .7em; }
+    @media screen and (max-width: 767px) {
+      .\.Z1Tz8m2\/src\/app\/blocks\/search\/styles\.scss-sort .\.1Lwx7L\/src\/app\/blocks\/search\/styles\.scss-space {
+        word-spacing: .5em; } }
+
+.\.1KRolI\/src\/app\/blocks\/search\/styles\.scss-items {
+  margin-top: 7em;
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 767px) {
+    .\.1KRolI\/src\/app\/blocks\/search\/styles\.scss-items {
+      margin-top: 3.5em; } }
+
+.\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 29%;
+  margin-bottom: 9em;
+  margin-right: 6.5em;
+  position: relative;
+  cursor: pointer; }
+  .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item:after {
+    content: " ";
+    margin-top: .2em;
+    display: block;
+    width: 6.6em;
+    height: 0.8em;
+    background: #e6002c;
+    border-radius: 6px; }
+  @media screen and (min-width: 768px) {
+    .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item:nth-child(3n+3) {
+      margin-right: 0; } }
+  @media screen and (max-width: 767px) {
+    .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item {
+      width: 46%;
+      margin-right: 8%; }
+      .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item:nth-child(2n+2) {
+        margin-right: 0; } }
+  .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item:after {
+    position: absolute;
+    bottom: 0; }
+  .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item:hover .\.1KwhD8\/src\/app\/blocks\/search\/styles\.scss-illustration div {
+    transform: scale(1.05); }
+  .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item a, .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item span {
+    font-family: "Bold";
+    font-size: 1.8em;
+    color: #1f1f1f;
+    text-decoration: none;
+    margin: 2.5em 0 1.5em 0;
+    display: inline-block; }
+    @media screen and (max-width: 767px) {
+      .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item a, .\.Z1TAqeK\/src\/app\/blocks\/search\/styles\.scss-item span {
+        margin: 1.5em 0 1em 0;
+        font-size: 1.7em; } }
+
+.\.1KwhD8\/src\/app\/blocks\/search\/styles\.scss-illustration {
+  width: 100%;
+  height: 44em;
+  overflow: hidden; }
+  @media screen and (max-width: 767px) {
+    .\.1KwhD8\/src\/app\/blocks\/search\/styles\.scss-illustration {
+      height: 57vw; } }
+  .\.1KwhD8\/src\/app\/blocks\/search\/styles\.scss-illustration div {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform .35s; }
+
+.\.Z1TzUox\/src\/app\/blocks\/search\/styles\.scss-more {
+  text-align: center;
+  margin-top: -4em;
+  margin-bottom: 8em; }
+
+/* Themes */
+.red .\.1KRolI\/src\/app\/blocks\/search\/styles\.scss-items li:after {
+  background: #e6002c; }
+
+.red .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li:hover {
+  color: #e6002c; }
+
+.red .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.Z1oGsCy\/src\/app\/blocks\/search\/styles\.scss-active {
+  color: #fff;
+  background-color: #e6002c; }
+
+.red .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.ZLvGzM\/src\/app\/blocks\/search\/styles\.scss-moreTags {
+  background-image: url("/img/plus-red.svg"); }
+  .red .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.ZLvGzM\/src\/app\/blocks\/search\/styles\.scss-moreTags:hover {
+    background-color: #e6002c;
+    background-image: url("/img/plus-white.svg"); }
+
+.green .\.1KRolI\/src\/app\/blocks\/search\/styles\.scss-items li:after {
+  background: #00ab2e; }
+
+.green .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li:hover {
+  color: #00ab2e; }
+
+.green .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.Z1oGsCy\/src\/app\/blocks\/search\/styles\.scss-active {
+  color: #fff;
+  background-color: #00ab2e; }
+
+.green .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.ZLvGzM\/src\/app\/blocks\/search\/styles\.scss-moreTags {
+  background-image: url("/img/plus-green.svg"); }
+  .green .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.ZLvGzM\/src\/app\/blocks\/search\/styles\.scss-moreTags:hover {
+    background-color: #00ab2e;
+    background-image: url("/img/plus-white.svg"); }
+
+.yellow .\.1KRolI\/src\/app\/blocks\/search\/styles\.scss-items li:after {
+  background: #faba32; }
+
+.yellow .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li:hover {
+  color: #faba32; }
+
+.yellow .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.Z1oGsCy\/src\/app\/blocks\/search\/styles\.scss-active {
+  color: #fff;
+  background-color: #faba32; }
+
+.yellow .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.ZLvGzM\/src\/app\/blocks\/search\/styles\.scss-moreTags {
+  background-image: url("/img/plus-yellow.svg"); }
+  .yellow .\.Z2uMKe0\/src\/app\/blocks\/search\/styles\.scss-filters li.\.ZLvGzM\/src\/app\/blocks\/search\/styles\.scss-moreTags:hover {
+    background-color: #faba32;
+    background-image: url("/img/plus-white.svg"); }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Component select */
+.\.ZkYrG1\/src\/app\/components\/select\/styles\.scss-component {
+  display: inline-block;
+  position: relative;
+  user-select: none;
+  white-space: nowrap;
+  text-align: left; }
+  .\.ZkYrG1\/src\/app\/components\/select\/styles\.scss-component.\.29KQRf\/src\/app\/components\/select\/styles\.scss-open .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list {
+    display: block; }
+  .\.ZkYrG1\/src\/app\/components\/select\/styles\.scss-component.\.29KQRf\/src\/app\/components\/select\/styles\.scss-open .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select span {
+    transform: rotate(90deg);
+    background-position: 0.7em 0.63em; }
+
+.\.1eED4V\/src\/app\/components\/select\/styles\.scss-select {
+  display: inline-block;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  display: inline-block;
+  background: #fff;
+  padding: 0.6em 2.1em;
+  padding-right: 3.5em;
+  border-radius: 2em;
+  cursor: pointer;
+  position: relative;
+  font-family: "Medium"; }
+  @media screen and (max-width: 767px) {
+    .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select {
+      font-size: 1.4em; } }
+  .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select span {
+    display: block;
+    width: 2.6em;
+    height: 2.6em;
+    background: url("/img/blocks/slider-1/arrow.svg") no-repeat 0.63em 0.63em;
+    background-size: auto 1.4em;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    border-radius: 100%;
+    transform: rotate(-90deg); }
+
+.\.29Kra3\/src\/app\/components\/select\/styles\.scss-list {
+  position: absolute;
+  top: 5em;
+  left: 1.4em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 2.4em 3.5em;
+  border-radius: 2em;
+  background: #fff;
+  display: none;
+  z-index: 6; }
+  @media screen and (max-width: 767px) {
+    .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list {
+      left: 0.2em; } }
+  .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li {
+    margin-bottom: 1.2em;
+    font-size: 1.5em;
+    font-family: "Regular";
+    cursor: pointer; }
+    .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li.\.Cke0N\/src\/app\/components\/select\/styles\.scss-active {
+      font-family: "Bold"; }
+    .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li:last-child {
+      margin-bottom: 0; }
+
+/* Themes */
+.grey-red .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select {
+  background: #F5F1F0; }
+
+.red .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select span {
+  background-color: #e6002c; }
+
+.red .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li.\.Cke0N\/src\/app\/components\/select\/styles\.scss-active, .red .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li:hover {
+  color: #e6002c; }
+
+.grey-green .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select {
+  background: #F5F1F0; }
+
+.green .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select span {
+  background-color: #00ab2e; }
+
+.green .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li.\.Cke0N\/src\/app\/components\/select\/styles\.scss-active, .green .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li:hover {
+  color: #00ab2e; }
+
+.grey-yellow .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select {
+  background: #F5F1F0; }
+
+.yellow .\.1eED4V\/src\/app\/components\/select\/styles\.scss-select span {
+  background-color: #faba32; }
+
+.yellow .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li.\.Cke0N\/src\/app\/components\/select\/styles\.scss-active, .yellow .\.29Kra3\/src\/app\/components\/select\/styles\.scss-list li:hover {
+  color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Search Recipe */
+.\.2lDpJj\/src\/app\/blocks\/search-recipe\/styles\.scss-component h2 {
+  font-size: 1.6em;
+  font-family: "Bold";
+  display: block; }
+
+.\.3po90\/src\/app\/blocks\/search-recipe\/styles\.scss-filters {
+  background: #FAF4EA;
+  position: relative;
+  z-index: 10; }
+
+.\.Z26AH7H\/src\/app\/blocks\/search-recipe\/styles\.scss-filterContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 7em 0; }
+  @media screen and (max-width: 767px) {
+    .\.Z26AH7H\/src\/app\/blocks\/search-recipe\/styles\.scss-filterContent.\.2bQlwl\/src\/app\/blocks\/search-recipe\/styles\.scss-content {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      display: block; } }
+
+.\.bD0Pd\/src\/app\/blocks\/search-recipe\/styles\.scss-filterTitle {
+  font-size: 1.6em;
+  font-family: "Bold";
+  display: block;
+  margin-bottom: 1.4em; }
+  @media screen and (max-width: 767px) {
+    .\.bD0Pd\/src\/app\/blocks\/search-recipe\/styles\.scss-filterTitle {
+      display: none; } }
+
+.\.umFsg\/src\/app\/blocks\/search-recipe\/styles\.scss-filterItem {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .\.umFsg\/src\/app\/blocks\/search-recipe\/styles\.scss-filterItem {
+      text-align: center; } }
+  @media screen and (max-width: 767px) {
+    .\.umFsg\/src\/app\/blocks\/search-recipe\/styles\.scss-filterItem {
+      display: inline-block; } }
+
+@media screen and (min-width: 768px) {
+  .\.MgMEa\/src\/app\/blocks\/search-recipe\/styles\.scss-filterSelect {
+    margin-left: 5em; } }
+
+@media screen and (max-width: 767px) {
+  .\.MgMEa\/src\/app\/blocks\/search-recipe\/styles\.scss-filterSelect {
+    margin-top: 1.2em;
+    margin-right: 1.2em; } }
+
+.\.MgMEa\/src\/app\/blocks\/search-recipe\/styles\.scss-filterSelect .select-label {
+  min-width: 10.1em; }
+
+.\.1t2iiU\/src\/app\/blocks\/search-recipe\/styles\.scss-sortSelect .select-label {
+  min-width: 10.1em; }
+
+@media screen and (min-width: 768px) {
+  .\.umB9x\/src\/app\/blocks\/search-recipe\/styles\.scss-filterIcon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    position: absolute; }
+    .\.umB9x\/src\/app\/blocks\/search-recipe\/styles\.scss-filterIcon.\.ZnmBqA\/src\/app\/blocks\/search-recipe\/styles\.scss-when {
+      width: 4.2em;
+      height: 4.1em;
+      background-image: url("/img/blocks/search-recipe/when.svg"); }
+    .\.umB9x\/src\/app\/blocks\/search-recipe\/styles\.scss-filterIcon.\.Znn083\/src\/app\/blocks\/search-recipe\/styles\.scss-time {
+      width: 3.4em;
+      height: 3.8em;
+      background-image: url("/img/blocks/search-recipe/time.svg"); }
+    .\.umB9x\/src\/app\/blocks\/search-recipe\/styles\.scss-filterIcon.\.ZzuD9G\/src\/app\/blocks\/search-recipe\/styles\.scss-difficulty {
+      width: 4.1em;
+      height: 4em;
+      background-image: url("/img/blocks/search-recipe/difficulty.svg"); }
+    .\.umB9x\/src\/app\/blocks\/search-recipe\/styles\.scss-filterIcon.\.GLMRr\/src\/app\/blocks\/search-recipe\/styles\.scss-product {
+      width: 4.1em;
+      height: 4.1em;
+      background-image: url("/img/blocks/search-recipe/product.svg"); } }
+
+.\.Kla5W\/src\/app\/blocks\/search-recipe\/styles\.scss-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/img/blocks/slider-1/background.jpg");
+  background-size: 256px 256px;
+  width: 100%;
+  height: 100%;
+  opacity: .1; }
+
+.\.2bQlwl\/src\/app\/blocks\/search-recipe\/styles\.scss-content {
+  max-width: 100em;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  width: 100vw; }
+  @media screen and (max-width: 767px) {
+    .\.2bQlwl\/src\/app\/blocks\/search-recipe\/styles\.scss-content {
+      padding: 0 9%;
+      width: auto; } }
+
+.\.Znn6x7\/src\/app\/blocks\/search-recipe\/styles\.scss-sort {
+  font-family: "Bold";
+  padding-top: 1.6em;
+  z-index: 5; }
+  .\.Znn6x7\/src\/app\/blocks\/search-recipe\/styles\.scss-sort .\.Z1HPpPH\/src\/app\/blocks\/search-recipe\/styles\.scss-label {
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 0 1em .5em 0; }
+    @media screen and (max-width: 767px) {
+      .\.Znn6x7\/src\/app\/blocks\/search-recipe\/styles\.scss-sort .\.Z1HPpPH\/src\/app\/blocks\/search-recipe\/styles\.scss-label {
+        font-size: 1.4em; } }
+  .\.Znn6x7\/src\/app\/blocks\/search-recipe\/styles\.scss-sort .\.Z1HkXG7\/src\/app\/blocks\/search-recipe\/styles\.scss-space {
+    word-spacing: .7em; }
+    @media screen and (max-width: 767px) {
+      .\.Znn6x7\/src\/app\/blocks\/search-recipe\/styles\.scss-sort .\.Z1HkXG7\/src\/app\/blocks\/search-recipe\/styles\.scss-space {
+        word-spacing: .5em; } }
+
+.\.Z1I07sa\/src\/app\/blocks\/search-recipe\/styles\.scss-items {
+  margin-top: 7em;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 768px) {
+    .\.Z1I07sa\/src\/app\/blocks\/search-recipe\/styles\.scss-items {
+      padding: 0 5em; } }
+  @media screen and (max-width: 767px) {
+    .\.Z1I07sa\/src\/app\/blocks\/search-recipe\/styles\.scss-items {
+      margin-top: 3.5em;
+      padding: 0 5%; } }
+
+@media screen and (min-width: 768px) {
+  .\.ZnoopP\/src\/app\/blocks\/search-recipe\/styles\.scss-item {
+    margin: 0 7.5em 7em 0; }
+    .\.ZnoopP\/src\/app\/blocks\/search-recipe\/styles\.scss-item:nth-child(3n+3) {
+      margin-right: 0; } }
+
+@media screen and (max-width: 767px) {
+  .\.ZnoopP\/src\/app\/blocks\/search-recipe\/styles\.scss-item {
+    margin-bottom: 3em; } }
+
+.\.Uxtl4\/src\/app\/blocks\/search-recipe\/styles\.scss-noResults {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: "Medium";
+  padding: 3em 0 8em 0; }
+
+.\.ZnnSzC\/src\/app\/blocks\/search-recipe\/styles\.scss-more {
+  text-align: center;
+  margin-bottom: 8em; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Card */
+@media screen and (max-width: 767px) {
+  .\.Z1d9c47\/src\/app\/components\/card\/styles\.scss-container {
+    width: 50%; } }
+
+.\.Z2nzauO\/src\/app\/components\/card\/styles\.scss-component {
+  background: #fff;
+  width: 25em;
+  height: 45em;
+  border-radius: 3em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin: auto; }
+  .\.Z2nzauO\/src\/app\/components\/card\/styles\.scss-component:hover .\.1YENDW\/src\/app\/components\/card\/styles\.scss-illustration {
+    transform: scale(1.05); }
+  @media screen and (max-width: 767px) {
+    .\.Z2nzauO\/src\/app\/components\/card\/styles\.scss-component {
+      width: 16.5em;
+      height: 30em; } }
+
+.\.kzsVC\/src\/app\/components\/card\/styles\.scss-content {
+  background: #fff;
+  min-height: 20em;
+  position: relative;
+  z-index: 3; }
+  @media screen and (max-width: 767px) {
+    .\.kzsVC\/src\/app\/components\/card\/styles\.scss-content {
+      min-height: 13em; } }
+
+.\.2qGGQD\/src\/app\/components\/card\/styles\.scss-border {
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  position: absolute;
+  background: url("/img/components/card/border.svg") no-repeat;
+  background-size: 100% 100%;
+  bottom: -1.65em;
+  z-index: 2; }
+
+.\.Z2261R3\/src\/app\/components\/card\/styles\.scss-title {
+  font-size: 2.8em;
+  padding: .8em 1em 2em 1em;
+  line-height: 1em; }
+  @media screen and (max-width: 767px) {
+    .\.Z2261R3\/src\/app\/components\/card\/styles\.scss-title {
+      font-size: 1.7em;
+      font-family: "Medium";
+      padding: 1em 1em 2.5em 1em; } }
+
+.\.1YENDW\/src\/app\/components\/card\/styles\.scss-illustration {
+  width: 100%;
+  height: 25em;
+  position: absolute;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  transition: transform .25s; }
+
+.\.ZI1MCp\/src\/app\/components\/card\/styles\.scss-tags {
+  display: flex;
+  margin: 0 .2em;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 1.2em;
+  width: 100%; }
+  @media screen and (max-width: 767px) {
+    .\.ZI1MCp\/src\/app\/components\/card\/styles\.scss-tags {
+      bottom: .9em; } }
+  .\.ZI1MCp\/src\/app\/components\/card\/styles\.scss-tags li {
+    font-size: 1.6em;
+    background-color: #f5f1f0;
+    padding: .5em 1.5em;
+    border-radius: 20px; }
+    @media screen and (max-width: 767px) {
+      .\.ZI1MCp\/src\/app\/components\/card\/styles\.scss-tags li {
+        font-size: 1.2em;
+        padding: .4em 1.3em; } }
+
+.\.TGam7\/src\/app\/components\/card\/styles\.scss-dificulty {
+  color: #fff; }
+  .\.TGam7\/src\/app\/components\/card\/styles\.scss-dificulty::first-letter {
+    text-transform: uppercase; }
+  .\.TGam7\/src\/app\/components\/card\/styles\.scss-dificulty.facile {
+    background-color: #00aa2e; }
+  .\.TGam7\/src\/app\/components\/card\/styles\.scss-dificulty.moyen {
+    background-color: #fcb832; }
+  .\.TGam7\/src\/app\/components\/card\/styles\.scss-dificulty.difficile {
+    background-color: #fc7432; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Slider 1 */
+.\.1JKBDr\/src\/app\/blocks\/slider-1\/styles\.scss-component {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .\.1JKBDr\/src\/app\/blocks\/slider-1\/styles\.scss-component {
+      height: 52.4em; } }
+
+.\.2lMMnK\/src\/app\/blocks\/slider-1\/styles\.scss-background {
+  background: url("/img/blocks/slider-1/background.jpg");
+  background-size: 256px 256px;
+  opacity: .1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none; }
+
+.\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts {
+  color: #fff; }
+  @media screen and (min-width: 768px) {
+    .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts {
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      left: calc(50% - 50.9em);
+      transform: translateY(-50%);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 700ms; } }
+  @media screen and (max-width: 767px) {
+    .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts {
+      display: none;
+      padding: 3em 13% 6.5em 13%; } }
+  @media screen and (min-width: 768px) {
+    .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts.\.Z2tIu6z\/src\/app\/blocks\/slider-1\/styles\.scss-focus {
+      opacity: 1;
+      pointer-events: initial; } }
+  @media screen and (max-width: 767px) {
+    .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts.\.Z2tIu6z\/src\/app\/blocks\/slider-1\/styles\.scss-focus {
+      display: block; } }
+  .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts h2 {
+    font-family: "Title";
+    font-size: 7.4em;
+    line-height: .7em;
+    margin-bottom: .1em;
+    margin-top: .1em; }
+    @media screen and (min-width: 768px) {
+      .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts h2 {
+        width: 4.8em; } }
+    @media screen and (max-width: 767px) {
+      .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts h2 {
+        font-size: 6.5em; } }
+  .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts .\.Z2wYWSS\/src\/app\/blocks\/slider-1\/styles\.scss-body {
+    font-size: 1.8em;
+    margin-bottom: 1.6em; }
+    @media screen and (min-width: 768px) {
+      .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts .\.Z2wYWSS\/src\/app\/blocks\/slider-1\/styles\.scss-body {
+        width: 18em; } }
+  .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts .\.ZCRAuP\/src\/app\/blocks\/slider-1\/styles\.scss-legals {
+    margin-top: 2em;
+    font-size: 1.2em; }
+    @media screen and (min-width: 768px) {
+      .\.Z2sNK4n\/src\/app\/blocks\/slider-1\/styles\.scss-texts .\.ZCRAuP\/src\/app\/blocks\/slider-1\/styles\.scss-legals {
+        width: 28em; } }
+
+@media screen and (min-width: 768px) {
+  .\.Z17fvxP\/src\/app\/blocks\/slider-1\/styles\.scss-illustration {
+    height: 100%;
+    width: 73.6em;
+    display: block;
+    position: absolute;
+    left: calc(50% - 16em); } }
+
+@media screen and (max-width: 767px) {
+  .\.Z17fvxP\/src\/app\/blocks\/slider-1\/styles\.scss-illustration {
+    height: 94.20289855vw;
+    position: relative; } }
+
+.\.Z17fvxP\/src\/app\/blocks\/slider-1\/styles\.scss-illustration svg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 700ms; }
+  @media screen and (max-width: 767px) {
+    .\.Z17fvxP\/src\/app\/blocks\/slider-1\/styles\.scss-illustration svg {
+      left: 50%;
+      transform: translateX(-50%); } }
+  .\.Z17fvxP\/src\/app\/blocks\/slider-1\/styles\.scss-illustration svg.\.Z2tIu6z\/src\/app\/blocks\/slider-1\/styles\.scss-focus {
+    opacity: 1;
+    pointer-events: initial; }
+
+.\.Z2wYGK6\/src\/app\/blocks\/slider-1\/styles\.scss-dots {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%); }
+  @media screen and (max-width: 767px) {
+    .\.Z2wYGK6\/src\/app\/blocks\/slider-1\/styles\.scss-dots {
+      bottom: 18%; } }
+
+.\.Z2wX71S\/src\/app\/blocks\/slider-1\/styles\.scss-prev, .\.Z2wXqeO\/src\/app\/blocks\/slider-1\/styles\.scss-next {
+  position: absolute;
+  top: calc(50% - 2em);
+  left: 6em; }
+  @media screen and (max-width: 767px) {
+    .\.Z2wX71S\/src\/app\/blocks\/slider-1\/styles\.scss-prev, .\.Z2wXqeO\/src\/app\/blocks\/slider-1\/styles\.scss-next {
+      left: 6%; } }
+
+.\.Z2wXqeO\/src\/app\/blocks\/slider-1\/styles\.scss-next {
+  left: auto;
+  right: 6em; }
+  @media screen and (max-width: 767px) {
+    .\.Z2wXqeO\/src\/app\/blocks\/slider-1\/styles\.scss-next {
+      right: 6%; } }
+
+/* Themes */
+.red.\.1JKBDr\/src\/app\/blocks\/slider-1\/styles\.scss-component {
+  background: #e6002c; }
+
+.green.\.1JKBDr\/src\/app\/blocks\/slider-1\/styles\.scss-component {
+  background: #00ab2e; }
+
+.yellow.\.1JKBDr\/src\/app\/blocks\/slider-1\/styles\.scss-component {
+  background: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Button arrow */
+.\.ZSSsq1\/src\/app\/components\/buttonArrow\/styles\.scss-prev, .\.ZSSLCW\/src\/app\/components\/buttonArrow\/styles\.scss-next {
+  background: #e6002c url("/img/blocks/slider-1/arrow.svg") no-repeat 1.3em 1.2em;
+  background-size: auto 1.6em;
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform .2s; }
+  .\.ZSSsq1\/src\/app\/components\/buttonArrow\/styles\.scss-prev:hover, .\.ZSSLCW\/src\/app\/components\/buttonArrow\/styles\.scss-next:hover {
+    transform: scale(1.1); }
+
+.\.ZSSLCW\/src\/app\/components\/buttonArrow\/styles\.scss-next {
+  transform: rotate(-180deg); }
+  .\.ZSSLCW\/src\/app\/components\/buttonArrow\/styles\.scss-next:hover {
+    transform: scale(1.1) rotate(-180deg); }
+
+/* Themes */
+.red .\.ZSSsq1\/src\/app\/components\/buttonArrow\/styles\.scss-prev, .red .\.ZSSLCW\/src\/app\/components\/buttonArrow\/styles\.scss-next {
+  background-color: #e6002c; }
+
+.green .\.ZSSsq1\/src\/app\/components\/buttonArrow\/styles\.scss-prev, .green .\.ZSSLCW\/src\/app\/components\/buttonArrow\/styles\.scss-next {
+  background-color: #00ab2e; }
+
+.yellow .\.ZSSsq1\/src\/app\/components\/buttonArrow\/styles\.scss-prev, .yellow .\.ZSSLCW\/src\/app\/components\/buttonArrow\/styles\.scss-next {
+  background-color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Component Dots */
+.\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots {
+  width: 100%;
+  text-align: center;
+  /* Themes */ }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots > span {
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer; }
+    .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots > span span {
+      display: block;
+      background: transparent;
+      border: 2px solid transparent;
+      width: 1.3em;
+      height: 1.3em;
+      border-radius: 100%;
+      transition: background .2s, border .2s; }
+    .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus {
+      cursor: auto; }
+      .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus span {
+        background: transparent;
+        border: 2px solid transparent; }
+    .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots > span:hover span {
+      border: 2px solid transparent; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.red > span span {
+    background: #dadada;
+    border-color: #dadada; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.red > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus span {
+    background: #e6002c;
+    border-color: #e6002c; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.red > span:hover span {
+    background: #e6002c;
+    border: 2px solid #e6002c; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-red > span span {
+    background: #fff;
+    border-color: #fff; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-red > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus span {
+    background-color: #e6002c;
+    border-color: #e6002c; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-red > span:hover span {
+    border-color: #e6002c; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.green > span span {
+    background: #dadada;
+    border-color: #dadada; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.green > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus span {
+    background: #00ab2e;
+    border-color: #00ab2e; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.green > span:hover span {
+    background: #00ab2e;
+    border: 2px solid #00ab2e; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-green > span span {
+    background: #fff;
+    border-color: #fff; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-green > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus span {
+    background-color: #00ab2e;
+    border-color: #00ab2e; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-green > span:hover span {
+    border-color: #00ab2e; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.yellow > span span {
+    background: #dadada;
+    border-color: #dadada; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.yellow > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus span {
+    background: #faba32;
+    border-color: #faba32; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.yellow > span:hover span {
+    background: #faba32;
+    border: 2px solid #faba32; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-yellow > span span {
+    background: #fff;
+    border-color: #fff; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-yellow > span.\.Z1EOU7X\/src\/app\/components\/dots\/styles\.scss-focus span {
+    background-color: #faba32;
+    border-color: #faba32; }
+  .\.Z1wlaoF\/src\/app\/components\/dots\/styles\.scss-dots.white-yellow > span:hover span {
+    border-color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Slider 2 */
+.\.Z1QwvYo\/src\/app\/blocks\/slider-2\/styles\.scss-component {
+  background: #FAF4EA;
+  padding: 8em 0; }
+  @media screen and (max-width: 767px) {
+    .\.Z1QwvYo\/src\/app\/blocks\/slider-2\/styles\.scss-component {
+      padding: 4.5em 0 3em 0;
+      margin-bottom: 4em; } }
+  .\.Z1QwvYo\/src\/app\/blocks\/slider-2\/styles\.scss-component h2 {
+    font-size: 3.4em;
+    font-family: "Medium"; }
+    .\.Z1QwvYo\/src\/app\/blocks\/slider-2\/styles\.scss-component h2:after {
+      content: " ";
+      margin-top: .2em;
+      display: block;
+      width: 1.94118em;
+      height: 0.23529em;
+      background: #e6002c;
+      border-radius: 6px; }
+    @media screen and (max-width: 767px) {
+      .\.Z1QwvYo\/src\/app\/blocks\/slider-2\/styles\.scss-component h2 {
+        font-size: 3em; }
+        .\.Z1QwvYo\/src\/app\/blocks\/slider-2\/styles\.scss-component h2:after {
+          content: " ";
+          margin-top: .2em;
+          display: block;
+          width: 2.2em;
+          height: 0.26667em;
+          background: #e6002c;
+          border-radius: 6px; } }
+
+.\.1Svnud\/src\/app\/blocks\/slider-2\/styles\.scss-content > p {
+  font-size: 1.8em;
+  margin-top: .8em; }
+
+@media screen and (min-width: 768px) {
+  .\.1Svnud\/src\/app\/blocks\/slider-2\/styles\.scss-content {
+    width: 100vw;
+    max-width: 100em;
+    margin: auto; } }
+
+@media screen and (max-width: 767px) {
+  .\.1Svnud\/src\/app\/blocks\/slider-2\/styles\.scss-content {
+    margin: 0 3em; } }
+
+.\.1AG4cA\/src\/app\/blocks\/slider-2\/styles\.scss-items {
+  margin: 3em 4.5em 0 4.5em;
+  height: 28em;
+  position: relative; }
+  @media screen and (max-width: 767px) {
+    .\.1AG4cA\/src\/app\/blocks\/slider-2\/styles\.scss-items {
+      margin: 3em 0 0 0;
+      height: 38em; } }
+
+.\.1mcm5m\/src\/app\/blocks\/slider-2\/styles\.scss-item {
+  display: inline-block;
+  width: 45.5em;
+  height: 28em; }
+  @media screen and (max-width: 767px) {
+    .\.1mcm5m\/src\/app\/blocks\/slider-2\/styles\.scss-item {
+      width: 100%;
+      height: 38em; } }
+
+.\.Z150Q8p\/src\/app\/blocks\/slider-2\/styles\.scss-illustration {
+  height: 100%;
+  width: 31em;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -4em; }
+  @media screen and (max-width: 767px) {
+    .\.Z150Q8p\/src\/app\/blocks\/slider-2\/styles\.scss-illustration {
+      left: 50%;
+      width: 80%;
+      transform: translateX(-50%);
+      background-position: center; } }
+
+.\.1Bor6A\/src\/app\/blocks\/slider-2\/styles\.scss-title {
+  font-family: "Title";
+  font-size: 9em;
+  line-height: 0.68em;
+  position: absolute;
+  top: calc(50% - 0.3em);
+  transform: translateY(-50%);
+  left: 2.2em;
+  text-indent: 0.15em; }
+  @media screen and (max-width: 767px) {
+    .\.1Bor6A\/src\/app\/blocks\/slider-2\/styles\.scss-title {
+      font-size: 5.5em;
+      top: 0;
+      left: 0em;
+      transform: none; } }
+
+.\.Z1qY9h4\/src\/app\/blocks\/slider-2\/styles\.scss-button {
+  position: absolute;
+  top: 13.8em;
+  left: 18em; }
+  @media screen and (max-width: 767px) {
+    .\.Z1qY9h4\/src\/app\/blocks\/slider-2\/styles\.scss-button {
+      left: 0;
+      top: 22em;
+      z-index: 1; } }
+
+/* Themes */
+.red h2:after {
+  background: #e6002c; }
+
+.green h2:after {
+  background: #00ab2e; }
+
+.yellow h2:after {
+  background: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Slider n */
+.\.ZTNtls\/src\/app\/components\/slider-n\/styles\.scss-transition .\.Z2ptkyu\/src\/app\/components\/slider-n\/styles\.scss-item {
+  transition: opacity .25s, transform .5s, left .5s; }
+
+.\.Z2ptkyu\/src\/app\/components\/slider-n\/styles\.scss-item {
+  position: absolute; }
+
+.\.Z2psq2d\/src\/app\/components\/slider-n\/styles\.scss-prev, .\.Z2psJf9\/src\/app\/components\/slider-n\/styles\.scss-next {
+  position: absolute;
+  top: calc(50% - 2em);
+  left: -4em; }
+  @media screen and (max-width: 767px) {
+    .\.Z2psq2d\/src\/app\/components\/slider-n\/styles\.scss-prev, .\.Z2psJf9\/src\/app\/components\/slider-n\/styles\.scss-next {
+      left: 0; } }
+
+.\.Z2psJf9\/src\/app\/components\/slider-n\/styles\.scss-next {
+  left: auto;
+  right: -4em; }
+  @media screen and (max-width: 767px) {
+    .\.Z2psJf9\/src\/app\/components\/slider-n\/styles\.scss-next {
+      right: 0; } }
+
+.\.Z2pu0Kq\/src\/app\/components\/slider-n\/styles\.scss-dots {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  bottom: -6em; }
+  @media screen and (max-width: 767px) {
+    .\.Z2pu0Kq\/src\/app\/components\/slider-n\/styles\.scss-dots {
+      bottom: -5em; } }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Slider 3 */
+.\.ZnCvNi\/src\/app\/blocks\/slider-3\/styles\.scss-component {
+  background: #FAF4EA;
+  padding: 8em 0; }
+  @media screen and (max-width: 767px) {
+    .\.ZnCvNi\/src\/app\/blocks\/slider-3\/styles\.scss-component {
+      padding: 4.5em 0 1em 0;
+      margin-bottom: 1em; } }
+  .\.ZnCvNi\/src\/app\/blocks\/slider-3\/styles\.scss-component h2 {
+    font-size: 3.4em;
+    font-family: "Medium"; }
+    .\.ZnCvNi\/src\/app\/blocks\/slider-3\/styles\.scss-component h2:after {
+      content: " ";
+      margin-top: .2em;
+      display: block;
+      width: 1.94118em;
+      height: 0.23529em;
+      background: #e6002c;
+      border-radius: 6px; }
+    @media screen and (max-width: 767px) {
+      .\.ZnCvNi\/src\/app\/blocks\/slider-3\/styles\.scss-component h2 {
+        font-size: 3em; }
+        .\.ZnCvNi\/src\/app\/blocks\/slider-3\/styles\.scss-component h2:after {
+          content: " ";
+          margin-top: .2em;
+          display: block;
+          width: 2.2em;
+          height: 0.26667em;
+          background: #e6002c;
+          border-radius: 6px; } }
+
+.\.28LvYh\/src\/app\/blocks\/slider-3\/styles\.scss-content > p {
+  font-size: 1.8em;
+  margin-top: .8em; }
+
+@media screen and (min-width: 768px) {
+  .\.28LvYh\/src\/app\/blocks\/slider-3\/styles\.scss-content {
+    width: 100vw;
+    max-width: 100em;
+    margin: auto; } }
+
+@media screen and (max-width: 767px) {
+  .\.28LvYh\/src\/app\/blocks\/slider-3\/styles\.scss-content {
+    margin: 0 3em; } }
+
+.\.AGBDq\/src\/app\/blocks\/slider-3\/styles\.scss-items {
+  margin: 9em 4.5em 0 4.5em;
+  height: 45em;
+  position: relative;
+  padding: 0 5em; }
+  @media screen and (max-width: 767px) {
+    .\.AGBDq\/src\/app\/blocks\/slider-3\/styles\.scss-items {
+      margin: 3em -4%;
+      padding: 0 0em;
+      height: 30em;
+      width: 108%; } }
+
+/* Themes */
+.red h2:after {
+  background: #e6002c; }
+
+.green h2:after {
+  background: #00ab2e; }
+
+.yellow h2:after {
+  background: #faba32; }
+
+/*
+ * Mixins
+ */
+/* Block Push */
+.\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock {
+  height: 40.4em;
+  width: 83em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2.5em;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 4.7em;
+  margin-bottom: 16em; }
+  @media screen and (max-width: 767px) {
+    .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock {
+      width: unset;
+      height: 29.6em;
+      background-position: center;
+      padding: 0em 2em; } }
+  .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock div {
+    align-self: flex-end;
+    padding-bottom: 4.5em;
+    max-width: 40.4em; }
+    @media screen and (max-width: 767px) {
+      .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock div {
+        padding-bottom: 2.5em; } }
+  .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock .\.Z1vGCjy\/src\/app\/blocks\/push\/styles\.scss-title {
+    font-size: 2.2em; }
+    @media screen and (max-width: 767px) {
+      .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock .\.Z1vGCjy\/src\/app\/blocks\/push\/styles\.scss-title {
+        font-size: 1.5em; } }
+  .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock .\.1B7jGb\/src\/app\/blocks\/push\/styles\.scss-subtitle {
+    font-size: 3.6em;
+    text-transform: uppercase; }
+    @media screen and (max-width: 767px) {
+      .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component .\.2uNmd2\/src\/app\/blocks\/push\/styles\.scss-pushBlock .\.1B7jGb\/src\/app\/blocks\/push\/styles\.scss-subtitle {
+        font-size: 1.8em; } }
+
+@media screen and (max-width: 767px) {
+  .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component {
+    padding: 0em 2.4em; }
+    .\.1Maa2R\/src\/app\/blocks\/push\/styles\.scss-component a {
+      font-size: 1.3em;
+      padding: 0.6em 0.7em;
+      white-space: nowrap;
+      margin-left: 1em; } }
+
+/*
+ * Mixins
+ */
+.\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component {
+  max-width: 100em;
+  width: 100vw;
+  margin: auto;
+  min-height: 51em;
+  position: relative;
+  margin-bottom: 16.1em;
+  /* Left */
+  /* Right */ }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.Z2vqOVY\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-image {
+    position: absolute;
+    background-size: cover;
+    background-position: center; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts {
+    left: 60%; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .image-0 {
+    width: 79.1em;
+    height: 52.5em;
+    right: 45%;
+    top: 0; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .image-1 {
+    width: 27.5em;
+    height: 35.3em;
+    right: 45%;
+    top: 26.3em; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .\.LTUfB\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-titleContainer {
+    left: 60%; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts {
+    left: 0%; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .image-0 {
+    width: 79.1em;
+    height: 52.5em;
+    left: 45%;
+    top: 0; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .image-1 {
+    width: 27.5em;
+    height: 35.3em;
+    left: 45%;
+    top: 26.3em; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .\.LTUfB\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-titleContainer {
+    left: 0%; }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.LTUfB\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-titleContainer {
+    position: relative;
+    right: 0px;
+    top: 8em; }
+    .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.LTUfB\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-titleContainer .\.2pTBYA\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-underline {
+      height: 0.6em;
+      width: 6em;
+      border-radius: 2em;
+      margin-bottom: 1.7em; }
+    .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.LTUfB\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-titleContainer .\.Z2uHvU3\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-title {
+      font-size: 3.6em;
+      text-transform: uppercase; }
+    @media screen and (max-width: 767px) {
+      .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.LTUfB\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-titleContainer {
+        position: initial;
+        padding: 0em 3.7em; }
+        .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.LTUfB\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-titleContainer .\.Z2uHvU3\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-title {
+          font-size: 3em; } }
+  .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts {
+    width: 35em;
+    position: relative;
+    padding-top: 10em; }
+    .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts .\.Z2x3HGC\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-body, .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts .\.Z1YD3u2\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-subtitle {
+      font-size: 1.8em;
+      margin-bottom: 1em; }
+    .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts .\.Z1YD3u2\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-subtitle {
+      font-family: "Medium"; }
+  @media screen and (max-width: 767px) {
+    .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component {
+      margin-bottom: 8em; }
+      .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .\.Z1x1011\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-imageContainer, .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .\.Z1x1011\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-imageContainer {
+        position: relative; }
+      .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .image-0, .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .image-0 {
+        position: initial;
+        width: 100vw;
+        height: 27em; }
+      .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .image-1, .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .image-1 {
+        width: 14.4em;
+        height: 18.5em;
+        right: 0;
+        left: unset;
+        top: 50%; }
+      .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-right .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts, .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component.position-left .\.Z2uI1Pf\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-texts {
+        left: 0px;
+        padding: 10em 3.7em 0em 3.7em;
+        margin: auto; }
+      .\.1XXylO\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-component .\.Z1UxwDw\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-button {
+        margin-left: 0.8em; } }
+
+/* Themes */
+.red .\.2pTBYA\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-underline {
+  background-color: #e6002c; }
+
+.green .\.2pTBYA\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-underline {
+  background-color: #00ab2e; }
+
+.yellow .\.2pTBYA\/src\/app\/blocks\/push-texts-images-compact\/styles\.scss-underline {
+  background-color: #faba32; }
+
+/*
+ * Mixins
+ */
+.\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component {
+  min-height: 74.7em;
+  background-color: #FAF4EA; }
+  .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.Z2n5icp\/src\/app\/blocks\/social\/styles\.scss-container {
+    max-width: 100em;
+    margin: auto;
+    padding: 8em 0em;
+    height: 100%; }
+  .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.1jHUKN\/src\/app\/blocks\/social\/styles\.scss-title {
+    font-size: 3.6em;
+    text-transform: uppercase;
+    margin: auto; }
+  .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.1XBUNA\/src\/app\/blocks\/social\/styles\.scss-underline {
+    height: 0.6em;
+    width: 6em;
+    border-radius: 2em;
+    margin-bottom: 8em; }
+  .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.1iYBIR\/src\/app\/blocks\/social\/styles\.scss-image {
+    width: 100%;
+    height: 31.6em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.j1Iyh\/src\/app\/blocks\/social\/styles\.scss-social {
+    display: flex;
+    flex-wrap: wrap; }
+    .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.j1Iyh\/src\/app\/blocks\/social\/styles\.scss-social .\.ZdPAOG\/src\/app\/blocks\/social\/styles\.scss-vignette {
+      width: 32.3em;
+      height: 40.5em;
+      border-radius: 2.5em;
+      background-color: #fff;
+      overflow: hidden;
+      margin-bottom: 1.6em; }
+      .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.j1Iyh\/src\/app\/blocks\/social\/styles\.scss-social .\.ZdPAOG\/src\/app\/blocks\/social\/styles\.scss-vignette:nth-child(3n+2) {
+        margin: 0 1.5em 1.6em 1.5em; }
+    .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.j1Iyh\/src\/app\/blocks\/social\/styles\.scss-social .\.ZfFMcA\/src\/app\/blocks\/social\/styles\.scss-button {
+      font-size: 1.8em;
+      text-decoration: none;
+      color: black;
+      align-self: center; }
+    .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.j1Iyh\/src\/app\/blocks\/social\/styles\.scss-social .\.ZahxzA\/src\/app\/blocks\/social\/styles\.scss-buttonContainer {
+      display: flex;
+      height: calc(100% - 31.6em);
+      padding: 0 2em; }
+    .\.1wFRaO\/src\/app\/blocks\/social\/styles\.scss-component .\.j1Iyh\/src\/app\/blocks\/social\/styles\.scss-social img {
+      object-fit: contain;
+      margin-right: 1.8em; }
+
+/* Themes */
+.red .\.1XBUNA\/src\/app\/blocks\/social\/styles\.scss-underline {
+  background-color: #e6002c; }
+
+.green .\.1XBUNA\/src\/app\/blocks\/social\/styles\.scss-underline {
+  background-color: #00ab2e; }
+
+.yellow .\.1XBUNA\/src\/app\/blocks\/social\/styles\.scss-underline {
+  background-color: #faba32; }
+
+/*
+ * Mixins
+ */
+.\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component {
+  padding-top: 14em;
+  max-width: 100em;
+  margin: auto;
+  height: auto;
+  position: relative; }
+  .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Zrbmjw\/src\/app\/blocks\/product-description\/styles\.scss-background {
+    position: absolute;
+    top: 0;
+    font-family: "Title";
+    font-size: 25em;
+    color: #f5f1f0;
+    font-style: italic;
+    pointer-events: none;
+    z-index: -1;
+    left: 5%; }
+    @media screen and (max-width: 767px) {
+      .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Zrbmjw\/src\/app\/blocks\/product-description\/styles\.scss-background {
+        font-size: 10.3em;
+        top: 0.2em; } }
+  .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2cgQby\/src\/app\/blocks\/product-description\/styles\.scss-title {
+    font-size: 3.6em;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+    margin-top: 1.5em; }
+    @media screen and (max-width: 767px) {
+      .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2cgQby\/src\/app\/blocks\/product-description\/styles\.scss-title {
+        font-size: 3em; } }
+  .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.26bdpE\/src\/app\/blocks\/product-description\/styles\.scss-underline {
+    height: 0.6em;
+    width: 6em;
+    border-radius: 2em;
+    margin-bottom: 1.7em; }
+    @media screen and (max-width: 767px) {
+      .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.26bdpE\/src\/app\/blocks\/product-description\/styles\.scss-underline {
+        margin-bottom: 3.4em; } }
+  .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container {
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 47.6em;
+    justify-content: space-between; }
+    .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container div {
+      width: 28.5em;
+      align-self: center; }
+    .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container .\.2waPhl\/src\/app\/blocks\/product-description\/styles\.scss-description .\.ZIo7L5\/src\/app\/blocks\/product-description\/styles\.scss-body, .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container .\.Z2ckE14\/src\/app\/blocks\/product-description\/styles\.scss-recette .\.28bUCd\/src\/app\/blocks\/product-description\/styles\.scss-hintBody {
+      font-size: 1.8em; }
+    .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container .\.2waPhl\/src\/app\/blocks\/product-description\/styles\.scss-description .\.Z223Ytl\/src\/app\/blocks\/product-description\/styles\.scss-weight {
+      font-size: 1.6em;
+      font-family: "Bold";
+      margin-top: 1.4em; }
+    .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container .\.Z2ckE14\/src\/app\/blocks\/product-description\/styles\.scss-recette .\.4EpeH\/src\/app\/blocks\/product-description\/styles\.scss-hintTitle {
+      font-size: 1.9em;
+      text-transform: uppercase;
+      font-family: "Bold";
+      text-align: center;
+      margin-bottom: 1.2em; }
+    .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container svg {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 1.3em; }
+    .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container .\.Z25P06e\/src\/app\/blocks\/product-description\/styles\.scss-mobileImage {
+      display: none;
+      height: 30.3em;
+      max-width: 31.1em;
+      background-size: cover;
+      background-position: center; }
+    @media screen and (max-width: 767px) {
+      .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container {
+        display: block;
+        background-image: none !important;
+        height: unset; }
+        .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container .\.Z25P06e\/src\/app\/blocks\/product-description\/styles\.scss-mobileImage {
+          display: block;
+          margin-bottom: 3.5em; }
+        .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container .\.2waPhl\/src\/app\/blocks\/product-description\/styles\.scss-description {
+          margin-bottom: 4em; }
+        .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component .\.Z2fw0Al\/src\/app\/blocks\/product-description\/styles\.scss-container div {
+          margin: auto; } }
+  @media screen and (max-width: 767px) {
+    .\.1Ef9LS\/src\/app\/blocks\/product-description\/styles\.scss-component {
+      padding: 2.6em 2.4em 0 2.4em; } }
+
+/* Themes */
+.red .\.26bdpE\/src\/app\/blocks\/product-description\/styles\.scss-underline {
+  background-color: #e6002c; }
+
+.green .\.26bdpE\/src\/app\/blocks\/product-description\/styles\.scss-underline {
+  background-color: #00ab2e; }
+
+.yellow .\.26bdpE\/src\/app\/blocks\/product-description\/styles\.scss-underline {
+  background-color: #faba32; }
+
+/* Config */
+
+/*
+ * Mixins
+ */
+/* Block Text */
+@media screen and (min-width: 768px) {
+  .\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component {
+    max-width: 100em;
+    width: 100vw;
+    margin: 0 auto 10em auto; }
+    .\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component.position-right {
+      padding-left: 42.5em; } }
+
+@media screen and (max-width: 767px) {
+  .\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component {
+    margin: 0 9% 4em 9%; } }
+
+.\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component h2 {
+  font-size: 3.4em;
+  text-transform: uppercase;
+  font-family: "Medium";
+  margin-bottom: .9em; }
+  .\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component h2:after {
+    content: " ";
+    margin-top: .2em;
+    display: block;
+    width: 1.94118em;
+    height: 0.23529em;
+    background: #e6002c;
+    border-radius: 6px; }
+  @media screen and (min-width: 768px) {
+    .\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component h2 {
+      width: 12em; } }
+  @media screen and (max-width: 767px) {
+    .\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component h2 {
+      font-size: 3em; } }
+
+.\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component p {
+  font-size: 1.8em; }
+  @media screen and (min-width: 768px) {
+    .\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component p {
+      width: 31.7em; } }
+
+/* Themes */
+.red.\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component h2:after {
+  background-color: #e6002c; }
+
+.green.\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component h2:after {
+  background-color: #00ab2e; }
+
+.yellow.\.Z2rfqQn\/src\/app\/blocks\/text\/styles\.scss-component h2:after {
+  background-color: #faba32; }
+
+/*
+ * Mixins
+ */
+.\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component {
+  width: 100em;
+  margin: auto;
+  margin-bottom: 4.7em; }
+  .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.2ebu0S\/src\/app\/blocks\/recipe-header\/styles\.scss-background {
+    position: absolute;
+    top: 0.1em;
+    font-family: "Title";
+    font-size: 16.5em;
+    color: #f5f1f0;
+    font-style: italic;
+    pointer-events: none;
+    z-index: -1; }
+    @media screen and (max-width: 767px) {
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.2ebu0S\/src\/app\/blocks\/recipe-header\/styles\.scss-background {
+        display: none; } }
+  .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z1D009Q\/src\/app\/blocks\/recipe-header\/styles\.scss-title {
+    font-size: 3.4em;
+    text-transform: uppercase;
+    max-width: 10.2em; }
+    .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z1D009Q\/src\/app\/blocks\/recipe-header\/styles\.scss-title:after {
+      content: " ";
+      margin-top: .2em;
+      display: block;
+      width: 1.94118em;
+      height: 0.23529em;
+      background: #e6002c;
+      border-radius: 6px; }
+    @media screen and (max-width: 767px) {
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z1D009Q\/src\/app\/blocks\/recipe-header\/styles\.scss-title {
+        font-size: 3em; } }
+  .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe {
+    display: flex;
+    margin-top: 3.5em; }
+    .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe div {
+      display: flex; }
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe div p {
+        align-self: center;
+        font-size: 1.8em;
+        font-family: 'Bold';
+        margin-left: 0.83em; }
+        @media screen and (max-width: 767px) {
+          .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe div p {
+            margin-left: 0.43em; } }
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe div .\.ZwqkBT\/src\/app\/blocks\/recipe-header\/styles\.scss-dificulty {
+        margin-left: calc(0.83em - 0.55em); }
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe div img {
+        align-self: center; }
+    .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe .\.2hvUY5\/src\/app\/blocks\/recipe-header\/styles\.scss-dificultyContainer {
+      margin: 0em 6.8em; }
+      @media screen and (max-width: 767px) {
+        .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe .\.2hvUY5\/src\/app\/blocks\/recipe-header\/styles\.scss-dificultyContainer {
+          margin: unset;
+          order: 2; } }
+    @media screen and (max-width: 767px) {
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe {
+        margin-top: 3em;
+        display: inherit; }
+        .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe .\.ZSSbKN\/src\/app\/blocks\/recipe-header\/styles\.scss-whenContainer {
+          margin-bottom: 1.6em; }
+        .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z6Iepx\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipe .\.u8R0Y\/src\/app\/blocks\/recipe-header\/styles\.scss-hintRecipeOption {
+          justify-content: space-between; } }
+  .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.1AEO7T\/src\/app\/blocks\/recipe-header\/styles\.scss-whenIcone {
+    height: 3.7em; }
+    @media screen and (max-width: 767px) {
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.1AEO7T\/src\/app\/blocks\/recipe-header\/styles\.scss-whenIcone {
+        height: 2.7em; } }
+  .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.MK08c\/src\/app\/blocks\/recipe-header\/styles\.scss-dificultyIcone {
+    height: 3.7em;
+    margin-right: 1em; }
+    @media screen and (max-width: 767px) {
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.MK08c\/src\/app\/blocks\/recipe-header\/styles\.scss-dificultyIcone {
+        height: 2.7em;
+        margin-right: 0.2em; } }
+  .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z29rm8e\/src\/app\/blocks\/recipe-header\/styles\.scss-timeIcone {
+    height: 3.2em; }
+    @media screen and (max-width: 767px) {
+      .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component .\.Z29rm8e\/src\/app\/blocks\/recipe-header\/styles\.scss-timeIcone {
+        height: 2.2em; } }
+  @media screen and (max-width: 767px) {
+    .\.1fusk6\/src\/app\/blocks\/recipe-header\/styles\.scss-component {
+      padding: 0em 2.4em;
+      width: 100vw; } }
+
+/*
+ * Mixins
+ */
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
