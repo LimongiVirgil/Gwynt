@@ -137,7 +137,8 @@ html {
 /* //// CLASSE //// */
 
 .classe {
-  background: url("/images/gwyntBackground.jpg");
+  //background: url("/images/gwyntBackground.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/images/gwyntBackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -183,24 +184,68 @@ html {
     }
 
     .infoCard {
-      width: calc(100vw - 30vw);
+      width: 100vw;
       height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.705);
+      background-color: rgba(0, 0, 0, 0.795);
       text-align: center;
-      padding: 0px 15vw;
+
+      .close {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+      }
+
+      .close:hover {
+        opacity: 1;
+      }
+
+      .close:before, .close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 4px;
+        background-color: white;
+      }
+
+      .close:before {
+        transform: rotate(45deg);
+      }
+
+      .close:after {
+        transform: rotate(-45deg);
+      }      
       
       img {
         margin-top: 10%;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         width: 230px;
       }
   
       p {
-        color: white;
-        font-size: 20px;
+        color: #B28D41;
+        font-size: 18px;
+
+        &:first-child {
+          font-size: 20px;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+      }
+
+      .infoCardText {
+        background-color: black;
+        width: 60%;
+        margin: auto;
+        border-top: 2px solid rgba(85, 85, 85, 0.527);
+        border-bottom: 2px solid rgba(85, 85, 85, 0.527);
+        padding: 20px 10px;
       }
     }
   }

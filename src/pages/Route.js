@@ -5,6 +5,7 @@ import Home from './Home';
 import Class from './Class';
 
 function Routes() {
+
   return (
     <BrowserRouter>
     <Switch>
