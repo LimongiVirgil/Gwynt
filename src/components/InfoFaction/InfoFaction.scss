@@ -1,6 +1,7 @@
 .infoDeck {
   //width: calc(100vw - ((170px + 20px) * 4 + 25px) * 2);
   width: auto;
+  align-self: center;
 
   .Neutre, .Monstres, .Skellige, .Nilfgaard, .ScoiaTael {
 		display: none;
@@ -10,5 +11,11 @@
     text-align: center;
     color: white;
     font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .infoTitle {
+    font-size: 18px;
+    margin-bottom: 5px;
   }
 }
