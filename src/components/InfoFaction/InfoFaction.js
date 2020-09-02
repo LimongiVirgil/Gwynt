@@ -15,15 +15,10 @@ function InfoFaction(props) {
 	// Otherwise, convert the localStorage string to an array
 	existing = existing ? existing.split(',') : [];
 
-<<<<<<< HEAD
 	var special = document.querySelector(`.${props.faction} .speciales`)
 
 	//var special = useRef(null);
 
-	console.log(special)
-
-=======
->>>>>>> e6a5b01e17f64e178a294af5599397c0068436d4
 	//Count number of heroe in deck
 	props.data.map((card, index) => {
 		if (existing.includes(card.id.toString())) {
@@ -39,7 +34,6 @@ function InfoFaction(props) {
 			power = power + card.power
 		}
 	})
-<<<<<<< HEAD
 	data.Neutre.map((card, index) => {
 		if (existing.includes(card.id.toString())) {
 			if (card.effect1 === "heroe") {
@@ -53,13 +47,7 @@ function InfoFaction(props) {
 			}
 			power = power + card.power
 		}
-		
-		if (speciales === 10) {
-			//special.style.color = "red"
-		}
 	})
-=======
->>>>>>> e6a5b01e17f64e178a294af5599397c0068436d4
 
 	return(
 		<div className={props.faction + ' faction'}>
@@ -68,11 +56,7 @@ function InfoFaction(props) {
 			<p className="infoTitle">Nombre de cartes d'unités</p>
 			<p className="unites">{unites}</p>
 			<p className="infoTitle">Cartes Spéciales</p>
-<<<<<<< HEAD
 			<p className="speciales" ref={special}>{speciales} / 10</p>
-=======
-			<p className="speciales">{speciales} / 10</p>
->>>>>>> e6a5b01e17f64e178a294af5599397c0068436d4
 			<p className="infoTitle">Force total de la carte Unité</p>
 			<p className="power">{power}</p>
 			<p className="infoTitle">Carte Héros</p>
