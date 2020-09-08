@@ -1,0 +1,131 @@
+.chiefImg img {
+	border-radius: 6px 10px 13px 12px;
+  width: 140px;
+  height: auto;
+  margin: auto;
+  //display: block;
+  cursor: pointer;
+}
+
+.chiefGallery {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.795);
+  // display: flex;
+  // overflow-x: auto;
+
+  .sliderContainer {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+
+  .close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    opacity: 1;
+  }
+
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    background-color: white;
+  }
+
+  .close:before {
+    transform: rotate(45deg);
+  }
+
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+  .slider {
+    display: flex;
+    // overflow-x: auto;
+  }
+
+  .chiefImgs {
+    /* margin: 0 50px;
+    align-self: center;
+    min-width: 300px; */
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      border-radius: 6px 10px 13px 12px;
+      width: 170px;
+      height: auto;
+      cursor: pointer;
+      margin: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .infoCardText {
+      visibility: hidden;
+      background-color: black;
+      width: 60%;
+      border-top: 2px solid rgba(85, 85, 85, 0.527);
+      border-bottom: 2px solid rgba(85, 85, 85, 0.527);
+      padding: 20px 10px;
+      margin: auto;
+
+      p {
+        color: #B28D41;
+        font-size: 18px;
+
+        &:first-child {
+          font-size: 20px;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .slick-current.slick-slide + .slick-slide img{
+    transform: translateX(-330%);
+    transition: transform 0.5s ease;
+  }
+
+  .slick-current.slick-slide[aria-hidden=false] img {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+  }
+
+  .slick-track > .slick-slide img {
+    transform: translateX(330%);
+    transition: transform 0.5s ease;
+  }
+
+  .slick-current {
+  
+    img {
+      width: 200px;
+    }
+
+    .infoCardText {
+      visibility: visible;
+    }
+  }
+
+  /* .slick-track .slick-center img{
+    width: 200px;
+  } */
+}

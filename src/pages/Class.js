@@ -31,7 +31,7 @@ export default Class => {
       </ul>
       <div className="mainContainer">
         <div className="deck">
-          <h2>Collection</h2>
+          <h2>Collection de cartes</h2>
           <CardList data={data.Nordling} faction="Nordling"/>
           <CardList data={data.Nilfgaard} faction="Nilfgaard"/>
           <CardList data={data.Monstres} faction="Monstres"/>
@@ -46,7 +46,7 @@ export default Class => {
           <InfoFaction data={data.Skellige} faction="Skellige"/>
         </div>
         <div className="mainDeck">
-          <h2>Jeu</h2>
+          <h2>Cartes du jeu</h2>
           <DeckList data={data.Nordling} faction="Nordling"/>
           <DeckList data={data.Nilfgaard} faction="Nilfgaard"/>
           <DeckList data={data.Monstres} faction="Monstres"/>
