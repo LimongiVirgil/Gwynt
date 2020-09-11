@@ -197,7 +197,7 @@ function DeckList(props) {
 	}
 
 	return(
-		<div className={props.faction + ' faction'}>
+		<div active={props.active} className={props.faction + ' faction'}>
 			{data.Neutre.map((card, index) =>
 				existing.includes(card.id.toString()) ? <img key={index} onDoubleClick={deckClick} onContextMenu={infoCardNeutre} id={card.id} src={card.image_url} alt="carte" /> : null
 			)}

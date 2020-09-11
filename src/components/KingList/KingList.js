@@ -16,6 +16,8 @@ function KingList(props) {
 	// Otherwise, convert the localStorage string to an array
 	existing = existing ? existing.split(',') : [];
 
+	console.log(existing)
+
 	const handleCardClick = (e) => {
 		if (factionName === "Nordling") {
 			const nordlingChief = ["202", "203", "204", "205"];
@@ -62,8 +64,8 @@ function KingList(props) {
 	};
 
 	return(
-		<div className={props.faction + ' faction'}>
-			<p>Chef</p>
+		<div className={props.faction + ' faction ' + 'kingList'}>
+			<p className="title" >Chef</p>
 			<div className="chiefImg">
 				{props.data.map((card, index) =>
 					(card.effect1 === 'king' && existing.includes(card.id.toString())) ? <img key={index} id={card.id} onClick={() => setOpen(true)} src={card.image_url} alt="carte" /> : null
