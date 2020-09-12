@@ -48,17 +48,25 @@ function Musics() {
 		}
 	}
 
+	const fullScreen = () => {
+    var fullScreen = document.querySelector('html')
+    fullScreen.requestFullscreen()
+  }
+
 	return(
-		<div className="audio">
-			{volume &&
-				<img onClick={handleClick} src="./images/speaker.svg" alt="mute button"/>
-			}
-			{volume === false && 
-				<img onClick={handleClick} src="./images/mute.svg" alt="mute button"/>
-			}
-			<audio ref={audio} onEnded={newMusic} className="sound-elements">
-				<source ref={sound} src=""></source>
-			</audio>
+		<div className="icon">
+			<img onClick={fullScreen} src="./images/fullscreen.svg" alt='fullscreen button'/>
+			<div className="audio">
+				{volume &&
+					<img onClick={handleClick} src="./images/speaker.svg" alt="mute button"/>
+				}
+				{volume === false && 
+					<img onClick={handleClick} src="./images/mute.svg" alt="mute button"/>
+				}
+				<audio ref={audio} onEnded={newMusic} className="sound-elements">
+					<source ref={sound} src=""></source>
+				</audio>
+			</div>
 		</div>
 	)
 }
