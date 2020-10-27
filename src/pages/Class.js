@@ -1,11 +1,12 @@
-import React, {useEffect, useCallback, useState} from 'react';
+import React, {useEffect, useCallback, useRef} from 'react';
 import data from '../cards.json'
 import CardList from '../components/CardList/CardList'
 import DeckList from '../components/DeckList/DeckList'
 import InfoFaction from '../components/InfoFaction/InfoFaction'
 
 export default Class => {
-  const [isOpen, setIsOpen] = useState(false);
+
+  const popup = useRef(null)
   
   useEffect(() => {
     document.addEventListener("keydown", enterFunction, false);
@@ -27,8 +28,7 @@ export default Class => {
         localStorage.setItem("faction", faction);
         window.location.pathname = '/game'
       } else {
-        alert('Votre deck doit contenir entre 25 et 40 cartes')
-        //setIsOpen(!isOpen)
+        popup.current.style.display = "block"
       }
   }
 
@@ -108,14 +108,12 @@ export default Class => {
         <div>Enter</div>
         <p>Pour commencer</p>
       </div>
-      {isOpen && 
-        <div className="warning" onClick={() => setIsOpen(false)}>
-          <div href="#" className="close" />
-          <div className="border">
-            <p>Votre deck doit contenir entre 25 et 40 cartes</p>
-          </div>
+      <div ref={popup} className="warning" onClick={() => popup.current.style.display = "none"}>
+        <div href="#" className="close" />
+        <div className="border">
+          <p>Votre deck doit contenir entre 25 et 40 cartes</p>
         </div>
-      }
+      </div>
     </div>
   );
 }
