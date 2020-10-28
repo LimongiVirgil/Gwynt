@@ -4,6 +4,7 @@ import data from '../cards.json'
 
 //Components
 import HandDeck from '../components/inGame/HandDeck'
+import StockCard from '../components/inGame/StockCard'
 
 export default Game => {
 
@@ -25,8 +26,6 @@ export default Game => {
     cards[j] = x;
   }
 
-  console.log(cards)
-
   //Concat Neutra card and choosen faction
   var concatData = data.Neutre.concat(data[getFaction])
 
@@ -44,6 +43,9 @@ export default Game => {
 
   return (
     <div className="game">
+      <div className="stockCard">
+        <StockCard faction={getFaction}/>
+      </div>
       <HandDeck shuffledCards={cards} concatData={concatData}/>
     </div>
   );
