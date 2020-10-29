@@ -105,6 +105,8 @@ export default Class => {
         </div>
       </div>
       <div className="command">
+        <img src="./images/mouseRight.svg" alt="mouse right click" />
+        <p>Infos Cartes</p>
         <div>Enter</div>
         <p>Pour commencer</p>
       </div>
