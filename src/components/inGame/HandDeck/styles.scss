@@ -1,20 +1,25 @@
 .handDeck {
   display: flex;
   position: relative;
-  top: 87.5%;
-  left: 115px;
-  justify-content: center;
+  top: 88%;
+  left: 60px;
+  justify-content: space-between;
+  width: calc(100% - 60px);
 
   img {
     width: 105px;
     border-radius: 6px 10px 13px 12px;
-    margin-left: -10px;
+    margin-left: -10%;
     transition: transform 0.3s ease;
     cursor: pointer;
 
     &:hover {
       transform: translateY(-10px);
       box-shadow: 0px 0px 15px #ffac00;
+    }
+
+    &:first-child {
+      margin-left: 0;
     }
   }
 }

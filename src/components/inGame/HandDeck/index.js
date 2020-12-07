@@ -5,7 +5,6 @@ import data from '../../../cards.json'
 export default function HandDeck({shuffledCards, concatData}) {
 
   var sliced = shuffledCards.slice(0, 10)
-  console.log(shuffledCards)
 
   return (
     <div className="handDeck">

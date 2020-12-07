@@ -16,8 +16,6 @@ function KingList(props) {
 	// Otherwise, convert the localStorage string to an array
 	existing = existing ? existing.split(',') : [];
 
-	console.log(existing)
-
 	const handleCardClick = (e) => {
 		if (factionName === "Nordling") {
 			const nordlingChief = ["202", "203", "204", "205"];

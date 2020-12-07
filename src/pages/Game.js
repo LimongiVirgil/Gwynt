@@ -1,12 +1,14 @@
 import React, {useEffect, useCallback, useState} from 'react';
 import data from '../cards.json'
-
+import './game.scss'
 
 //Components
 import HandDeck from '../components/inGame/HandDeck'
 import StockCard from '../components/inGame/StockCard'
 
 export default Game => {
+
+  const [stock, setStock] = useState(null)
 
   //King Card
   var _chiefCard;
@@ -17,6 +19,10 @@ export default Game => {
 
   var cards = getCards ? getCards.split(',') : window.location.pathname = '/class';
 
+  //Stock cards
+  console.log(getFaction)
+  console.log(getCards)
+
   //Shuffle cards
   var j, x, i;
   for (i = cards.length - 1; i > 0; i--) {
@@ -26,7 +32,7 @@ export default Game => {
     cards[j] = x;
   }
 
-  //Concat Neutra card and choosen faction
+  //Concat Neutral card and choosen faction
   var concatData = data.Neutre.concat(data[getFaction])
 
   //List of KingIds
@@ -43,10 +49,13 @@ export default Game => {
 
   return (
     <div className="game">
-      <div className="stockCard">
-        <StockCard faction={getFaction}/>
+      <div  className="score"></div>
+      <div className="gameArea">
+        <HandDeck shuffledCards={cards} concatData={concatData}/>
       </div>
-      <HandDeck shuffledCards={cards} concatData={concatData}/>
+      <div className="stockCard">
+        <StockCard faction={getFaction} stock={stock}/>
+      </div>
     </div>
   );
 }
