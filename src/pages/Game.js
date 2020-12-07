@@ -20,7 +20,6 @@ export default Game => {
   var cards = getCards ? getCards.split(',') : window.location.pathname = '/class';
 
   //Stock cards
-  console.log(getFaction)
   console.log(getCards)
 
   //Shuffle cards
