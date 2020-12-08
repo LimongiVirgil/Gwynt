@@ -5,10 +5,11 @@ import './game.scss'
 //Components
 import HandDeck from '../components/inGame/HandDeck'
 import StockCard from '../components/inGame/StockCard'
+import KingCard from '../components/inGame/KingCard'
 
 export default Game => {
 
-  const [stock, setStock] = useState(null)
+  const [stock, setStock] = useState(0)
 
   //King Card
   var _chiefCard;
@@ -18,9 +19,6 @@ export default Game => {
   var getCards = localStorage.getItem(getFaction);
 
   var cards = getCards ? getCards.split(',') : window.location.pathname = '/class';
-
-  //Stock cards
-  console.log(getCards)
 
   //Shuffle cards
   var j, x, i;
@@ -46,9 +44,17 @@ export default Game => {
     }
   })
 
+  useEffect(() => {
+    localStorage.setItem('shuffledDeck', cards);
+    var shuffledDeck = localStorage.getItem('shuffledDeck').split(',')
+    setStock(shuffledDeck.length)
+  }, []);
+
   return (
     <div className="game">
-      <div  className="score"></div>
+      <div  className="score">
+        <KingCard faction={getFaction} idKing={_chiefCard}/>
+      </div>
       <div className="gameArea">
         <HandDeck shuffledCards={cards} concatData={concatData}/>
       </div>
