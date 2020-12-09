@@ -4,4 +4,73 @@
   position: absolute;
   bottom: 105px;
   left: 37px;
+  cursor: pointer;
+}
+
+.infoCard {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.795);
+  text-align: center;
+
+  .close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    opacity: 1;
+  }
+
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    background-color: white;
+  }
+
+  .close:before {
+    transform: rotate(45deg);
+  }
+
+  .close:after {
+    transform: rotate(-45deg);
+  }      
+  
+  img {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    width: 230px;
+    border-radius: 6px 10px 13px 12px;
+  }
+
+  p {
+    color: #B28D41;
+    font-size: 18px;
+
+    &:first-child {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .infoCardText {
+    background-color: black;
+    width: 60%;
+    margin: auto;
+    border-top: 2px solid rgba(85, 85, 85, 0.527);
+    border-bottom: 2px solid rgba(85, 85, 85, 0.527);
+    padding: 20px 10px;
+  }
 }

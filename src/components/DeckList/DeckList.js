@@ -31,6 +31,8 @@ function DeckList(props) {
 		e.preventDefault()
 	}
 
+	////////////////////////////////
+
 	const deckClick = (e) => {
 		// Get name of faction
 		let parentClass = e.target.parentNode.className.split(' ')[0];

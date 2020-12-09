@@ -1,4 +1,4 @@
-import React, {useEffect, useCallback, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import data from '../cards.json'
 import './game.scss'
 
@@ -47,7 +47,7 @@ export default Game => {
   useEffect(() => {
     localStorage.setItem('shuffledDeck', cards);
     var shuffledDeck = localStorage.getItem('shuffledDeck').split(',')
-    setStock(shuffledDeck.length)
+    setStock(shuffledDeck.length - 10)
   }, []);
 
   return (
@@ -56,7 +56,7 @@ export default Game => {
         <KingCard faction={getFaction} idKing={_chiefCard}/>
       </div>
       <div className="gameArea">
-        <HandDeck shuffledCards={cards} concatData={concatData}/>
+        <HandDeck faction={getFaction} shuffledCards={cards} concatData={concatData}/>
       </div>
       <div className="stockCard">
         <StockCard faction={getFaction} stock={stock}/>
