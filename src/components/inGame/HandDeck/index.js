@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 import './styles.scss'
 import data from '../../../cards.json'
 
+//Import component
+import Delete2Card from '../Delet2Card'
+import { removeSliced } from '../../../tools/deckManagement'
+
 export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
 
   const [open, setOpen] = useState(false);
@@ -12,6 +16,14 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
   const [cardNameEffect, setCardNameEffect] = useState(false);
 
   var sliced = shuffledCards.slice(0, 10)
+
+  if (enemy) {
+    localStorage.setItem('slicedEnemyDeck', sliced);
+    removeSliced(shuffledCards, "deckEnemy")
+  } else {
+    localStorage.setItem('slicedDeck', sliced);
+    removeSliced(shuffledCards, "deck")
+  }
 
   var factionName; 
 
@@ -30,24 +42,23 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
 		e.preventDefault()
   }
 
-  console.log(shuffledCards)
-
   return (
     <>
-      <div className={["handDeck", enemy].join(' ')}>
+      {/* <div className={["handDeck", enemy].join(' ')}>
         {
           concatData.map((card, index) => {
             if (sliced.includes(card.id.toString()) && !enemy) {
-              return <img key={index} id={card.id} src={card.image_url} onContextMenu={infoCard} alt={cardName} />
+              return <img key={index} id={card.id} src={card.image_url} onContextMenu={infoCard} alt={card.name} />
             } else if (sliced.includes(card.id.toString()) && enemy) {
-              return <img key={index} src={`./images/${faction}/backface.jpg`} alt="carte du deck" />
+              return <img key={index} src={`./images/${faction}/backface.jpg`} alt={card.name} />
             }
           })
         }
-      </div>
+      </div> */}
+      {!enemy && <Delete2Card concatData={concatData} sliced={sliced}/>}
       { open && 
         <div className="infoCard">
-          <img src={cardUrl} alt="carte"/>
+          <img src={cardUrl} alt={cardName}/>
           <div href="#" className="close" onClick={() => setOpen(!open)}/>
           { cardNameEffect &&
             <div className="infoCardText">

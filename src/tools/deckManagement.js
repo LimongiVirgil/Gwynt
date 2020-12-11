@@ -28,3 +28,8 @@ export function shuffleCard(deck) {
 
   return deck
 }
+
+//Create deck (removing sliced card from local storage deck)
+export function removeSliced(shuffledDeck, nameLocal) {
+  localStorage.setItem(nameLocal, shuffledDeck.slice(10));
+}

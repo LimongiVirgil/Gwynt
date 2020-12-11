@@ -1,0 +1,58 @@
+.deckRemove {
+
+  &.infoCard {
+    .title {
+      margin-top: 35px;
+      font-family: "Pill";
+      font-size: 26px;
+      font-weight: lighter;
+      margin-bottom: 50px;
+    }
+
+    img {
+      margin: auto;
+      margin-bottom: 15%;
+      cursor: pointer;
+    }
+
+    .slick-arrow.slick-prev, .slick-arrow.slick-next {
+      z-index: 1;
+      top: 540px;
+    }
+
+    .slick-arrow.slick-prev {
+      left: 10px;
+    }
+
+    .slick-arrow.slick-next {
+      right: 10px;
+    }
+  }
+
+  .cardDesc:focus {
+    outline: none;
+  }
+
+  .cardDesc {
+    .infoCardText{
+      opacity: 0;
+      transition: opacity 0 ease;
+      width: 50vw;
+      position: relative;
+      left: 50%;
+    }
+  }
+
+  .slick-current {
+    position: relative;
+
+    img {
+      width: 240px;
+    }
+
+    .infoCardText {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+  }
+}

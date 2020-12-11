@@ -1,16 +1,60 @@
-.deck {
+.deckBoard {
   position: absolute;
-  //right: 0;
-  top: 56.5%;
+  right: 27%;
+  top: 57.7%;
 
   img {
     margin-left: 78px;
     width: 80px;
     border-radius: 6px 10px 13px 12px;
     cursor: help;
+    margin: auto;
+
+    &:hover {
+      box-shadow: 0px 0px 15px #ffac00;
+    }
+  }
+
+  .nbCard {
+    width: 40px;
+    height: 25px;
+    margin: auto;
+    position: relative;
+    top: -15px;
+
+    p {
+      font-family: "Pill";
+      font-weight: bold;
+      font-size: 25px;
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-45%);
+      color: white;
+    }
+
+    &.Monstres {
+      background-color: #7b221e;
+    }
+
+    &.ScoiaTael{
+      background-color: #257a1f;
+    }
+
+    &.Nilfgaard{
+      background-color: #352f2f;
+    }
+
+    &.Nordling{
+      background-color: #435aa0;
+    }
+
+    &.Skellige{
+      background-color: #67446c;
+    }
   }
 
   &.enemyStock {
-    top: 24%;
+    top: 24.9%;
   }
 }

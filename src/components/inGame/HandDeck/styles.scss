@@ -30,6 +30,11 @@
 
     img {
       transform: translateY(-200px) rotate(180deg);
+      cursor: inherit;
+
+      &:hover {
+        box-shadow: inherit;
+      }
     }
 
     &:hover img {

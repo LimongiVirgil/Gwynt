@@ -13,5 +13,13 @@
   .gameArea {
     width: 65%;
     position: relative;
+
+    .infoCard {
+      left: -20vw;
+    }
+  }
+
+  .infoCardText {
+    font-family: "Pill";
   }
 }

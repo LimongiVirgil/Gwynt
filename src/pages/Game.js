@@ -66,6 +66,7 @@ export default Game => {
   return (
     <div className="game">
       <div  className="score">
+        <KingCard faction={enemyDeck.faction} idKing={enemyDeck.king} enemy='enemyKing'/>
         <KingCard faction={getFaction} idKing={_chiefCard}/>
       </div>
       <div className="gameArea">

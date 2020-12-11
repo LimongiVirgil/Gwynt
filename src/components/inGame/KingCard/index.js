@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import './styles.scss';
 import data from '../../../cards.json'
 
-export default function KingCard({faction, idKing}) {
+export default function KingCard({faction, idKing, enemy}) {
 
   const [open, setOpen] = useState(false);
 
   const infoCard = (e) => {
 		setOpen(!open)
 		e.preventDefault()
-	}
+  }
 
   var kingName;
   var kingUrl;
@@ -27,7 +27,7 @@ export default function KingCard({faction, idKing}) {
 
   return (
     <>
-      <img className="chiefCard" src={kingUrl} alt={kingName} onContextMenu={infoCard}/>
+      <img className={["chiefCard", enemy].join(' ')} src={kingUrl} alt={kingName} onContextMenu={infoCard}/>
       { open && 
         <div className="infoCard">
           <img src={kingUrl} alt="carte"/>
