@@ -1,16 +1,17 @@
 .game {
   display: flex;
 
-
   .score {
     width: 20%;
   }
 
   .stockCard {
     width: 15%;
+    position: relative;
   }
 
   .gameArea {
     width: 65%;
+    position: relative;
   }
 }

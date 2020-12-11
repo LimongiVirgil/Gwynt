@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './styles.scss'
 import data from '../../../cards.json'
 
-export default function HandDeck({shuffledCards, concatData, faction}) {
+export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
 
   const [open, setOpen] = useState(false);
 
@@ -18,21 +18,7 @@ export default function HandDeck({shuffledCards, concatData, faction}) {
   const infoCard = (e) => {
     setOpen(!open)
 
-    if (e.target.id >= 1 && e.target.id <= 32) {
-      factionName = "Neutre"
-    } else if (e.target.id >= 33 && e.target.id <= 75) {
-      factionName = "Skellige"
-    } else if (e.target.id >= 76 && e.target.id <= 119) {
-      factionName = "Monstres"
-    } else if (e.target.id >= 120 && e.target.id <= 160) {
-      factionName = "ScoiaTael"
-    } else if (e.target.id >= 161 && e.target.id <= 201) {
-      factionName = "Nilfgaard"
-    } else {
-      factionName = "Nordling"
-    }
-    
-    data[factionName].map(card => {
+    concatData.map(card => {
       if (card.id.toString() === e.target.id) {
         setCardName(card.name)
         setCardUrl(card.image_url)
@@ -41,35 +27,36 @@ export default function HandDeck({shuffledCards, concatData, faction}) {
       }
     })
 
-    console.log(cardName, cardUrl, cardDesc, cardNameEffect)
-
 		e.preventDefault()
   }
 
+  console.log(shuffledCards)
 
   return (
     <>
-    <div className="handDeck">
-      {
-        concatData.map((card, index) => {
-          if (sliced.includes(card.id.toString())) {
-            return <img key={index} id={card.id} src={card.image_url} onContextMenu={infoCard} alt="carte" />
-          }
-        })
-      }
-    </div>
-    { open && 
-      <div className="infoCard">
-        <img src={cardUrl} alt="carte"/>
-        <div href="#" className="close" onClick={() => setOpen(!open)}/>
-        { cardNameEffect &&
-          <div className="infoCardText">
-            <p>{cardNameEffect}</p>
-            <p>{cardDesc}</p>
-          </div>
+      <div className={["handDeck", enemy].join(' ')}>
+        {
+          concatData.map((card, index) => {
+            if (sliced.includes(card.id.toString()) && !enemy) {
+              return <img key={index} id={card.id} src={card.image_url} onContextMenu={infoCard} alt={cardName} />
+            } else if (sliced.includes(card.id.toString()) && enemy) {
+              return <img key={index} src={`./images/${faction}/backface.jpg`} alt="carte du deck" />
+            }
+          })
         }
       </div>
-    }
-  </>
+      { open && 
+        <div className="infoCard">
+          <img src={cardUrl} alt="carte"/>
+          <div href="#" className="close" onClick={() => setOpen(!open)}/>
+          { cardNameEffect &&
+            <div className="infoCardText">
+              <p>{cardNameEffect}</p>
+              <p>{cardDesc}</p>
+            </div>
+          }
+        </div>
+      }
+    </>
   )
 }

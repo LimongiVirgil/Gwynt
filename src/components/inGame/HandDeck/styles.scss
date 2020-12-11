@@ -5,6 +5,7 @@
   left: 60px;
   justify-content: space-between;
   width: calc(100% - 60px);
+  position: absolute;
 
   img {
     width: 105px;
@@ -20,6 +21,19 @@
 
     &:first-child {
       margin-left: 0;
+    }
+  }
+
+  &.enemyHand {
+    transition: transform 1s ease;
+    top: -150px;
+
+    img {
+      transform: translateY(-200px) rotate(180deg);
+    }
+
+    &:hover img {
+      transform: translateY(50px) rotate(180deg);
     }
   }
 }
