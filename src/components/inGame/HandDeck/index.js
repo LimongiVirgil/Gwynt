@@ -10,6 +10,8 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
 
   const [open, setOpen] = useState(false);
 
+  const [open2Card, setOpen2Card] = useState(true);
+
   const [cardName, setCardName] = useState(false);
   const [cardUrl, setCardUrl] = useState(false);
   const [cardDesc, setCardDesc] = useState(false);
@@ -42,6 +44,10 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
 		e.preventDefault()
   }
 
+  const closeDelet2Card = (num) => {
+    if (num === 1) setOpen2Card(false);
+  }
+
   return (
     <>
       {/* <div className={["handDeck", enemy].join(' ')}>
@@ -55,7 +61,7 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
           })
         }
       </div> */}
-      {!enemy && <Delete2Card concatData={concatData} sliced={sliced}/>}
+      {!enemy && open2Card && <Delete2Card concatData={concatData} sliced={sliced} passFunction={closeDelet2Card}/>}
       { open && 
         <div className="infoCard">
           <img src={cardUrl} alt={cardName}/>

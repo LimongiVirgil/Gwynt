@@ -4,7 +4,7 @@ import './styles.scss'
 //Import slick slider
 import Slider from "react-slick";
 
-export default function HandDeck({ concatData, sliced }) {
+export default function HandDeck({ concatData, sliced, passFunction }) {
 
   const [cardList, setCardList] = useState()
   const [number, setNumber] = useState(0)
@@ -21,7 +21,6 @@ export default function HandDeck({ concatData, sliced }) {
 
   useEffect(() => {
     setCardList(sliced)
-    console.log(number)
   }, [cardList, number])
 
   const deletCard = (e) => {
@@ -40,9 +39,8 @@ export default function HandDeck({ concatData, sliced }) {
       setNumber(number + 1)
       newHandDeck[index] = getfirstElement.toString()
       setCardList(newHandDeck)
+      passFunction(number)
     }
-
-    console.log(cardList)
   }
 
   return (
