@@ -39,7 +39,7 @@ export default function HandDeck({ concatData, sliced, passFunction }) {
       setNumber(number + 1)
       newHandDeck[index] = getfirstElement.toString()
       setCardList(newHandDeck)
-      passFunction(number)
+      passFunction(number, cardList)
     }
   }
 

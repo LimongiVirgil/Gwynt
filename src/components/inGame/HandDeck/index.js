@@ -16,6 +16,7 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
   const [cardUrl, setCardUrl] = useState(false);
   const [cardDesc, setCardDesc] = useState(false);
   const [cardNameEffect, setCardNameEffect] = useState(false);
+  const [newHandCard, setNewHandCard] = useState()
 
   var sliced = shuffledCards.slice(0, 10)
 
@@ -44,13 +45,27 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
 		e.preventDefault()
   }
 
-  const closeDelet2Card = (num) => {
-    if (num === 1) setOpen2Card(false);
+  const closeDelet2Card = (num, newHandDeck) => {
+    if (num === 1) {
+      setOpen2Card(false);
+      setNewHandCard(newHandDeck)
+    }
   }
 
   return (
     <>
-      {/* <div className={["handDeck", enemy].join(' ')}>
+      {!open2Card && <div className={["handDeck", enemy].join(' ')}>
+        {
+          concatData.map((card, index) => {
+            if (newHandCard.includes(card.id.toString()) && !enemy) {
+              return <img key={index} id={card.id} src={card.image_url} onContextMenu={infoCard} alt={card.name} />
+            } else if (newHandCard.includes(card.id.toString()) && enemy) {
+              return <img key={index} src={`./images/${faction}/backface.jpg`} alt={card.name} />
+            }
+          })
+        }
+      </div>}
+      {enemy && <div className={["handDeck", enemy].join(' ')}>
         {
           concatData.map((card, index) => {
             if (sliced.includes(card.id.toString()) && !enemy) {
@@ -60,7 +75,7 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
             }
           })
         }
-      </div> */}
+      </div>}
       {!enemy && open2Card && <Delete2Card concatData={concatData} sliced={sliced} passFunction={closeDelet2Card}/>}
       { open && 
         <div className="infoCard">
