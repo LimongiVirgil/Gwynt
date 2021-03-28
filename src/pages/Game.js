@@ -12,8 +12,8 @@ import {
   getRandomEnemyDeck
 } from '../tools/enemyDeck'
 
-//import deckManagement
-import { removeKing, shuffleCard } from '../tools/deckManagement'
+//import deckTools
+import { removeKing, shuffleCard } from '../tools/deckTools'
 
 //Components
 import HandDeck from '../components/inGame/HandDeck'

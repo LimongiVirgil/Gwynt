@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { fullScreen } from '../../tools/fullScreen'
-import './Musics.scss'
 
-function Musics() {
+export default function Musics() {
 	const sound = useRef(null);
 	const audio = useRef(null);
 
@@ -50,21 +48,16 @@ function Musics() {
 	}
 
 	return(
-		<div className="icon">
-			<img onClick={fullScreen} src="./images/fullscreen.svg" alt='fullscreen button'/>
-			<div className="audio">
-				{volume &&
-					<img onClick={handleClick} src="./images/speaker.svg" alt="mute button"/>
-				}
-				{!volume && 
-					<img onClick={handleClick} src="./images/mute.svg" alt="mute button"/>
-				}
-				<audio ref={audio} onEnded={newMusic} className="sound-elements">
-					<source ref={sound} src=""></source>
-				</audio>
-			</div>
+		<div className="audio">
+			{volume &&
+				<img onClick={handleClick} src="./images/speaker.svg" alt="mute button"/>
+			}
+			{!volume && 
+				<img onClick={handleClick} src="./images/mute.svg" alt="mute button"/>
+			}
+			<audio ref={audio} onEnded={newMusic} className="sound-elements">
+				<source ref={sound} src=""></source>
+			</audio>
 		</div>
 	)
 }
-
-export default Musics

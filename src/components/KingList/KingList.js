@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
-import data from '../../cards.json'
+
+import { getFactionCards } from '../../tools/localStorageTools'
 import './KingList.scss'
 
 function KingList(props) {
@@ -8,50 +9,44 @@ function KingList(props) {
 
 	// Get faction
 	let factionName = props.faction
+	var existing = getFactionCards(factionName);
 
-	// Get the existing data
-	var existing = localStorage.getItem(factionName);
+	//Replace king in localStorage by choosen king
+	const replaceKingByAnother = (kingsNamesList, e) => {
+		kingsNamesList.map((id) =>
+			existing.includes(id) ? existing.splice( existing.indexOf(id), 1, e.target.id.toString() ) : null
+		)
 
-	// If no existing data, create an array
-	// Otherwise, convert the localStorage string to an array
-	existing = existing ? existing.split(',') : [];
+		localStorage.setItem(factionName, existing.toString());
+	}
 
 	const handleCardClick = (e) => {
+
 		if (factionName === "Nordling") {
 			const nordlingChief = ["202", "203", "204", "205"];
-			{nordlingChief.map((id) =>
-				existing.includes(id) ? existing.splice( existing.indexOf(id), 1, e.target.id.toString() ) : null
-			)}
-			localStorage.setItem(factionName, existing.toString());
+			replaceKingByAnother(nordlingChief, e)
+
 		} else if (factionName === "Nilfgaard") {
 			const nilfgaardChief = ["161", "162", "163", "164"];
-			{nilfgaardChief.map((id) =>
-				existing.includes(id) ? existing.splice( existing.indexOf(id), 1, e.target.id.toString() ) : null
-			)}
-			localStorage.setItem(factionName, existing.toString());
+			replaceKingByAnother(nilfgaardChief, e);
+
 		} else if (factionName === "Monstres") {
 			const monstresChief = ["76", "77", "78", "79"];
-			{monstresChief.map((id) =>
-				existing.includes(id) ? existing.splice( existing.indexOf(id), 1, e.target.id.toString() ) : null
-			)}
-			localStorage.setItem(factionName, existing.toString());
+			replaceKingByAnother(monstresChief, e);
+
 		} else if (factionName === "ScoiaTael") {
 			const scoiaTaelChief = ["120", "121", "122", "123"];
-			{scoiaTaelChief.map((id) =>
-				existing.includes(id) ? existing.splice( existing.indexOf(id), 1, e.target.id.toString() ) : null
-			)}
-			localStorage.setItem(factionName, existing.toString());
+			replaceKingByAnother(scoiaTaelChief, e);
+
 		} else if (factionName === "Skellige") {
 			const skelligeChief = ["33", "34"];
-			{skelligeChief.map((id) =>
-				existing.includes(id) ? existing.splice( existing.indexOf(id), 1, e.target.id.toString() ) : null
-			)}
-			localStorage.setItem(factionName, existing.toString());
+			replaceKingByAnother(skelligeChief , e);
 		}
 
 		setOpen(false)
 	}
 
+	//Slider settings
 	const settings = {
 		className: "sliderContainer",
 		infinite: false,
@@ -62,7 +57,7 @@ function KingList(props) {
 	};
 
 	return(
-		<div className={props.faction + ' faction ' + 'kingList'}>
+		<div className={`${props.faction} faction kingList`}>
 			<p className="title" >Chef</p>
 			<div className="chiefImg">
 				{props.data.map((card, index) =>

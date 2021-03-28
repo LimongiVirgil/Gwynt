@@ -4,7 +4,7 @@ import data from '../../../cards.json'
 
 //Import component
 import Delete2Card from '../Delet2Card'
-import { removeSliced } from '../../../tools/deckManagement'
+import { removeSliced } from '../../../tools/deckTools'
 
 export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
 

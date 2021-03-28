@@ -2,12 +2,12 @@
 import React from 'react';
 import './App.scss';
 import Routes from './pages/Route';
-import Musics from './components/Musics/Musics'
+import TopIcons from './components/TopIcons/TopIcons'
 
 function App() {
   return (
     <div className="App">
-      <Musics />
+      <TopIcons />
       <Routes/>
     </div>
   );
