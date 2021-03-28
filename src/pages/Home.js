@@ -1,26 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { fullScreen } from '../tools/fullScreen'
 
-//import './App.scss';
-
-function Home() {
-
-  const fullScreen = () => {
-    var fullScreen = document.querySelector('html')
-    fullScreen.requestFullscreen()
-  }
+export default function Home() {
   
   return (
     <div className="menu">
       <div className="gameTitle">
-        <img src="/images/logo_witcher.png" alt="title logo"></img>
-        <img src="/images/Gwent.png" alt="background"></img>
+        <img src="/images/logo_witcher.png" alt="title logo" />
+        <img src="/images/Gwent.png" alt="background" />
       </div>
       <Link to="/class" onClick={fullScreen}>
-        <button className="hover-ripple">Jouer</button>
+        <div className="hover-ripple playButton">
+          <p>Jouer</p>
+        </div>
       </Link>
     </div>
   );
-}
-
-export default Home;
+};

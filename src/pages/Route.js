@@ -5,7 +5,7 @@ import Home from './Home';
 import Class from './Class';
 import Game from './Game';
 
-function Routes() {
+export default function Routes() {
 
   return (
     <BrowserRouter>
@@ -16,6 +16,4 @@ function Routes() {
     </Switch>
     </BrowserRouter>
   )
-}
-
-export default Routes
+};

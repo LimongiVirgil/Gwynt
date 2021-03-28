@@ -117,7 +117,7 @@ html {
     }
   }
 
-  button {
+  .playButton {
     color: white;
     height: 50px;
     width: 150px;
@@ -129,6 +129,14 @@ html {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    display: inline-block;
+
+    p {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
   
   .hover-ripple {

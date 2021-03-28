@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { fullScreen } from '../../tools/fullScreen'
 import './Musics.scss'
 
 function Musics() {
@@ -31,7 +32,7 @@ function Musics() {
 		} else {
 			audio.current.pause()
 		}
-	}, [volume]);
+	}, [volume, randSound]);
 
 	function handleClick() {
 		var revert = !volume
@@ -48,11 +49,6 @@ function Musics() {
 		}
 	}
 
-	const fullScreen = () => {
-    var fullScreen = document.querySelector('html')
-    fullScreen.requestFullscreen()
-  }
-
 	return(
 		<div className="icon">
 			<img onClick={fullScreen} src="./images/fullscreen.svg" alt='fullscreen button'/>
@@ -60,7 +56,7 @@ function Musics() {
 				{volume &&
 					<img onClick={handleClick} src="./images/speaker.svg" alt="mute button"/>
 				}
-				{volume === false && 
+				{!volume && 
 					<img onClick={handleClick} src="./images/mute.svg" alt="mute button"/>
 				}
 				<audio ref={audio} onEnded={newMusic} className="sound-elements">

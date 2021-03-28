@@ -59,6 +59,8 @@ export default function HandDeck({ concatData, sliced }) {
               }
             </div>)
           }
+
+          return false
         })}
         <div></div>
         <div></div>

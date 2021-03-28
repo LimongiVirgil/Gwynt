@@ -20,7 +20,7 @@ import HandDeck from '../components/inGame/HandDeck'
 import StockCard from '../components/inGame/StockCard'
 import KingCard from '../components/inGame/KingCard'
 
-export default Game => {
+export default function Game() {
 
   const [stock, setStock] = useState(0)
   const [stockEnemy, setStockEnemy] = useState(0)
@@ -35,6 +35,7 @@ export default Game => {
   var cards = getCards ? getCards.split(',') : window.location.pathname = '/class';
 
   var enemyDeck = getRandomEnemyDeck()
+  console.log(enemyDeck)
 
   //Shuffle cards
   shuffleCard(cards)
@@ -79,4 +80,4 @@ export default Game => {
       </div>
     </div>
   );
-}
+};

@@ -4,7 +4,7 @@ import CardList from '../components/CardList/CardList'
 import DeckList from '../components/DeckList/DeckList'
 import InfoFaction from '../components/InfoFaction/InfoFaction'
 
-export default Class => {
+export default function Class() {
 
   const popup = useRef(null)
   
@@ -118,4 +118,4 @@ export default Class => {
       </div>
     </div>
   );
-}
+};
