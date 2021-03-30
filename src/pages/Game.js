@@ -3,14 +3,7 @@ import data from '../cards.json'
 import './game.scss'
 
 //import enemy Decks
-import {
-  enemyScoiatael, 
-  enemyNilfgaard, 
-  enemyMonstre, 
-  enemyNordling, 
-  enemySkelige,
-  getRandomEnemyDeck
-} from '../tools/enemyDeck'
+import { getRandomEnemyDeck } from '../tools/enemyDeck'
 
 //import deckTools
 import { removeKing, shuffleCard } from '../tools/deckTools'
@@ -49,7 +42,7 @@ export default function Game() {
   var idKings = ["33", "34", "76", "77", "78", "79", "120", "121", "122", "123", "161", "162", "163", "164", "202", "203", "204", "205"]
 
   //remove king card from shuffled array
-  var _chiefCard = removeKing(cards, idKings, "idKing")
+  _chiefCard = removeKing(cards, idKings, "idKing")
   removeKing(cards, idKings)
   
   useEffect(() => {
