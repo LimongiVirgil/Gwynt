@@ -21,28 +21,7 @@ function KingList(props) {
 	}
 
 	const handleCardClick = (e) => {
-
-		if (factionName === "Nordling") {
-			const nordlingChief = ["202", "203", "204", "205"];
-			replaceKingByAnother(nordlingChief, e)
-
-		} else if (factionName === "Nilfgaard") {
-			const nilfgaardChief = ["161", "162", "163", "164"];
-			replaceKingByAnother(nilfgaardChief, e);
-
-		} else if (factionName === "Monstres") {
-			const monstresChief = ["76", "77", "78", "79"];
-			replaceKingByAnother(monstresChief, e);
-
-		} else if (factionName === "ScoiaTael") {
-			const scoiaTaelChief = ["120", "121", "122", "123"];
-			replaceKingByAnother(scoiaTaelChief, e);
-
-		} else if (factionName === "Skellige") {
-			const skelligeChief = ["33", "34"];
-			replaceKingByAnother(skelligeChief , e);
-		}
-
+		replaceKingByAnother(props.kingData, e)
 		setOpen(false)
 	}
 

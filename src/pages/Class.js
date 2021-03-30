@@ -1,5 +1,6 @@
 import React, {useEffect, useCallback, useRef, useState} from 'react';
 import data from '../cards.json'
+import dataKing from '../kingId.json'
 
 //Tools
 import { getFactionCards } from '../tools/localStorageTools'
@@ -10,7 +11,6 @@ import DeckList from '../components/DeckList/DeckList'
 import InfoFaction from '../components/InfoFaction/InfoFaction'
 
 export default function Class() {
-
   const [cardFaction, setCardFaction] = useState("Nordling")
 
   const popup = useRef(null)
@@ -22,6 +22,7 @@ export default function Class() {
 
   const currentFaction = useRef(null);
   
+  //keyCode listener
   useEffect(() => {
     document.addEventListener("keydown", enterFunction, false);
 
@@ -30,6 +31,7 @@ export default function Class() {
     };
   });
 
+  //If deck is completed start the game
   const play = (faction) => {
       var existing = getFactionCards(faction);
 
@@ -41,12 +43,14 @@ export default function Class() {
       }
   }
 
+  //keyCode 
   const enterFunction = useCallback((e) => {
     if(e.keyCode === 13) {
       play(cardFaction)
     }
   }, [cardFaction]);
 
+  //Change faction
   function handleClickClass(factionName) {
     setCardFaction(factionName.attributes['faction'].value)
   }
@@ -63,10 +67,10 @@ export default function Class() {
       <div className="mainContainer">
         <div className="deck">
           <h2>Collection de cartes</h2>
-          <CardList ref={currentFaction} data={data[cardFaction]}  faction={cardFaction}/>
+          <CardList ref={currentFaction} data={data[cardFaction]} kingData={dataKing[cardFaction]}  faction={cardFaction}/>
         </div>
         <div className="infoDeck">
-          <InfoFaction data={data[cardFaction]} faction={cardFaction}/>
+          <InfoFaction data={data[cardFaction]} kingData={dataKing[cardFaction]} faction={cardFaction}/>
         </div>
         <div className="mainDeck">
           <h2>Cartes du jeu</h2>

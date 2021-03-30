@@ -2,77 +2,31 @@ import React, {useState} from 'react';
 import './CardList.scss'
 import data from '../../cards.json'
 
+//Tools
+import { getFactionCards } from '../../tools/localStorageTools';
+
 function CardList(props) {
 	const [open, setOpen] = useState(false);
 	const [idc, setIdc] = useState(null);
-	//const [chiefCard, setChiefCard] = useState(false);
 
 	const [openNeutre, setOpenNeutre] = useState(false);
 	const [idcNeutre, setIdcNeutre] = useState(null);
 
-	// Get faction
+	// Get faction and cards list
 	let factionName = props.faction
+	var existing = getFactionCards(factionName)
 
-	// Get the existing data
-	var existing = localStorage.getItem(factionName);
+	//var chiefCard = true;
 
-	// If no existing data, create an array
-	// Otherwise, convert the localStorage string to an array
-	existing = existing ? existing.split(',') : [];
-
-	var chiefCard = true;
-
-	if (factionName === "Nordling") {
-		const nordlingChief = ["202", "203", "204", "205"];
-		{nordlingChief.map((id) => {
-			if (!existing.includes("202") && !existing.includes("203") && !existing.includes("204") && !existing.includes("205")) {
-				return (
-					existing.push("202")
-				)
-			}
-		})}
-		localStorage.setItem(factionName, existing.toString());
-	} else if (factionName === "Nilfgaard") {
-		const nilfgaardChief = ["161", "162", "163", "164"];
-		{nilfgaardChief.map((id) => {
-			if (!existing.includes("161") && !existing.includes("162") && !existing.includes("163") && !existing.includes("164")) {
-				return (
-					existing.push("161")
-				)
-			}
-		})}
-		localStorage.setItem(factionName, existing.toString());
-	} else if (factionName === "Monstres") {
-		const monstresChief = ["76", "77", "78", "79"];
-		{monstresChief.map((id) => {
-			if (!existing.includes("76") && !existing.includes("77") && !existing.includes("78") && !existing.includes("79")) {
-				return (
-					existing.push("76")
-				)
-			}
-		})}
-		localStorage.setItem(factionName, existing.toString());
-	} else if (factionName === "ScoiaTael") {
-		const scoiaTaelChief = ["120", "121", "122", "123"];
-		{scoiaTaelChief.map((id) => {
-			if (!existing.includes("120") && !existing.includes("121") && !existing.includes("122") && !existing.includes("123")) {
-				return (
-					existing.push("120")
-				)
-			}
-		})}
-		localStorage.setItem(factionName, existing.toString());
-	} else if (factionName === "Skellige") {
-		const skelligeChief = ["33", "34"];
-		{skelligeChief.map((id) => {
-			if (!existing.includes("33") && !existing.includes("34")) {
-				return (
-					existing.push("33")
-				)
-			}
-		})}
-		localStorage.setItem(factionName, existing.toString());
-	}
+	// Add by default a king
+	props.kingData.forEach((id) => {
+		if (!existing.includes("202") && !existing.includes("203") && !existing.includes("204") && !existing.includes("205")) {
+			return (
+				existing.push("202")
+			)
+		}
+	})
+	localStorage.setItem(factionName, existing.toString());
 
 	////// Display info Card //////
 

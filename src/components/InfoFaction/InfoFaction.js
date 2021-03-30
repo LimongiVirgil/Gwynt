@@ -52,7 +52,7 @@ function InfoFaction(props) {
 
 	return(
 		<div active={props.active} className={props.faction + ' faction'}>
-			<KingList data={props.data} faction={props.faction}/>
+			<KingList data={props.data} kingData={props.kingData} faction={props.faction}/>
 			<p className="infoTitle">Toutes les cartes du jeu</p>
 			<p className="existing" ref={existingRef}>{existing.length}</p>
 			<p className="infoTitle">Nombre de cartes d'unités</p>
