@@ -20,7 +20,15 @@ export default function Class() {
   const monstres = useRef(null);
   const skellige = useRef(null);
 
-  const currentFaction = useRef(null);
+  const uniteRef = useRef(null);
+  const powerUniteRef = useRef(null);
+  const heroeRef = useRef(null)
+  const cardUniteRef = useRef(null)
+  const specialRef = useRef(null)
+
+  const refsInfoFaction = {
+    uniteRef, powerUniteRef, heroeRef, cardUniteRef, specialRef
+  }
   
   //keyCode listener
   useEffect(() => {
@@ -55,6 +63,126 @@ export default function Class() {
     setCardFaction(factionName.attributes['faction'].value)
   }
 
+  //////////////////////////////////////
+
+  const cardClick = (e, factionName, cardsList) => {
+		// Get deck list
+		let deck = document.querySelector(`.mainDeck .${factionName}.faction`)
+		//Get card list
+		let card = document.querySelector(`.deck .${factionName}.faction`)
+
+		// Get the existing data
+		var existing = localStorage.getItem(factionName);
+
+		// If no existing data, create an array
+		// Otherwise, convert the localStorage string to an array
+		existing = existing ? existing.split(',') : [];
+
+		var unite = document.querySelector(`.${factionName} .unites`)
+		var powerUnite = document.querySelector(`.${factionName} .power`)
+		var heroe = document.querySelector(`.${factionName} .count`)
+		var cardUnite = document.querySelector(`.${factionName} .existing`)
+		var special = document.querySelector(`.${factionName} .speciales`)
+
+		var separator = special.innerHTML.indexOf(' ');
+
+		var addCard = true
+
+		if (e.target.parentNode.parentNode.className === "mainDeck") {
+			card.append(e.target)
+
+			const index = existing.indexOf(e.target.id);
+			if (index > -1) {
+				existing.splice(index, 1);
+			}
+
+			// Save back to localStorage
+			localStorage.setItem(factionName, existing.toString());
+
+			// Add 1 to infocard unit when a card is choose
+			cardsList.forEach((card) => {
+				if (e.target.id === card.id.toString()) {
+					if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
+						unite.innerHTML = Number(unite.innerHTML) - 1;
+					}
+					if (card.effect1 === "heroe") {
+						heroe.innerHTML = Number(heroe.innerHTML) - 1
+					}
+					if (card.special) {
+						special.innerHTML = Number(special.innerHTML.substr(0, separator)) - 1 + " / 10"
+					}
+					powerUnite.innerHTML = Number(powerUnite.innerHTML) - card.power
+					cardUnite.innerHTML = Number(cardUnite.innerHTML) - 1
+				}
+
+				if (special.innerHTML === "10 / 10") {
+					special.style.color = "red"
+				} else {
+					special.style.color = "white"
+				}
+				if (cardUnite.innerHTML === '40') {
+					cardUnite.style.color = 'red'
+				} else {
+					cardUnite.style.color = "white"
+				}
+			})
+		} else {
+			if (special.innerHTML === "10 / 10") {
+				data.Neutre.forEach((card) => {
+					if (e.target.id === card.id.toString() && (card.effect1 === "meteo" || card.effect1 ===  "chargeRing" || card.effect1 ===  "destroy" || card.effect1 ===  "lure")) {
+						addCard = false;
+					}
+				})
+			}
+
+			if (addCard) {
+
+				if (existing.length < 40) {
+					// Add new data to localStorage Array
+					existing.push(e.target.id);
+
+					// Save back to localStorage
+					localStorage.setItem(factionName, existing.toString());
+
+					// Add select card to deck list
+					deck.append(e.target)
+
+					// Add 1 to infocard unit when a card is choose
+					cardsList.forEach((card) => {
+						if (e.target.id === card.id.toString()) {
+							if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
+								unite.innerHTML = Number(unite.innerHTML) + 1;
+							}
+							if (card.effect1 === "heroe") {
+								heroe.innerHTML = Number(heroe.innerHTML) + 1
+							}
+							if (card.special) {
+								special.innerHTML = Number(special.innerHTML.substr(0, separator)) + 1 + " / 10"
+							}
+							powerUnite.innerHTML = Number(powerUnite.innerHTML) + card.power
+							cardUnite.innerHTML = Number(cardUnite.innerHTML) + 1
+						}
+
+						if (special.innerHTML === "10 / 10") {
+							special.style.color = "red"
+						} else {
+							special.style.color = "white"
+						}
+						if (cardUnite.innerHTML === '40') {
+							cardUnite.style.color = 'red'
+						} else {
+							cardUnite.style.color = "white"
+						}
+					})
+				}
+			}
+
+			addCard = true;
+		}
+	}
+
+  /////////////////////////////////////
+
   return (
     <div className="classe">
       <ul className="factionName">
@@ -67,10 +195,15 @@ export default function Class() {
       <div className="mainContainer">
         <div className="deck">
           <h2>Collection de cartes</h2>
-          <CardList ref={currentFaction} data={data[cardFaction]} kingData={dataKing[cardFaction]}  faction={cardFaction}/>
+          <CardList data={data[cardFaction]} kingData={dataKing[cardFaction]} cardClick={cardClick} faction={cardFaction}/>
         </div>
         <div className="infoDeck">
-          <InfoFaction data={data[cardFaction]} kingData={dataKing[cardFaction]} faction={cardFaction}/>
+          <InfoFaction 
+            data={data[cardFaction]} 
+            kingData={dataKing[cardFaction]} 
+            faction={cardFaction}
+            ref={refsInfoFaction}
+          />
         </div>
         <div className="mainDeck">
           <h2>Cartes du jeu</h2>

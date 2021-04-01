@@ -41,7 +41,7 @@ function CardList(props) {
 
 	//////// Register card in localhost ////////
 
-	const cardClick = (e) => {
+	/* const cardClick = (e) => {
 		// Get deck list
 		let deck = document.querySelector(`.mainDeck .${factionName}.faction`)
 		//Get card list
@@ -155,7 +155,7 @@ function CardList(props) {
 
 			addCard = true;
 		}
-	}
+	} */
 
 	return(
 		<div active={props.active} className={`${props.faction} faction`}>
@@ -165,7 +165,7 @@ function CardList(props) {
 					<img 
 						key={index} 
 						id={card.id} 
-						onDoubleClick={cardClick} 
+						onDoubleClick={(e) => props.cardClick(e, factionName, cardsList)} 
 						onContextMenu={infoCard} 
 						src={card.image_url} 
 						alt="carte"
