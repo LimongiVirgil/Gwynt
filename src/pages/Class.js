@@ -65,7 +65,7 @@ export default function Class() {
 
   //////////////////////////////////////
 
-  const cardClick = (e, factionName, cardsList) => {
+  const cardClick = (e, factionName, cardsList, addingCard) => {
 		// Get deck list
 		let deck = document.querySelector(`.mainDeck .${factionName}.faction`)
 		//Get card list
@@ -78,17 +78,15 @@ export default function Class() {
 		// Otherwise, convert the localStorage string to an array
 		existing = existing ? existing.split(',') : [];
 
-		var unite = document.querySelector(`.${factionName} .unites`)
-		var powerUnite = document.querySelector(`.${factionName} .power`)
-		var heroe = document.querySelector(`.${factionName} .count`)
-		var cardUnite = document.querySelector(`.${factionName} .existing`)
-		var special = document.querySelector(`.${factionName} .speciales`)
-
-		var separator = special.innerHTML.indexOf(' ');
+    const nbCardInDeck = uniteRef.current;
+		const nbCombatCard = cardUniteRef.current;
+		const nbSpecialCard = specialRef.current;
+		const totalPowerCard = powerUniteRef.current;
+		const nbHeroeCard = heroeRef.current;
 
 		var addCard = true
 
-		if (e.target.parentNode.parentNode.className === "mainDeck") {
+		if (!addingCard) {
 			card.append(e.target)
 
 			const index = existing.indexOf(e.target.id);
@@ -103,31 +101,31 @@ export default function Class() {
 			cardsList.forEach((card) => {
 				if (e.target.id === card.id.toString()) {
 					if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
-						unite.innerHTML = Number(unite.innerHTML) - 1;
+						nbCombatCard.innerText = Number(nbCombatCard.innerText) - 1;
 					}
 					if (card.effect1 === "heroe") {
-						heroe.innerHTML = Number(heroe.innerHTML) - 1
+						nbHeroeCard.innerText = Number(nbHeroeCard.innerText) - 1
 					}
 					if (card.special) {
-						special.innerHTML = Number(special.innerHTML.substr(0, separator)) - 1 + " / 10"
+						nbSpecialCard.innerText = Number(nbSpecialCard.innerText) - 1
 					}
-					powerUnite.innerHTML = Number(powerUnite.innerHTML) - card.power
-					cardUnite.innerHTML = Number(cardUnite.innerHTML) - 1
+					totalPowerCard.innerText = Number(totalPowerCard.innerText) - card.power
+					nbCardInDeck.innerText = Number(nbCardInDeck.innerText) - 1
 				}
 
-				if (special.innerHTML === "10 / 10") {
-					special.style.color = "red"
+				if (nbSpecialCard.innerText === "10") {
+					nbSpecialCard.style.color = "red"
 				} else {
-					special.style.color = "white"
+					nbSpecialCard.style.color = "white"
 				}
-				if (cardUnite.innerHTML === '40') {
-					cardUnite.style.color = 'red'
+				if (nbCardInDeck.innerText === '40') {
+					nbCardInDeck.style.color = 'red'
 				} else {
-					cardUnite.style.color = "white"
+					nbCardInDeck.style.color = "white"
 				}
 			})
 		} else {
-			if (special.innerHTML === "10 / 10") {
+			if (nbSpecialCard.innerText === "10 / 10") {
 				data.Neutre.forEach((card) => {
 					if (e.target.id === card.id.toString() && (card.effect1 === "meteo" || card.effect1 ===  "chargeRing" || card.effect1 ===  "destroy" || card.effect1 ===  "lure")) {
 						addCard = false;
@@ -151,27 +149,27 @@ export default function Class() {
 					cardsList.forEach((card) => {
 						if (e.target.id === card.id.toString()) {
 							if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
-								unite.innerHTML = Number(unite.innerHTML) + 1;
+								nbCombatCard.innerText = Number(nbCombatCard.innerText) + 1;
 							}
 							if (card.effect1 === "heroe") {
-								heroe.innerHTML = Number(heroe.innerHTML) + 1
+								nbHeroeCard.innerText = Number(nbHeroeCard.innerText) + 1
 							}
 							if (card.special) {
-								special.innerHTML = Number(special.innerHTML.substr(0, separator)) + 1 + " / 10"
+								nbSpecialCard.innerText = Number(nbSpecialCard.innerText) + 1
 							}
-							powerUnite.innerHTML = Number(powerUnite.innerHTML) + card.power
-							cardUnite.innerHTML = Number(cardUnite.innerHTML) + 1
+							totalPowerCard.innerText = Number(totalPowerCard.innerText) + card.power
+							nbCardInDeck.innerText = Number(nbCardInDeck.innerText) + 1
 						}
 
-						if (special.innerHTML === "10 / 10") {
-							special.style.color = "red"
+						if (nbSpecialCard.innerText === "10") {
+							nbSpecialCard.style.color = "red"
 						} else {
-							special.style.color = "white"
+							nbSpecialCard.style.color = "white"
 						}
-						if (cardUnite.innerHTML === '40') {
-							cardUnite.style.color = 'red'
+						if (nbCardInDeck.innerText === '40') {
+							nbCardInDeck.style.color = 'red'
 						} else {
-							cardUnite.style.color = "white"
+							nbCardInDeck.style.color = "white"
 						}
 					})
 				}

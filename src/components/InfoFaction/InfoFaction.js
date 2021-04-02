@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, forwardRef} from 'react';
+import React, { useEffect, forwardRef } from 'react';
 import { getFactionCards } from '../../tools/localStorageTools'
 
 import data from '../../cards.json'
@@ -8,105 +8,64 @@ import './InfoFaction.scss'
 
 const InfoFaction = forwardRef((props, ref) => {
 
-	var count = 0;
-	var power = 0;
-	var speciales = 0;
-	var unites = 0;
-
 	useEffect(() => {
-		if (speciales === 10) {
-			ref.specialRef.current.style.color = "red";
-		}
-		if (ref.uniteRef.length === 40) {
-			ref.uniteRef.current.style.color = "red";
-		}
+		// Get faction cards
+		var existing = getFactionCards(props.faction);
 
-		console.log(ref.powerUniteRef.current.innerText)
-	});
+		// Merge faction cards list with neutral cards list
+		const cardsList = [...data.Neutre, ...props.data];
 
-	// Get faction cards
-	var existing = getFactionCards(props.faction);
+		const nbCardInDeck = ref.uniteRef.current;
+		const nbCombatCard = ref.cardUniteRef.current;
+		const nbSpecialCard = ref.specialRef.current;
+		const totalPowerCard = ref.powerUniteRef.current;
+		const nbHeroeCard = ref.heroeRef.current;
 
-	// Merge faction cards list with neutral cards list
-	const cardsList = [...data.Neutre, ...props.data];
-
-	//Counting of card for the dashBoard
-
-	cardsList.map((card) => {
-		if (existing.includes(card.id.toString())) {
-			if (card.effect1 === "heroe") {
-				count = count + 1
-			}
-			if (card.special) {
-				speciales = speciales + 1
-			}
-			if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
-				unites = unites + 1
-			}
-			power = power + card.power
-		}
-
-		return false;
-	})
-	
-
-	/* const specialRef = useRef(0);
-	const existingRef = useRef(0);
-
-
-	var count = 0;
-	var power = 0;
-	var speciales = 0;
-	var unites = 0;
-
-	useEffect(() => {
-		if (speciales === 10) {
-			specialRef.current.style.color = "red";
-		}
-		if (existing.length === 40) {
-			existingRef.current.style.color = "red";
-		}
-	});
-
-	// Get faction cards
-	var existing = getFactionCards(props.faction);
-
-	//Counting of card for the dashBoard
-	const countingCards = (deck) => {
-		deck.map((card) => {
+		//Counting of card for the dashBoard
+		cardsList.map((card) => {
 			if (existing.includes(card.id.toString())) {
+				nbCardInDeck.innerText = Number(nbCardInDeck.innerText) + 1;
+
 				if (card.effect1 === "heroe") {
-					count = count + 1
+					nbHeroeCard.innerText = Number(nbHeroeCard.innerText) + 1;
 				}
 				if (card.special) {
-					speciales = speciales + 1
+					nbSpecialCard.innerText = Number(nbSpecialCard.innerText) + 1
 				}
 				if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
-					unites = unites + 1
+					nbCombatCard.innerText = Number(nbCombatCard.innerText) + 1
 				}
-				power = power + card.power
+				totalPowerCard.innerText = Number(totalPowerCard.innerText) + card.power
 			}
 
 			return false;
 		})
-	}
 
-	countingCards(props.data);
-	countingCards(data.Neutre);
- */
+		if (nbSpecialCard.innerText === '10') {
+			nbSpecialCard.style.color = "red";
+			nbSpecialCard.nextSibling.style.color = "red";
+		}
+		if (nbCardInDeck.innerText === '40') {
+			nbCardInDeck.style.color = "red";
+		}
+	});
+
 	return(
-		<div active={props.active} className={props.faction + ' faction'}>
+		<div active={props.active} className={`${props.faction} faction`}>
 			<KingList data={props.data} kingData={props.kingData} faction={props.faction}/>
 			<p className="infoTitle">Toutes les cartes du jeu</p>
-			<p className="existing" ref={ref.uniteRef}>{existing.length}</p>
+			<p className="existing" ref={ref.uniteRef}>0</p>
 			<p className="infoTitle">Nombre de cartes d'unités</p>
-			<p className="unites" ref={ref.cardUniteRef}>{unites}</p>
+			<p className="unites" ref={ref.cardUniteRef}>0</p>
 			<p className="infoTitle">Cartes Spéciales</p>
-			<p className="speciales" ref={ref.specialRef} >{speciales} / 10</p>
+			<div className="specialesDiv">
+				<p className="speciales" ref={ref.specialRef} >0</p>
+				<span> / 10</span>
+			</div>
 			<p className="infoTitle">Force total de la carte Unité</p>
 			<p className="power" ref={ref.powerUniteRef}>0</p>
 			<p className="infoTitle">Carte Héros</p>
-			<p className="count" ref={ref.heroeRef}>{count}</p>
+			<p className="count" ref={ref.heroeRef}>0</p>
 		</div>
 	)
 })

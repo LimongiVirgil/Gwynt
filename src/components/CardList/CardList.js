@@ -165,7 +165,7 @@ function CardList(props) {
 					<img 
 						key={index} 
 						id={card.id} 
-						onDoubleClick={(e) => props.cardClick(e, factionName, cardsList)} 
+						onDoubleClick={(e) => props.cardClick(e, factionName, cardsList, true)} 
 						onContextMenu={infoCard} 
 						src={card.image_url} 
 						alt="carte"

@@ -4,11 +4,19 @@
   align-self: center;
   font-family: "Pill";
 
-  p {
+  p, span {
     text-align: center;
     color: white;
     font-size: 20px;
     margin-bottom: 15px;
+  }
+
+  .specialesDiv {
+    text-align: center;
+  }
+
+  .speciales {
+    display: inline-block;
   }
 
   .infoTitle {
