@@ -36,7 +36,6 @@ function CardList(props) {
 
 	const closeInfoCard = (e) => {
 		setOpen(!open)
-		console.log('heelo')
 	}
 
 	//////// Register card in localhost ////////

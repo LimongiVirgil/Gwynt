@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './DeckList.scss'
 import data from '../../cards.json'
 
+//Tools
+import { getFactionCards } from '../../tools/localStorageTools'
+
 function DeckList(props) {
 	const [open, setOpen] = useState(false);
 	const [idc, setIdc] = useState(null);
@@ -10,12 +13,10 @@ function DeckList(props) {
 	const [idcNeutre, setIdcNeutre] = useState(null);
 
 	let parentClass = props.faction;
-	
-	var existing = localStorage.getItem(parentClass);
 
 	// If no existing data, create an array
 	// Otherwise, convert the localStorage string to an array
-	existing = existing ? existing.split(',') : [];
+	var existing = getFactionCards(parentClass);
 
 	////// Display info Card //////
 
@@ -33,7 +34,7 @@ function DeckList(props) {
 
 	////////////////////////////////
 
-	const deckClick = (e) => {
+	/* const deckClick = (e) => {
 		// Get name of faction
 		let parentClass = e.target.parentNode.className.split(' ')[0];
 	
@@ -196,15 +197,15 @@ function DeckList(props) {
 				}
 			}
 		})
-	}
+	} */
 
 	return(
 		<div active={props.active} className={props.faction + ' faction'}>
 			{data.Neutre.map((card, index) =>
-				existing.includes(card.id.toString()) ? <img key={index} onDoubleClick={deckClick} onContextMenu={infoCardNeutre} id={card.id} src={card.image_url} alt="carte" /> : null
+				existing.includes(card.id.toString()) ? <img key={index} onDoubleClick={(e) => props.cardClick(e, parentClass, props.cardsList, existing, false)} onContextMenu={infoCardNeutre} id={card.id} src={card.image_url} alt="carte" /> : null
 			)}
 			{props.data.map((card, index) =>
-				(existing.includes(card.id.toString()) && card.effect1 != "king") ? <img key={index} onDoubleClick={deckClick} onContextMenu={infoCard} id={card.id} src={card.image_url} alt="carte" /> : null
+				(existing.includes(card.id.toString()) && card.effect1 !== "king") ? <img key={index} onDoubleClick={(e) => props.cardClick(e, parentClass, props.cardsList, existing, false)} onContextMenu={infoCard} id={card.id} src={card.image_url} alt="carte" /> : null
 			)}
 			{open === true &&
 				props.data.map((card, index) => {

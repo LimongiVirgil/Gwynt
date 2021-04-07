@@ -76,7 +76,6 @@ export default function Class() {
   var handCards = getFactionCards(cardFaction);
 
   const sortCards = (cards) => {
-
     if (handDeck.length === 0 || mainDeck.length === 0) {
       var arrHandDeck = [...handDeck];
       var arrMainDeck = [...mainDeck];
@@ -118,7 +117,7 @@ export default function Class() {
 		var addCard = true
 
 		if (!addingCard) {
-			card.append(e.target)
+			//card.append(e.target)
 
 			const index = existing.indexOf(e.target.id);
 			if (index > -1) {
@@ -127,6 +126,19 @@ export default function Class() {
 
 			// Save back to localStorage
 			localStorage.setItem(factionName, existing.toString());
+
+      const newArrHandDeck = [...handDeck];
+      const newArrMainDeck = [...mainDeck];
+
+      cardsList.forEach((card) => {
+        if (String(card.id) === e.target.id) {
+          newArrMainDeck.push(card)
+          newArrHandDeck.splice(newArrHandDeck.indexOf(card, 1))
+        }
+      })
+
+      setHandDeck(newArrHandDeck)
+      setMainDeck(newArrMainDeck)
 
 			// Add 1 to infocard unit when a card is choose
 			/* currCardsList.forEach((card) => {
@@ -249,7 +261,7 @@ export default function Class() {
         </div>
         <div className="mainDeck">
           <h2>Cartes du jeu</h2>
-          <DeckList data={data[cardFaction]} faction={cardFaction}/>
+          <DeckList data={data[cardFaction]} faction={cardFaction} cardClick={cardClick}/>
         </div>
       </div>
       <div className="command">
