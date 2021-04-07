@@ -23,7 +23,7 @@ function CardList(props) {
 	localStorage.setItem(factionName, existing.toString());
 
 	// Merge faction cards list with neutral cards list
-	const cardsList = [...data.Neutre, ...props.data];
+	//const cardsList = [...data.Neutre, ...props.data];
 
 	////// Display info Card //////
 
@@ -159,20 +159,20 @@ function CardList(props) {
 
 	return(
 		<div active={props.active} className={`${props.faction} faction`}>
-			{cardsList.map((card, index) =>
+			{props.cardsList.map((card, index) =>
 				(existing.includes(card.id.toString()) || card.effect1 === "king") ? 
 					null : 
 					<img 
 						key={index} 
 						id={card.id} 
-						onDoubleClick={(e) => props.cardClick(e, factionName, cardsList, true)} 
+						onDoubleClick={(e) => props.cardClick(e, factionName, props.cardsList, existing, true)} 
 						onContextMenu={infoCard} 
 						src={card.image_url} 
 						alt="carte"
 					/>
 			)}
 			{ open === true && 
-				<InfoCards cards={cardsList} idCard={idc} closeInfo={closeInfoCard}/>
+				<InfoCards cards={props.cardsList} idCard={idc} closeInfo={closeInfoCard}/>
 			}
 		</div>
 	)

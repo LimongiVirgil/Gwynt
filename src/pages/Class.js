@@ -12,6 +12,9 @@ import InfoFaction from '../components/InfoFaction/InfoFaction'
 
 export default function Class() {
   const [cardFaction, setCardFaction] = useState("Nordling")
+  const [mainDeck, setMainDeck] = useState([])
+  const [handDeck, setHandDeck] = useState([])
+  const [cardsList, setCardsList] = useState([])
 
   const popup = useRef(null)
   const nordling = useRef(null);
@@ -30,14 +33,20 @@ export default function Class() {
     uniteRef, powerUniteRef, heroeRef, cardUniteRef, specialRef
   }
   
-  //keyCode listener
   useEffect(() => {
+    //keyCode listener
     document.addEventListener("keydown", enterFunction, false);
+
+    // Merge faction cards list with neutral cards list
+    const mergedArrays = [...data.Neutre, ...data[cardFaction]];
+	  setCardsList(mergedArrays);
+
+    sortCards(mergedArrays)
 
     return () => {
       document.removeEventListener("keydown", enterFunction, false);
     };
-  });
+  }, [cardFaction, mainDeck, handDeck]);
 
   //If deck is completed start the game
   const play = (faction) => {
@@ -63,9 +72,31 @@ export default function Class() {
     setCardFaction(factionName.attributes['faction'].value)
   }
 
-  //////////////////////////////////////
+  //Sort cards
+  var handCards = getFactionCards(cardFaction);
 
-  const cardClick = (e, factionName, cardsList, addingCard) => {
+  const sortCards = (cards) => {
+
+    if (handDeck.length === 0 || mainDeck.length === 0) {
+      var arrHandDeck = [...handDeck];
+      var arrMainDeck = [...mainDeck];
+    
+      cards.forEach((card) => {
+        if (handCards.includes(String(card.id)) && card.effect1 !== 'king') {
+          arrHandDeck.push(card)
+          //handDeck.push(card)
+        } else if (card.effect1 !== 'king') {
+          arrMainDeck.push(card)
+          //mainDeck.push(card)
+        }
+      })
+    
+      setHandDeck(arrHandDeck)
+      setMainDeck(arrMainDeck)
+    }
+  }
+
+  const cardClick = (e, factionName, currCardsList, currDeck, addingCard) => {
 		// Get deck list
 		let deck = document.querySelector(`.mainDeck .${factionName}.faction`)
 		//Get card list
@@ -98,7 +129,7 @@ export default function Class() {
 			localStorage.setItem(factionName, existing.toString());
 
 			// Add 1 to infocard unit when a card is choose
-			cardsList.forEach((card) => {
+			/* currCardsList.forEach((card) => {
 				if (e.target.id === card.id.toString()) {
 					if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
 						nbCombatCard.innerText = Number(nbCombatCard.innerText) - 1;
@@ -123,7 +154,7 @@ export default function Class() {
 				} else {
 					nbCardInDeck.style.color = "white"
 				}
-			})
+			}) */
 		} else {
 			if (nbSpecialCard.innerText === "10 / 10") {
 				data.Neutre.forEach((card) => {
@@ -143,11 +174,23 @@ export default function Class() {
 					localStorage.setItem(factionName, existing.toString());
 
 					// Add select card to deck list
-					deck.append(e.target)
+          const newArrHandDeck = [...handDeck];
+          const newArrMainDeck = [...mainDeck];
+
+          cardsList.forEach((card) => {
+            if (String(card.id) === e.target.id) {
+              newArrMainDeck.splice(newArrMainDeck.indexOf(card, 1))
+              newArrHandDeck.push(card)
+            }
+          })
+
+          setHandDeck(newArrHandDeck)
+          setMainDeck(newArrMainDeck)
 
 					// Add 1 to infocard unit when a card is choose
-					cardsList.forEach((card) => {
+					/* currCardsList.forEach((card) => {
 						if (e.target.id === card.id.toString()) {
+
 							if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
 								nbCombatCard.innerText = Number(nbCombatCard.innerText) + 1;
 							}
@@ -171,7 +214,7 @@ export default function Class() {
 						} else {
 							nbCardInDeck.style.color = "white"
 						}
-					})
+					}) */
 				}
 			}
 
@@ -193,11 +236,12 @@ export default function Class() {
       <div className="mainContainer">
         <div className="deck">
           <h2>Collection de cartes</h2>
-          <CardList data={data[cardFaction]} kingData={dataKing[cardFaction]} cardClick={cardClick} faction={cardFaction}/>
+          <CardList cardsList={cardsList} /* data={data[cardFaction]} */ kingData={dataKing[cardFaction]} cardClick={cardClick} faction={cardFaction}/>
         </div>
         <div className="infoDeck">
-          <InfoFaction 
-            data={data[cardFaction]} 
+          <InfoFaction
+            /* data={data[cardFaction]} */
+            cardsList={cardsList}
             kingData={dataKing[cardFaction]} 
             faction={cardFaction}
             ref={refsInfoFaction}

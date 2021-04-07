@@ -13,7 +13,7 @@ const InfoFaction = forwardRef((props, ref) => {
 		var existing = getFactionCards(props.faction);
 
 		// Merge faction cards list with neutral cards list
-		const cardsList = [...data.Neutre, ...props.data];
+		//const cardsList = [...data.Neutre, ...props.data];
 
 		const nbCardInDeck = ref.uniteRef.current;
 		const nbCombatCard = ref.cardUniteRef.current;
@@ -22,7 +22,7 @@ const InfoFaction = forwardRef((props, ref) => {
 		const nbHeroeCard = ref.heroeRef.current;
 
 		//Counting of card for the dashBoard
-		cardsList.map((card) => {
+		props.cardsList.map((card) => {
 			if (existing.includes(card.id.toString())) {
 				nbCardInDeck.innerText = Number(nbCardInDeck.innerText) + 1;
 
@@ -52,7 +52,7 @@ const InfoFaction = forwardRef((props, ref) => {
 
 	return(
 		<div active={props.active} className={`${props.faction} faction`}>
-			<KingList data={props.data} kingData={props.kingData} faction={props.faction}/>
+			<KingList data={props.cardsList} kingData={props.kingData} faction={props.faction}/>
 			<p className="infoTitle">Toutes les cartes du jeu</p>
 			<p className="existing" ref={ref.uniteRef}>0</p>
 			<p className="infoTitle">Nombre de cartes d'unités</p>
