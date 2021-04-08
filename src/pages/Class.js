@@ -83,10 +83,8 @@ export default function Class() {
       cards.forEach((card) => {
         if (handCards.includes(String(card.id)) && card.effect1 !== 'king') {
           arrHandDeck.push(card)
-          //handDeck.push(card)
         } else if (card.effect1 !== 'king') {
           arrMainDeck.push(card)
-          //mainDeck.push(card)
         }
       })
     
@@ -95,11 +93,7 @@ export default function Class() {
     }
   }
 
-  const cardClick = (e, factionName, currCardsList, currDeck, addingCard) => {
-		// Get deck list
-		let deck = document.querySelector(`.mainDeck .${factionName}.faction`)
-		//Get card list
-		let card = document.querySelector(`.deck .${factionName}.faction`)
+  const cardClick = (e, factionName, addingCard) => {
 
 		// Get the existing data
 		var existing = localStorage.getItem(factionName);
@@ -108,11 +102,7 @@ export default function Class() {
 		// Otherwise, convert the localStorage string to an array
 		existing = existing ? existing.split(',') : [];
 
-    const nbCardInDeck = uniteRef.current;
-		const nbCombatCard = cardUniteRef.current;
 		const nbSpecialCard = specialRef.current;
-		const totalPowerCard = powerUniteRef.current;
-		const nbHeroeCard = heroeRef.current;
 
 		var addCard = true
 
@@ -140,35 +130,8 @@ export default function Class() {
       setHandDeck(newArrHandDeck)
       setMainDeck(newArrMainDeck)
 
-			// Add 1 to infocard unit when a card is choose
-			/* currCardsList.forEach((card) => {
-				if (e.target.id === card.id.toString()) {
-					if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
-						nbCombatCard.innerText = Number(nbCombatCard.innerText) - 1;
-					}
-					if (card.effect1 === "heroe") {
-						nbHeroeCard.innerText = Number(nbHeroeCard.innerText) - 1
-					}
-					if (card.special) {
-						nbSpecialCard.innerText = Number(nbSpecialCard.innerText) - 1
-					}
-					totalPowerCard.innerText = Number(totalPowerCard.innerText) - card.power
-					nbCardInDeck.innerText = Number(nbCardInDeck.innerText) - 1
-				}
-
-				if (nbSpecialCard.innerText === "10") {
-					nbSpecialCard.style.color = "red"
-				} else {
-					nbSpecialCard.style.color = "white"
-				}
-				if (nbCardInDeck.innerText === '40') {
-					nbCardInDeck.style.color = 'red'
-				} else {
-					nbCardInDeck.style.color = "white"
-				}
-			}) */
 		} else {
-			if (nbSpecialCard.innerText === "10 / 10") {
+			if (nbSpecialCard.innerText === "10") {
 				data.Neutre.forEach((card) => {
 					if (e.target.id === card.id.toString() && (card.effect1 === "meteo" || card.effect1 ===  "chargeRing" || card.effect1 ===  "destroy" || card.effect1 ===  "lure")) {
 						addCard = false;
@@ -198,43 +161,12 @@ export default function Class() {
 
           setHandDeck(newArrHandDeck)
           setMainDeck(newArrMainDeck)
-
-					// Add 1 to infocard unit when a card is choose
-					/* currCardsList.forEach((card) => {
-						if (e.target.id === card.id.toString()) {
-
-							if (!card.special && card.effect1 !== "heroe" && card.effect1 !== "king") {
-								nbCombatCard.innerText = Number(nbCombatCard.innerText) + 1;
-							}
-							if (card.effect1 === "heroe") {
-								nbHeroeCard.innerText = Number(nbHeroeCard.innerText) + 1
-							}
-							if (card.special) {
-								nbSpecialCard.innerText = Number(nbSpecialCard.innerText) + 1
-							}
-							totalPowerCard.innerText = Number(totalPowerCard.innerText) + card.power
-							nbCardInDeck.innerText = Number(nbCardInDeck.innerText) + 1
-						}
-
-						if (nbSpecialCard.innerText === "10") {
-							nbSpecialCard.style.color = "red"
-						} else {
-							nbSpecialCard.style.color = "white"
-						}
-						if (nbCardInDeck.innerText === '40') {
-							nbCardInDeck.style.color = 'red'
-						} else {
-							nbCardInDeck.style.color = "white"
-						}
-					}) */
 				}
 			}
 
 			addCard = true;
 		}
 	}
-
-  /////////////////////////////////////
 
   return (
     <div className="classe">
@@ -248,11 +180,10 @@ export default function Class() {
       <div className="mainContainer">
         <div className="deck">
           <h2>Collection de cartes</h2>
-          <CardList cardsList={cardsList} /* data={data[cardFaction]} */ kingData={dataKing[cardFaction]} cardClick={cardClick} faction={cardFaction}/>
+          <CardList cardsList={cardsList} kingData={dataKing[cardFaction]} cardClick={cardClick} faction={cardFaction}/>
         </div>
         <div className="infoDeck">
           <InfoFaction
-            /* data={data[cardFaction]} */
             cardsList={cardsList}
             kingData={dataKing[cardFaction]} 
             faction={cardFaction}
@@ -261,7 +192,7 @@ export default function Class() {
         </div>
         <div className="mainDeck">
           <h2>Cartes du jeu</h2>
-          <DeckList data={data[cardFaction]} faction={cardFaction} cardClick={cardClick}/>
+          <DeckList cardsList={cardsList} faction={cardFaction} cardClick={cardClick}/>
         </div>
       </div>
       <div className="command">
