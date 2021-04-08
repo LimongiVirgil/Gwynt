@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './DeckList.scss'
 
 // Tools
@@ -33,10 +35,11 @@ function DeckList(props) {
 		<div active={props.active} className={`${props.faction} faction`}>
 			{props.cardsList.map((card, index) =>
 				(existing.includes(card.id.toString()) && card.effect1 !== "king") ? 
-				<img 
+				<LazyLoadImage 
 					key={index} 
 					onDoubleClick={(e) => props.cardClick(e, parentClass, false)} 
-					onContextMenu={infoCard} 
+					onContextMenu={infoCard}
+					effect="blur"
 					id={card.id} 
 					src={card.image_url} 
 					alt="carte" 

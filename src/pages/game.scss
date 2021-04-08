@@ -1,5 +1,13 @@
 .game {
   display: flex;
+  background-image: url("/images/board.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
 
   .score {
     width: 20%;

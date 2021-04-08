@@ -1,0 +1,76 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/gwyntBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .gameTitle {
+    margin: auto;
+    width: 60vw;
+    padding-top: 15vh;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    img:first-child {
+      width: 70%;
+      height: auto;
+      object-position: center;
+      object-fit: unset;
+    }
+
+    img:last-child {
+      width: 12%;
+      margin-top: 5%;
+    }
+  }
+
+  .playButton {
+    color: white;
+    height: 50px;
+    width: 150px;
+    background-color: #B28D41;
+    cursor: pointer;
+    border: none;
+    font-size: 28px;
+    margin-top: 10vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+
+    p {
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: "Pill";
+    }
+  }
+  
+  .hover-ripple {
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 5px #B28D41 solid;
+      animation: 1s ease infinite;
+    }
+
+    &:hover::before {
+      animation-name: hover-ripple;
+    }
+  }
+}

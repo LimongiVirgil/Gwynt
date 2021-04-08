@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './styles.scss';
-import data from '../../../cards.json'
+import data from '../../../data/cards.json'
 
 export default function KingCard({faction, idKing, enemy}) {
 

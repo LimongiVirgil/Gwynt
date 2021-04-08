@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import data from '../cards.json'
+import data from '../data/cards.json'
+
+// Scss
 import './game.scss'
 
-//import enemy Decks
+// Tools
 import { getRandomEnemyDeck } from '../tools/enemyDeck'
-
-//import deckTools
 import { removeKing, shuffleCard } from '../tools/deckTools'
 
 //Components
@@ -28,15 +28,14 @@ export default function Game() {
   var cards = getCards ? getCards.split(',') : window.location.pathname = '/class';
 
   var enemyDeck = getRandomEnemyDeck()
-  console.log(enemyDeck)
 
   //Shuffle cards
   shuffleCard(cards)
   var shuffledEnemyDeck = shuffleCard(enemyDeck.card);
 
   //Concat Neutral card and choosen faction
-  var concatData = data.Neutre.concat(data[getFaction])
-  var concatEnemyData = data.Neutre.concat(data[enemyDeck.faction])
+  var concatData = [...data.Neutre, ...data[getFaction]]
+  var concatEnemyData = [...data.Neutre, ...data[enemyDeck.faction]]
 
   //List of KingIds
   var idKings = ["33", "34", "76", "77", "78", "79", "120", "121", "122", "123", "161", "162", "163", "164", "202", "203", "204", "205"]

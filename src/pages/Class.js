@@ -1,11 +1,14 @@
 import React, {useEffect, useCallback, useRef, useState} from 'react';
-import data from '../cards.json'
-import dataKing from '../kingId.json'
+import data from '../data/cards.json'
+import dataKing from '../data/kingId.json'
 
-//Tools
+// Scss
+import './class.scss'
+
+// Tools
 import { getFactionCards } from '../tools/localStorageTools'
 
-//Components
+// Components
 import CardList from '../components/CardList/CardList'
 import DeckList from '../components/DeckList/DeckList'
 import InfoFaction from '../components/InfoFaction/InfoFaction'

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './styles.scss'
-import data from '../../../cards.json'
 
 //Import component
 import Delete2Card from '../Delet2Card'
