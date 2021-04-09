@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './CardList.scss'
 
@@ -44,6 +44,7 @@ function CardList(props) {
 						key={index} 
 						id={card.id} 
 						effect="blur"
+						scrollPosition={props.scrollPosition}
 						onDoubleClick={(e) => props.cardClick(e, factionName, true)} 
 						onContextMenu={infoCard} 
 						src={card.image_url} 
@@ -57,4 +58,4 @@ function CardList(props) {
 	)
 }
 
-export default CardList
+export default trackWindowScroll(CardList)

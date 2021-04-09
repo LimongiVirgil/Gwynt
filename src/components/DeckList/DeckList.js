@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './DeckList.scss'
 
@@ -40,8 +40,9 @@ function DeckList(props) {
 					onDoubleClick={(e) => props.cardClick(e, parentClass, false)} 
 					onContextMenu={infoCard}
 					effect="blur"
+					scrollPosition={props.scrollPosition}
 					id={card.id} 
-					src={card.image_url} 
+					src={card.image_url}
 					alt="carte" 
 				/> : 
 					null
@@ -53,4 +54,4 @@ function DeckList(props) {
 	)
 }
 
-export default DeckList
+export default trackWindowScroll(DeckList)
