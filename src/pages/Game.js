@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { useHistory } from "react-router-dom";
 import data from '../data/cards.json'
 
 // Scss
@@ -14,9 +15,10 @@ import StockCard from '../components/inGame/StockCard'
 import KingCard from '../components/inGame/KingCard'
 
 export default function Game() {
-
   const [stock, setStock] = useState(0)
   const [stockEnemy, setStockEnemy] = useState(0)
+
+  let history = useHistory();
 
   //King Card
   var _chiefCard;
@@ -25,7 +27,7 @@ export default function Game() {
   var getFaction = localStorage.getItem('faction');
   var getCards = localStorage.getItem(getFaction);
 
-  var cards = getCards ? getCards.split(',') : window.location.pathname = '/class';
+  var cards = getCards ? getCards.split(',') : history.push("/class");
 
   var enemyDeck = getRandomEnemyDeck()
 

@@ -1,4 +1,5 @@
 import React, {useEffect, useCallback, useRef, useState} from 'react';
+import { useHistory } from "react-router-dom";
 import data from '../data/cards.json'
 import dataKing from '../data/kingId.json'
 
@@ -35,6 +36,8 @@ export default function Class() {
   const refsInfoFaction = {
     uniteRef, powerUniteRef, heroeRef, cardUniteRef, specialRef
   }
+
+  let history = useHistory();
   
   useEffect(() => {
     //keyCode listener
@@ -57,7 +60,7 @@ export default function Class() {
 
       if (existing.length >= 25 && existing.length <= 40) {
         localStorage.setItem("faction", faction);
-        window.location.pathname = '/game'
+        history.push("/game");
       } else {
         popup.current.style.display = "block"
       }
