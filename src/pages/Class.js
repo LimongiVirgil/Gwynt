@@ -44,7 +44,7 @@ export default function Class() {
     const mergedArrays = [...data.Neutre, ...data[cardFaction]];
 	  setCardsList(mergedArrays);
 
-    sortCards(mergedArrays)
+    //sortCards(mergedArrays)
 
     return () => {
       document.removeEventListener("keydown", enterFunction, false);
@@ -78,23 +78,23 @@ export default function Class() {
   //Sort cards
   var handCards = getFactionCards(cardFaction);
 
-  const sortCards = (cards) => {
-    if (handDeck.length === 0 || mainDeck.length === 0) {
-      var arrHandDeck = [...handDeck];
-      var arrMainDeck = [...mainDeck];
+  // const sortCards = (cards) => {
+  //   if (handDeck.length === 0 || mainDeck.length === 0) {
+  //     var arrHandDeck = [...handDeck];
+  //     var arrMainDeck = [...mainDeck];
     
-      cards.forEach((card) => {
-        if (handCards.includes(String(card.id)) && card.effect1 !== 'king') {
-          arrHandDeck.push(card)
-        } else if (card.effect1 !== 'king') {
-          arrMainDeck.push(card)
-        }
-      })
+  //     cards.forEach((card) => {
+  //       if (handCards.includes(String(card.id)) && card.effect1 !== 'king') {
+  //         arrHandDeck.push(card)
+  //       } else if (card.effect1 !== 'king') {
+  //         arrMainDeck.push(card)
+  //       }
+  //     })
     
-      setHandDeck(arrHandDeck)
-      setMainDeck(arrMainDeck)
-    }
-  }
+  //     setHandDeck(arrHandDeck)
+  //     setMainDeck(arrMainDeck)
+  //   }
+  // }
 
   const cardClick = (e, factionName, addingCard) => {
 
