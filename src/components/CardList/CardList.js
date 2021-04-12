@@ -45,6 +45,7 @@ function CardList(props) {
 						id={card.id} 
 						effect="blur"
 						scrollPosition={props.scrollPosition}
+						visibleByDefault={card.src === card.image_url}
 						onDoubleClick={(e) => props.cardClick(e, factionName, true)} 
 						onContextMenu={infoCard} 
 						src={card.image_url} 
