@@ -41,7 +41,6 @@ function DeckList(props) {
 					onContextMenu={infoCard}
 					effect="blur"
 					scrollPosition={props.scrollPosition}
-					visibleByDefault={card.src === card.image_url}
 					id={card.id} 
 					src={card.image_url}
 					alt="carte" 
