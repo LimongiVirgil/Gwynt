@@ -183,19 +183,19 @@ export default function Class() {
       <div className="mainContainer">
         <div className="deck">
           <h2>Collection de cartes</h2>
-          {/* <CardList cardsList={cardsList} kingData={dataKing[cardFaction]} cardClick={cardClick} faction={cardFaction}/> */}
+          <CardList cardsList={cardsList} kingData={dataKing[cardFaction]} cardClick={cardClick} faction={cardFaction}/>
         </div>
         <div className="infoDeck">
-          {/* <InfoFaction
+          <InfoFaction
             cardsList={cardsList}
             kingData={dataKing[cardFaction]} 
             faction={cardFaction}
             ref={refsInfoFaction}
-          /> */}
+          />
         </div>
         <div className="mainDeck">
           <h2>Cartes du jeu</h2>
-          {/* <DeckList cardsList={cardsList} faction={cardFaction} cardClick={cardClick}/> */}
+          <DeckList cardsList={cardsList} faction={cardFaction} cardClick={cardClick}/>
         </div>
       </div>
       <div className="command">
