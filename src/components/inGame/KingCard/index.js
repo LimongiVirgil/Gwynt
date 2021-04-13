@@ -1,40 +1,44 @@
-import React, {useState} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './styles.scss';
 import data from '../../../data/cards.json'
 
 export default function KingCard({faction, idKing, enemy}) {
-
   const [open, setOpen] = useState(false);
+
+  const kingName = useRef();
+  const kingUrl = useRef();
+  const kingDesc = useRef();
+  const kingNameEffect = useRef();
 
   const infoCard = (e) => {
 		setOpen(!open)
 		e.preventDefault()
   }
 
-  var kingName;
-  var kingUrl;
-  var kingDesc;
-  var kingNameEffect;
-
-  data[faction].map(card => {
-    if (card.id.toString() === idKing) {
-      kingName = card.name
-      kingUrl = card.image_url
-      kingDesc = card.description1
-      kingNameEffect = card.nameEffect
-    }
+  useEffect(() => {
+    data[faction].forEach(card => {
+      if (card.id.toString() === idKing) {
+        kingName.current.attributes.src.value = card.image_url
+        kingName.current.attributes.alt.value = card.name
+        if (open) {
+          kingUrl.current.attributes.src.value = card.image_url
+          kingDesc.current.innerText = card.description1
+          kingNameEffect.current.innerText = card.nameEffect
+        }
+      }
+    })
   })
 
   return (
     <>
-      <img className={["chiefCard", enemy].join(' ')} src={kingUrl} alt={kingName} onContextMenu={infoCard}/>
+      <img ref={kingName} className={["chiefCard", enemy].join(' ')} src='' alt='' onContextMenu={infoCard}/>
       { open && 
         <div className="infoCard">
-          <img src={kingUrl} alt="carte"/>
+          <img ref={kingUrl} src='' alt="carte"/>
           <div href="#" className="close" onClick={() => setOpen(!open)}/>
           <div className="infoCardText">
-            <p>{kingNameEffect}</p>
-            <p>{kingDesc}</p>
+            <p ref={kingNameEffect}></p>
+            <p ref={kingDesc} />
           </div>
         </div>
       }
