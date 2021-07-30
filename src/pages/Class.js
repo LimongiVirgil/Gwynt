@@ -56,14 +56,14 @@ export default function Class() {
 
   //If deck is completed start the game
   const play = (faction) => {
-      var existing = getFactionCards(faction);
+    var existing = getFactionCards(faction);
 
-      if (existing.length >= 25 && existing.length <= 40) {
-        localStorage.setItem("faction", faction);
-        history.push("/game");
-      } else {
-        popup.current.style.display = "block"
-      }
+    if (existing.length >= 25 && existing.length <= 40) {
+      localStorage.setItem("faction", faction);
+      history.push("/game");
+    } else {
+      popup.current.style.display = "block"
+    }
   }
 
   //keyCode 

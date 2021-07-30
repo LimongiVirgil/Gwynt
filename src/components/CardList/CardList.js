@@ -41,13 +41,13 @@ function CardList(props) {
 				(existing.includes(card.id.toString()) || card.effect1 === "king") ? 
 					null : 
 					<LazyLoadImage 
-						key={index} 
-						id={card.id} 
+						key={index}
+						id={card.id}
 						effect="blur"
 						scrollPosition={props.scrollPosition}
-						onDoubleClick={(e) => props.cardClick(e, factionName, true)} 
-						onContextMenu={infoCard} 
-						src={card.image_url} 
+						onDoubleClick={(e) => props.cardClick(e, factionName, true)}
+						onContextMenu={infoCard}
+						src={card.image_url}
 						alt="carte"
 					/>
 			)}
