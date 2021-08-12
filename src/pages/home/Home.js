@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './home.scss'
 
 // Components
-import { fullScreen } from '../tools/fullScreen'
+import { fullScreen } from '../../tools/fullScreen'
 
 export default function Home() {
   

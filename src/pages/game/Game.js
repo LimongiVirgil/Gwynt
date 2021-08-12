@@ -1,18 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import { useHistory } from "react-router-dom";
-import data from '../data/cards.json'
+import data from '../../data/cards.json'
 
 // Scss
 import './game.scss'
 
 // Tools
-import { getRandomEnemyDeck } from '../tools/enemyDeck'
-import { removeKing, shuffleCard } from '../tools/deckTools'
+import { getRandomEnemyDeck } from '../../tools/enemyDeck'
+import { removeKing, shuffleCard } from '../../tools/deckTools'
 
 //Components
-import HandDeck from '../components/inGame/HandDeck'
-import StockCard from '../components/inGame/StockCard'
-import KingCard from '../components/inGame/KingCard'
+import HandDeck from '../../components/inGame/HandDeck'
+import StockCard from '../../components/inGame/StockCard'
+import KingCard from '../../components/inGame/KingCard'
 
 export default function Game() {
   const [stock, setStock] = useState(0)

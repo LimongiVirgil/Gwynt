@@ -1,18 +1,18 @@
 import React, {useEffect, useCallback, useRef, useState} from 'react';
 import { useHistory } from "react-router-dom";
-import data from '../data/cards.json'
-import dataKing from '../data/kingId.json'
+import data from '../../data/cards.json'
+import dataKing from '../../data/kingId.json'
 
 // Scss
 import './class.scss'
 
 // Tools
-import { getFactionCards } from '../tools/localStorageTools'
+import { getFactionCards } from '../../tools/localStorageTools'
 
 // Components
-import CardList from '../components/CardList/CardList'
-import DeckList from '../components/DeckList/DeckList'
-import InfoFaction from '../components/InfoFaction/InfoFaction'
+import CardList from '../../components/CardList/CardList'
+import DeckList from '../../components/DeckList/DeckList'
+import InfoFaction from '../../components/InfoFaction/InfoFaction'
 
 export default function Class() {
   const [cardFaction, setCardFaction] = useState("Nordling")
