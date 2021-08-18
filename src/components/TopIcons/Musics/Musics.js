@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+import './Musics.scss';
+
 export default function Musics() {
 	const sound = useRef(null);
 	const audio = useRef(null);
