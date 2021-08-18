@@ -101,27 +101,27 @@ export default function Class() {
 
   const cardClick = (e, factionName, addingCard) => {
 
-		// Get the existing data
-		var existing = localStorage.getItem(factionName);
+    // Get the existing data
+    var existing = localStorage.getItem(factionName);
 
-		// If no existing data, create an array
-		// Otherwise, convert the localStorage string to an array
-		existing = existing ? existing.split(',') : [];
+    // If no existing data, create an array
+    // Otherwise, convert the localStorage string to an array
+    existing = existing ? existing.split(',') : [];
 
-		const nbSpecialCard = specialRef.current;
+    const nbSpecialCard = specialRef.current;
 
-		var addCard = true
+    var addCard = true
 
-		if (!addingCard) {
-			//card.append(e.target)
+    if (!addingCard) {
+      //card.append(e.target)
 
-			const index = existing.indexOf(e.target.id);
-			if (index > -1) {
-				existing.splice(index, 1);
-			}
+      const index = existing.indexOf(e.target.id);
+      if (index > -1) {
+        existing.splice(index, 1);
+      }
 
-			// Save back to localStorage
-			localStorage.setItem(factionName, existing.toString());
+      // Save back to localStorage
+      localStorage.setItem(factionName, existing.toString());
 
       const newArrHandDeck = [...handDeck];
       const newArrMainDeck = [...mainDeck];
@@ -136,25 +136,25 @@ export default function Class() {
       setHandDeck(newArrHandDeck)
       setMainDeck(newArrMainDeck)
 
-		} else {
-			if (nbSpecialCard.innerText === "10") {
-				data.Neutre.forEach((card) => {
-					if (e.target.id === card.id.toString() && (card.effect1 === "meteo" || card.effect1 ===  "chargeRing" || card.effect1 ===  "destroy" || card.effect1 ===  "lure")) {
-						addCard = false;
-					}
-				})
-			}
+    } else {
+      if (nbSpecialCard.innerText === "10") {
+        data.Neutre.forEach((card) => {
+          if (e.target.id === card.id.toString() && (card.effect1 === "meteo" || card.effect1 ===  "chargeRing" || card.effect1 ===  "destroy" || card.effect1 ===  "lure")) {
+            addCard = false;
+          }
+        })
+      }
 
-			if (addCard) {
+      if (addCard) {
 
-				if (existing.length < 40) {
-					// Add new data to localStorage Array
-					existing.push(e.target.id);
+        if (existing.length < 40) {
+          // Add new data to localStorage Array
+          existing.push(e.target.id);
 
-					// Save back to localStorage
-					localStorage.setItem(factionName, existing.toString());
+          // Save back to localStorage
+          localStorage.setItem(factionName, existing.toString());
 
-					// Add select card to deck list
+          // Add select card to deck list
           const newArrHandDeck = [...handDeck];
           const newArrMainDeck = [...mainDeck];
 
