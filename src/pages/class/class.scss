@@ -13,7 +13,7 @@
     justify-content: space-evenly;
     justify-content: center;
     padding-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     li {
       color: #ffffff;
@@ -22,6 +22,7 @@
       margin-left: 20px;
       cursor: pointer;
       font-family: "Pill";
+      border-bottom: 3px solid transparent;
     }
   }
 
@@ -123,6 +124,9 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.65);
     font-weight: bold;
+    border-top: 2px #B28D41 solid;
+    border-left: 2px #B28D41 solid;
+    user-select: none;
 
     div {
       margin-right: 10px;

@@ -76,28 +76,18 @@ export default function Class() {
   //Change faction
   function handleClickClass(factionName) {
     setCardFaction(factionName.attributes['faction'].value)
+
+    nordling.current.style.borderBottom = "unset"
+    nilfgaard.current.style.borderBottom = "unset"
+    scoiaTael.current.style.borderBottom = "unset"
+    monstres.current.style.borderBottom = "unset"
+    skellige.current.style.borderBottom = "unset"
+
+    factionName.style.borderBottom = "3px solid #B28D41"
   }
 
   //Sort cards
   var handCards = getFactionCards(cardFaction);
-
-  // const sortCards = (cards) => {
-  //   if (handDeck.length === 0 || mainDeck.length === 0) {
-  //     var arrHandDeck = [...handDeck];
-  //     var arrMainDeck = [...mainDeck];
-    
-  //     cards.forEach((card) => {
-  //       if (handCards.includes(String(card.id)) && card.effect1 !== 'king') {
-  //         arrHandDeck.push(card)
-  //       } else if (card.effect1 !== 'king') {
-  //         arrMainDeck.push(card)
-  //       }
-  //     })
-    
-  //     setHandDeck(arrHandDeck)
-  //     setMainDeck(arrMainDeck)
-  //   }
-  // }
 
   const cardClick = (e, factionName, addingCard) => {
 
@@ -167,12 +157,12 @@ export default function Class() {
 
           setHandDeck(newArrHandDeck)
           setMainDeck(newArrMainDeck)
-				}
-			}
+        }
+      }
 
-			addCard = true;
-		}
-	}
+      addCard = true;
+    }
+  }
 
   return (
     <div className="classe">
