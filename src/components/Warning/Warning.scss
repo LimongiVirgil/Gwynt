@@ -1,0 +1,57 @@
+.warningContainer {
+  position: absolute;
+  background-color: #bcbcbc9c;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+
+  .warningMessage {
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    max-width: 726px;
+    padding: 20px;
+    outline: 10px solid rgba(255, 255, 255, 0.4);
+
+    p {
+      padding: 0 45px 0 0px;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .close {
+      position: relative;
+      min-width: 22px;
+      height: 22px;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      opacity: 1;
+    }
+
+    .close:before, .close:after {
+      position: absolute;
+      left: 10px;
+      content: ' ';
+      height: 22px;
+      width: 3px;
+      background-color: black;
+    }
+
+    .close:before {
+      transform: rotate(45deg);
+    }
+
+    .close:after {
+      transform: rotate(-45deg);
+    }
+  }
+}

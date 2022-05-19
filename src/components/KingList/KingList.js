@@ -47,20 +47,17 @@ function KingList(props) {
         <div className="chiefGallery">
           <div href="#" className="close" onClick={() => setOpen(false)}/>
           <Slider {...settings}>
-            {props.data.map((card, index) => {
-              if (card.effect1 === "king") {
-                return( 
-                  <div className="chiefImgs" key={index}>
-                    <img src={card.image_url} alt="carte" id={card.id} onDoubleClick={handleCardClick}/>
-                    <div className="infoCardText">
-                      {card.nameEffect && <p>{card.nameEffect}</p>}
-                      {card.description1 && <p>{card.description1}</p>}
-                      {card.description2 && <p>{card.description2}</p>}
-                    </div>
+            {props.data.map((card, index) => (
+              card.effect1 === "king" &&
+                <div className="chiefImgs" key={index}>
+                  <img src={card.image_url} alt="carte" id={card.id} onDoubleClick={handleCardClick}/>
+                  <div className="infoCardText">
+                    {card.nameEffect && <p>{card.nameEffect}</p>}
+                    {card.description1 && <p>{card.description1}</p>}
+                    {card.description2 && <p>{card.description2}</p>}
                   </div>
-                )
-              }
-            })}
+                </div>
+            ))}
           </Slider>
         </div>}
     </div>

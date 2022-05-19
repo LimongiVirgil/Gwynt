@@ -3,6 +3,6 @@ export const fullScreen = () => {
 	fullScreen.requestFullscreen()
 }
 
-export const exitFullScren = () => {
+export const exitFullScreen = () => {
 	document.exitFullscreen()
 }
