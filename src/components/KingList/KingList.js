@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Slider from "react-slick";
 
 import { getFactionCards } from '../../tools/localStorageTools'
@@ -6,6 +6,8 @@ import './KingList.scss'
 
 function KingList(props) {
   const [open, setOpen] = useState(false);
+
+  const dragIcon = useRef(null);
 
   // Get faction
   let factionName = props.faction
@@ -35,6 +37,11 @@ function KingList(props) {
     arrows: false,
   };
 
+  const handleDrag = () => {
+    console.log('oui')
+    dragIcon.current.style.display = "none"
+  }
+
   return(
     <div className={`${props.faction} faction kingList`}>
       <p className="title" >Chef</p>
@@ -49,7 +56,7 @@ function KingList(props) {
           <Slider {...settings}>
             {props.data.map((card, index) => (
               card.effect1 === "king" &&
-                <div className="chiefImgs" key={index}>
+                <div className="chiefImgs" key={index} onMouseDown={() => handleDrag()}>
                   <img src={card.image_url} alt="carte" id={card.id} onDoubleClick={handleCardClick}/>
                   <div className="infoCardText">
                     {card.nameEffect && <p>{card.nameEffect}</p>}
@@ -59,6 +66,15 @@ function KingList(props) {
                 </div>
             ))}
           </Slider>
+          <div ref={dragIcon} className="dragIcon">
+            <div className="iconWrapper">
+              <div className="handIcon">
+                <div className="hand">
+                  <div className="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>}
     </div>
   )
