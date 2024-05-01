@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 // Scss
 import './home.scss'
@@ -9,6 +9,12 @@ import { fullScreen } from '../../tools/fullScreen'
 import Warning from '../../components/Warning/Warning'
 
 export default function Home() {
+  const history = useHistory();
+
+  const handleClick = () => {
+    fullScreen();
+    history.push("class");
+  }
   
   return (
     <div className="menu">
@@ -17,11 +23,11 @@ export default function Home() {
         <img src="/images/logo_witcher.png" alt="title logo" />
         <img src="/images/Gwent.png" alt="background" />
       </div>
-      <Link to="/class" onClick={fullScreen}>
+      <button onClick={handleClick}>
         <div className="hover-ripple playButton">
           <p>Jouer</p>
         </div>
-      </Link>
+      </button>
     </div>
   );
 };

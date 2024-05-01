@@ -5,7 +5,7 @@ import './styles.scss'
 import Delete2Card from '../Delet2Card'
 import { removeSliced } from '../../../tools/deckTools'
 
-export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
+export default function HandDeck({shuffledCards, concatData, faction, enemy, getCard}) {
 
   const [open, setOpen] = useState(false);
 
@@ -27,8 +27,6 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
     removeSliced(shuffledCards, "deck")
   }
 
-  var factionName; 
-
   const infoCard = (e) => {
     setOpen(!open)
 
@@ -41,7 +39,7 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
       }
     })
 
-		e.preventDefault()
+    e.preventDefault()
   }
 
   const closeDelet2Card = (num, newHandDeck) => {
@@ -57,7 +55,7 @@ export default function HandDeck({shuffledCards, concatData, faction, enemy}) {
         {
           concatData.map((card, index) => {
             if (newHandCard.includes(card.id.toString()) && !enemy) {
-              return <img key={index} id={card.id} src={card.image_url} onContextMenu={infoCard} alt={card.name} />
+              return <img key={index} id={card.id} src={card.image_url} onClick={(el) => getCard(el)} onContextMenu={infoCard} alt={card.name} />
             } else if (newHandCard.includes(card.id.toString()) && enemy) {
               return <img key={index} src={`./images/${faction}/backface.jpg`} alt={card.name} />
             }

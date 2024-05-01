@@ -13,10 +13,12 @@ import { removeKing, shuffleCard } from '../../tools/deckTools'
 import HandDeck from '../../components/inGame/HandDeck'
 import StockCard from '../../components/inGame/StockCard'
 import KingCard from '../../components/inGame/KingCard'
+import Board from '../../components/inGame/Board'
 
 export default function Game() {
   const [stock, setStock] = useState(0)
   const [stockEnemy, setStockEnemy] = useState(0)
+  const [placeCard, setPlaceCard] = useState(null)
 
   let history = useHistory();
 
@@ -45,7 +47,24 @@ export default function Game() {
   //remove king card from shuffled array
   _chiefCard = removeKing(cards, idKings, "idKing")
   removeKing(cards, idKings)
-  
+
+  //////
+  //////
+  //////
+  // On click on card in hand get the ID, find the card in all cards array, ((and place it in board game))
+  const getCard = (el) => {
+    let cardID = Number(el.target.id);
+    concatData.forEach((card) => {
+      if (card.id === cardID) {
+        let localisation = card.area
+        setPlaceCard({"cardID": cardID, "localisation": localisation, "url": card.image_url, "name": card.name})
+      }
+    })
+  }
+  //////
+  //////
+  //////
+
   useEffect(() => {
     localStorage.setItem('shuffledDeck', cards);
     var shuffledDeck = localStorage.getItem('shuffledDeck').split(',')
@@ -55,7 +74,6 @@ export default function Game() {
 
     setStock(shuffledDeck.length - 10)
     setStockEnemy(shuffledEnemyDeckStorage.length - 10)
-
   }, []);
 
   return (
@@ -66,7 +84,8 @@ export default function Game() {
       </div>
       <div className="gameArea">
         <HandDeck faction={enemyDeck.faction} shuffledCards={shuffledEnemyDeck} concatData={concatEnemyData} enemy='enemyHand'/>
-        <HandDeck faction={getFaction} shuffledCards={cards} concatData={concatData}/>
+        <Board placeCard={placeCard} concatData={concatData}/>
+        <HandDeck faction={getFaction} shuffledCards={cards} concatData={concatData} getCard={getCard}/>
       </div>
       <div className="stockCard">
         <StockCard faction={enemyDeck.faction} stock={stockEnemy} enemy='enemyStock'/>

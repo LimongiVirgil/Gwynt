@@ -1,0 +1,14 @@
+.boardGame {
+  height: calc(100vh - 132px);
+  width: calc(100% - 80px);
+  position: relative;
+  top: 10px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    width: 100%;
+    height: calc(100% / 6);
+  }
+}
