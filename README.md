@@ -1,6 +1,6 @@
 # Gwint
 
-Projet ayant pour objectif de créer/copier le Gwynt/Gwent de The Witcher.
+Projet non commercial et strictement privé ayant pour seul but de progresser techniquement
 
 ## Installer le projet
 
